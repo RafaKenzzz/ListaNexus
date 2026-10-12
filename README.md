@@ -147,6 +147,8 @@ substitua os ficheiros mantendo as proporções:
   foco visível, textos alternativos, suporte a `prefers-reduced-motion`.
 - **Deploy:** sendo estático, publique a pasta em qualquer serviço —
   Netlify, Vercel, GitHub Pages, Cloudflare Pages. Não requer configuração especial.
+- **Site publicado:** https://rafakenzzz.github.io/ListaNexus/ (GitHub Pages, branch `main`).
+  Qualquer `git push` para `main` atualiza o site automaticamente em ~1 minuto.
 
 ---
 
