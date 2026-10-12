@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Área de campanha informativa. Conteúdo público.
-Sitemap: https://nexuspenafirme.pt/sitemap.xml
+Sitemap: https://eclipsepenafirme.pt/sitemap.xml

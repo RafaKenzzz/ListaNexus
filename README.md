@@ -1,6 +1,6 @@
-# Nexus — Site da lista candidata à AE do Externato de Penafirme
+# Eclipse — Site da lista candidata à AE do Externato de Penafirme
 
-Website multipágina, estático e sem _build step_, para a lista **Nexus** às eleições da
+Website multipágina, estático e sem _build step_, para a lista **Eclipse** às eleições da
 Associação de Estudantes do Externato de Penafirme.
 
 > **Nota:** este é um site de campanha estudantil e **não** é o site oficial do Externato
@@ -55,9 +55,8 @@ listaae/
    ├─ css/styles.css        # Design system completo (variáveis, componentes)
    ├─ js/site.js            # Interações + consentimento de cookies
    └─ img/
-      ├─ nexuslogo.png      # Logótipo original
-      ├─ nexus-mark.png     # Marca com fundo transparente (usada no site)
-      ├─ nexus-mark-dark.png
+      ├─ eclipse-logo.png   # Logótipo (recortado, fundo transparente)
+      ├─ eclipse-square.png # Versão quadrada (ícones e medalhão)
       ├─ og-image.png       # Imagem de partilha (1200×630)
       ├─ favicon-16.png · favicon-32.png · apple-touch-icon.png · icon-192.png · icon-512.png
       ├─ noticia-01..06.svg · evento-01..02.svg
@@ -73,9 +72,9 @@ Os números de telefone/e-mail, morada e nomes são **placeholders**. Procure e 
 
 | O quê | Onde |
 |---|---|
-| Domínio (`https://nexuspenafirme.pt/`) | `canonical`/`og:url` em todos os `.html`, `sitemap.xml`, `robots.txt`, JSON-LD |
+| Domínio (`https://eclipsepenafirme.pt/`) | `canonical`/`og:url` em todos os `.html`, `sitemap.xml`, `robots.txt`, JSON-LD |
 | E-mails (`contacto@`, `imprensa@`, `privacidade@`) | `contactos.html`, `privacidade.html`, footer de todas as páginas |
-| Instagram (`@nexus.penafirme`) | footer, `contactos.html`, JSON-LD |
+| Instagram (`@eclipse.penafirme`) | footer, `contactos.html`, JSON-LD |
 | Nomes/dados da equipa | `equipa.html` |
 | Membros (nome, ano, curso, função, frase, email) | `membros.html` |
 | Fotos dos membros | `assets/img/membros/01..24.svg` |
@@ -97,13 +96,13 @@ Definido como variáveis CSS no topo de `assets/css/styles.css`.
 
 | Variável | Valor | Uso |
 |---|---|---|
-| `--ink` | `#070c22` | Fundo escuro principal |
-| `--ink-2` / `--ink-3` | `#0b1430` / `#122048` | Superfícies escuras |
-| `--sky` / `--sky-2` | `#7ec1e8` / `#a9d8f0` | Azul de destaque |
-| `--blue` / `--blue-deep` | `#2c6ba6` / `#1a4a79` | Azuis de apoio |
-| `--ochre` / `--ochre-2` | `#e0a53e` / `#f0c466` | Realce (acento quente) |
-| `--clay` | `#b9542f` | Acento terroso |
-| `--paper` / `--paper-2` / `--paper-3` | `#f4f0e7` / `#ece5d7` / `#ded5c2` | Fundos claros |
+| `--ink` | `#080828` | Fundo escuro principal |
+| `--ink-2` / `--ink-3` | `#0d1030` / `#141a42` | Superfícies escuras |
+| `--sky` / `--sky-2` | `#f8c848` / `#fbe08f` | Azul de destaque |
+| `--blue` / `--blue-deep` | `#c9962f` / `#a8791f` | Azuis de apoio |
+| `--ochre` / `--ochre-2` | `#f5b942` / `#ffe08a` | Realce (acento quente) |
+| `--clay` | `#c98a2e` | Acento terroso |
+| `--paper` / `--paper-2` / `--paper-3` | `#f8e8c8` / `#f1ddb6` / `#e6cd97` | Fundos claros |
 
 **Tipografia** (Google Fonts, com fallback para _system fonts_)
 
@@ -121,7 +120,7 @@ Definido como variáveis CSS no topo de `assets/css/styles.css`.
 - **Galeria** com lightbox (fecha com `Esc` e clique no fundo).
 - **FAQ** com accordions acessíveis (`aria-expanded`/`aria-controls`).
 - **Consentimento de cookies** real (categorias: essenciais, medição, preferências),
-  guardado em `localStorage` na chave `nexus.consent.v1`. Reabertura via links `[data-open-cookie]`.
+  guardado em `localStorage` na chave `eclipse.consent.v1`. Reabertura via links `[data-open-cookie]`.
 - **Formulários** de demonstração: marque `data-demo` no `<form>`; o JS valida e mostra
   mensagem, sem enviar (ligue ao seu backend quando existir).
 

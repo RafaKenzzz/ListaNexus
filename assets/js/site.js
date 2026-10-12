@@ -1,5 +1,5 @@
 /* =========================================================================
-   NEXUS — site interactions
+   ECLIPSE — site interactions
    Vanilla JS, no dependencies. Progressive enhancement only.
    ========================================================================= */
 (function () {
@@ -145,7 +145,7 @@
       if (!status) return;
       status.className = "form-status is-visible " + (ok ? "form-status--ok" : "form-status--err");
       status.textContent = ok
-        ? "Obrigado! A tua mensagem foi registada nesta demonstração. A equipa Nexus responde em 1 a 2 dias úteis."
+        ? "Obrigado! A tua mensagem foi registada nesta demonstração. A equipa Eclipse responde em 1 a 2 dias úteis."
         : "Verifica os campos obrigatórios (e o formato do email) antes de enviar.";
       if (ok) form.reset();
       status.focus();
@@ -169,7 +169,7 @@
   $$("[data-year]").forEach(function (el) { el.textContent = new Date().getFullYear(); });
 
   /* ---------- Cookie consent (RGPD) ------------------------------------ */
-  var STORAGE_KEY = "nexus.consent.v1";
+  var STORAGE_KEY = "eclipse.consent.v1";
   var banner = $("#cookie-banner");
   if (banner) {
     var prefs = $("#cookie-prefs");
@@ -179,7 +179,7 @@
     var applyConsent = function (consent) {
       // Hook point for analytics / embeds. Nothing third-party is loaded
       // until consent is granted.
-      window.nexusConsent = consent;
+      window.eclipseConsent = consent;
     };
     var save = function (consent) {
       consent.date = new Date().toISOString();
