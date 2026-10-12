@@ -608,9 +608,9 @@ body.nav-open { overflow: hidden; }
   color: var(--ink); max-width: 26ch;
 }
 .pullquote::before { content: "“"; display: block; font-size: 3em; line-height: .5; color: var(--ochre); margin-bottom: .15em; }
-.section--ink .pullquote { color: var(--white); }
+.section--ink .pullquote, .section--ink-2 .pullquote { color: var(--white); }
 .pullquote__by { display: flex; align-items: center; gap: .8rem; margin-top: 1.6rem; font-family: var(--font-body); font-size: .92rem; font-weight: 600; color: var(--muted); }
-.section--ink .pullquote__by { color: var(--sky-2); }
+.section--ink .pullquote__by, .section--ink-2 .pullquote__by { color: var(--sky-2); }
 
 /* avatar monogram (used for team placeholders) */
 .avatar {
