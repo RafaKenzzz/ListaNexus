@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="festa de finalistas">
+  <defs>
+    <linearGradient id="bg7" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1430"/><stop offset="1" stop-color="#070c22"/>
+    </linearGradient>
+    <radialGradient id="glow7" cx="0.8" cy="0.15" r="0.8">
+      <stop offset="0" stop-color="#2c6ba6" stop-opacity="0.55"/>
+      <stop offset="0.6" stop-color="#2c6ba6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow27" cx="0.1" cy="1" r="0.7">
+      <stop offset="0" stop-color="#7ec1e8" stop-opacity="0.22"/>
+      <stop offset="0.7" stop-color="#7ec1e8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots7" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#7ec1e8" fill-opacity="0.14"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg7)"/>
+  <rect width="800" height="800" fill="url(#glow7)"/>
+  <rect width="800" height="800" fill="url(#glow27)"/>
+  <rect width="800" height="800" fill="url(#dots7)"/>
+  <line x1="400" y1="400" x2="520" y2="400" stroke="#e0a53e" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="602.8444235207044" y2="454.3519994715293" stroke="#7ec1e8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="659.8076211353316" y2="550" stroke="#7ec1e8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="484.8528137423857" y2="484.8528137423857" stroke="#7ec1e8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="505" y2="581.8653347947321" stroke="#e0a53e" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="477.6457135307562" y2="689.7777478867205" stroke="#7ec1e8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="400" y2="520" stroke="#7ec1e8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="345.6480005284706" y2="602.8444235207044" stroke="#7ec1e8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="250.00000000000006" y2="659.8076211353316" stroke="#e0a53e" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="315.1471862576143" y2="484.8528137423857" stroke="#7ec1e8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="218.13466520526788" y2="505" stroke="#7ec1e8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="110.22225211327952" y2="477.6457135307563" stroke="#7ec1e8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="280" y2="400" stroke="#e0a53e" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="197.15557647929563" y2="345.64800052847073" stroke="#7ec1e8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="140.1923788646684" y2="249.99999999999997" stroke="#7ec1e8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="315.1471862576143" y2="315.1471862576143" stroke="#7ec1e8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="294.9999999999999" y2="218.1346652052679" stroke="#e0a53e" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="322.3542864692438" y2="110.22225211327952" stroke="#7ec1e8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="400" y2="280" stroke="#7ec1e8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="454.35199947152927" y2="197.15557647929563" stroke="#7ec1e8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="550" y2="140.1923788646684" stroke="#e0a53e" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="484.8528137423857" y2="315.1471862576143" stroke="#7ec1e8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="581.865334794732" y2="294.9999999999999" stroke="#7ec1e8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><line x1="400" y1="400" x2="689.7777478867205" y2="322.3542864692438" stroke="#7ec1e8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/><circle cx="400" cy="400" r="60" fill="#122048" stroke="#7ec1e8" stroke-width="2"/><circle cx="400" cy="400" r="26" fill="#7ec1e8"/>
+  <g transform="translate(654.4,40)" opacity="0.9">
+    <rect width="105.6" height="105.6" rx="21.119999999999997" fill="none" stroke="#7ec1e8" stroke-width="2" stroke-opacity="0.7"/>
+    <path d="M 24.64 82.72 V 22.880000000000003 L 80.96000000000001 82.72 V 22.880000000000003" fill="none" stroke="#7ec1e8" stroke-width="12.32" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g font-family="'Space Mono', Consolas, monospace" fill="#a9d8f0" opacity="0.85">
+    <text x="40" y="756" font-size="20" letter-spacing="3">FESTA DE FINALISTAS</text>
+    <text x="760" y="756" font-size="20" letter-spacing="3" text-anchor="end" fill="#e0a53e">N/08</text>
+  </g>
+  <rect x="40" y="722" width="46" height="3" fill="#7ec1e8"/>
+</svg>

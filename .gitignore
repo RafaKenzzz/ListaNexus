@@ -1,0 +1,13 @@
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+*.lnk
+
+# Logs / temp
+*.log
+*.tmp
+
+# Editor settings
+.vscode/
+.idea/
