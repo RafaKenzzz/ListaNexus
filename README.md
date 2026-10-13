@@ -156,6 +156,14 @@ substitua os ficheiros mantendo as proporções:
 - **Site publicado:** https://rafakenzzz.github.io/ListaNexus/ (GitHub Pages, branch `main`).
   Qualquer `git push` para `main` atualiza o site automaticamente em ~1 minuto.
 
+### Publicar alterações
+
+```powershell
+git add -A
+git commit -m "Descrição curta da alteração"
+git push origin main
+```
+
 ---
 
 ## Verificação

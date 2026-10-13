@@ -1,7 +1,3 @@
-/* =========================================================================
-   ECLIPSE — site interactions
-   Vanilla JS, no dependencies. Progressive enhancement only.
-   ========================================================================= */
 (function () {
   "use strict";
 
@@ -10,7 +6,6 @@
   var $$ = function (sel, ctx) { return Array.prototype.slice.call((ctx || doc).querySelectorAll(sel)); };
   var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* ---------- Header: solid on scroll ---------------------------------- */
   var header = $(".site-header");
   if (header) {
     var onScrollHeader = function () {
@@ -21,7 +16,6 @@
     window.addEventListener("scroll", onScrollHeader, { passive: true });
   }
 
-  /* ---------- Mobile navigation ---------------------------------------- */
   var toggle = $(".nav-toggle");
   var mobileNav = $("#mobile-nav");
   if (toggle && mobileNav) {
@@ -48,7 +42,6 @@
     });
   }
 
-  /* ---------- Reveal on scroll ----------------------------------------- */
   var revealEls = $$("[data-reveal]");
   if (revealEls.length) {
     if (prefersReduced || !("IntersectionObserver" in window)) {
@@ -66,14 +59,13 @@
     }
   }
 
-  /* ---------- Accordions ----------------------------------------------- */
   $$(".acc__trigger").forEach(function (btn) {
     var panel = doc.getElementById(btn.getAttribute("aria-controls"));
     if (!panel) return;
     panel.style.height = "0px";
     btn.addEventListener("click", function () {
       var open = btn.getAttribute("aria-expanded") === "true";
-      // close siblings in same group
+
       var group = btn.closest(".acc");
       if (group && !open) {
         $$(".acc__trigger", group).forEach(function (other) {
@@ -87,18 +79,16 @@
       btn.setAttribute("aria-expanded", open ? "false" : "true");
       panel.style.height = open ? "0px" : panel.scrollHeight + "px";
     });
-    // keep height correct if content reflows
+
     window.addEventListener("resize", function () {
       if (btn.getAttribute("aria-expanded") === "true") panel.style.height = panel.scrollHeight + "px";
     });
   });
 
-  /* ---------- Ticker: duplicate track for seamless loop ---------------- */
   $$(".ticker__track").forEach(function (track) {
     track.innerHTML += track.innerHTML;
   });
 
-  /* ---------- Gallery lightbox ----------------------------------------- */
   var lightbox = $("#lightbox");
   if (lightbox) {
     var lbImg = $(".lightbox__fig img", lightbox);
@@ -128,7 +118,6 @@
     doc.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
   }
 
-  /* ---------- Forms (AJAX submit via FormSubmit) ----------------------- */
   $$("form[data-ajax]").forEach(function (form) {
     var endpoint = form.getAttribute("action");
     var btn = form.querySelector('button[type="submit"]');
@@ -179,7 +168,6 @@
     });
   });
 
-  /* ---------- Back to top ---------------------------------------------- */
   var toTop = $(".to-top");
   if (toTop) {
     var onScrollTop = function () {
@@ -192,10 +180,8 @@
     });
   }
 
-  /* ---------- Footer year ---------------------------------------------- */
   $$("[data-year]").forEach(function (el) { el.textContent = new Date().getFullYear(); });
 
-  /* ---------- Cookie consent (RGPD) ------------------------------------ */
   var STORAGE_KEY = "eclipse.consent.v1";
   var banner = $("#cookie-banner");
   if (banner) {
@@ -204,8 +190,7 @@
       try { return JSON.parse(localStorage.getItem(STORAGE_KEY)); } catch (err) { return null; }
     };
     var applyConsent = function (consent) {
-      // Hook point for analytics / embeds. Nothing third-party is loaded
-      // until consent is granted.
+
       window.eclipseConsent = consent;
     };
     var save = function (consent) {
@@ -245,7 +230,7 @@
         preferences: !!($("#pref-preferences") && $("#pref-preferences").checked)
       });
     });
-    // Re-open preferences from anywhere on the site
+
     $$("[data-open-cookie]").forEach(function (el) {
       el.addEventListener("click", function (e) { e.preventDefault(); openBanner(); if (prefs) prefs.classList.add("is-open"); });
     });
