@@ -526,6 +526,7 @@ body.nav-open { overflow: hidden; }
 }
 .chip--sky { background: rgba(126,193,232,.16); border-color: rgba(126,193,232,.4); color: var(--blue-deep); }
 .section--ink .chip { background: rgba(126,193,232,.1); border-color: var(--line-ink-2); color: var(--sky-2); }
+.hero .chip { background: rgba(126,193,232,.12); border-color: rgba(126,193,232,.45); color: var(--sky-2); }
 
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line-ink); border: 1px solid var(--line-ink); border-radius: var(--radius-lg); overflow: hidden; }
 .stat { background: var(--ink); padding: clamp(1.3rem, 3vw, 2.2rem); }
@@ -773,6 +774,7 @@ body.nav-open { overflow: hidden; }
 .prose ol li { list-style: none; position: relative; padding-left: 1.6rem; counter-increment: n; }
 .prose ol li::before { content: counter(n) "."; position: absolute; left: 0; font-family: var(--font-mono); font-weight: 700; color: var(--clay); }
 .prose strong { color: var(--ink); }
+.section--ink .prose strong, .section--ink-2 .prose strong { color: var(--white); }
 .prose blockquote { border-left: 3px solid var(--ochre); padding: .4rem 0 .4rem 1.4rem; margin: 1.4rem 0; color: var(--ink-3); font-style: italic; }
 
 .table-wrap { overflow-x: auto; margin: 1.4rem 0; border: 1px solid var(--line); border-radius: var(--radius-lg); }
