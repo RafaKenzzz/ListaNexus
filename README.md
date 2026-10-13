@@ -124,11 +124,12 @@ Definido como variáveis CSS no topo de `assets/css/styles.css`.
 - **Consentimento de cookies** real (categorias: essenciais, medição, preferências),
   guardado em `localStorage` na chave `eclipse.consent.v1`. Reabertura via links `[data-open-cookie]`.
 - **Formulários** (contacto + newsletter em todas as páginas) enviados por `fetch` para o
-  **FormSubmit** (`action="https://formsubmit.co/ajax/eclipse.extp@gmail.com"`), que encaminha
-  cada mensagem para `eclipse.extp@gmail.com`. Validação client-side + estados de envio/erro.
-  ⚠️ Requer **ativação**: o primeiro envio gera um email do FormSubmit com um link «Activate Form»
-  — clicar nesse link uma vez. Para mudar o destino, substitua o email no `action` de todos os
-  `<form>` e reative.
+  **FormSubmit** (`action="https://formsubmit.co/ajax/b27be4651bf7003b8eaa9fe9e6ee7276"`), que
+  encaminha cada mensagem para `eclipse.extp@gmail.com`. Usa-se o **alias** (string aleatória) em
+  vez do email exposto, por privacidade/anti-spam. Validação client-side + estados de envio/erro.
+  ⚠️ Requer **ativação** (uma só vez): no primeiro envio a FormSubmit mostra uma página/email com
+  «Activate Form» — clicar nesse link. O alias pertence a `eclipse.extp@gmail.com`; para mudar o
+  destino, faça um novo envio de teste e substitua o alias/email no `action` de todos os `<form>`.
 
 ---
 
