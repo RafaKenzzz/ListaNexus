@@ -1,32 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="quermesse da escola">
   <defs>
     <linearGradient id="bg10" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d1030"/><stop offset="1" stop-color="#080828"/>
+      <stop offset="0" stop-color="#0b1430"/><stop offset="1" stop-color="#070c22"/>
     </linearGradient>
     <radialGradient id="glow10" cx="0.8" cy="0.15" r="0.8">
-      <stop offset="0" stop-color="#c9962f" stop-opacity="0.55"/>
-      <stop offset="0.6" stop-color="#c9962f" stop-opacity="0"/>
+      <stop offset="0" stop-color="#2c6ba6" stop-opacity="0.55"/>
+      <stop offset="0.6" stop-color="#2c6ba6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glow210" cx="0.1" cy="1" r="0.7">
-      <stop offset="0" stop-color="#f8c848" stop-opacity="0.22"/>
-      <stop offset="0.7" stop-color="#f8c848" stop-opacity="0"/>
+      <stop offset="0" stop-color="#7ec1e8" stop-opacity="0.22"/>
+      <stop offset="0.7" stop-color="#7ec1e8" stop-opacity="0"/>
     </radialGradient>
     <pattern id="dots10" width="30" height="30" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.4" fill="#f8c848" fill-opacity="0.14"/>
+      <circle cx="2" cy="2" r="1.4" fill="#7ec1e8" fill-opacity="0.14"/>
     </pattern>
   </defs>
   <rect width="800" height="800" fill="url(#bg10)"/>
   <rect width="800" height="800" fill="url(#glow10)"/>
   <rect width="800" height="800" fill="url(#glow210)"/>
   <rect width="800" height="800" fill="url(#dots10)"/>
-  <rect x="90" y="614.2857142857143" width="76.57142857142857" height="85.71428571428571" rx="10" fill="#a8791f" fill-opacity="0.5"/><rect x="90" y="614.2857142857143" width="76.57142857142857" height="8" rx="4" fill="#f5b942"/><rect x="178.57142857142856" y="528.5714285714286" width="76.57142857142857" height="171.42857142857142" rx="10" fill="#f8c848" fill-opacity="0.55"/><rect x="178.57142857142856" y="528.5714285714286" width="76.57142857142857" height="8" rx="4" fill="#f5b942"/><rect x="267.1428571428571" y="442.8571428571429" width="76.57142857142857" height="257.1428571428571" rx="10" fill="#a8791f" fill-opacity="0.6"/><rect x="267.1428571428571" y="442.8571428571429" width="76.57142857142857" height="8" rx="4" fill="#f5b942"/><rect x="355.7142857142857" y="357.14285714285717" width="76.57142857142857" height="342.85714285714283" rx="10" fill="#f8c848" fill-opacity="0.65"/><rect x="355.7142857142857" y="357.14285714285717" width="76.57142857142857" height="8" rx="4" fill="#f5b942"/><rect x="444.2857142857143" y="271.42857142857144" width="76.57142857142857" height="428.57142857142856" rx="10" fill="#a8791f" fill-opacity="0.7"/><rect x="444.2857142857143" y="271.42857142857144" width="76.57142857142857" height="8" rx="4" fill="#f5b942"/><rect x="532.8571428571429" y="185.71428571428578" width="76.57142857142857" height="514.2857142857142" rx="10" fill="#f8c848" fill-opacity="0.75"/><rect x="532.8571428571429" y="185.71428571428578" width="76.57142857142857" height="8" rx="4" fill="#f5b942"/><rect x="621.4285714285714" y="100" width="76.57142857142857" height="600" rx="10" fill="#a8791f" fill-opacity="0.8"/><rect x="621.4285714285714" y="100" width="76.57142857142857" height="8" rx="4" fill="#f5b942"/>
+  <rect x="90" y="614.2857142857143" width="76.57142857142857" height="85.71428571428571" rx="10" fill="#1a4a79" fill-opacity="0.5"/><rect x="90" y="614.2857142857143" width="76.57142857142857" height="8" rx="4" fill="#e0a53e"/><rect x="178.57142857142856" y="528.5714285714286" width="76.57142857142857" height="171.42857142857142" rx="10" fill="#7ec1e8" fill-opacity="0.55"/><rect x="178.57142857142856" y="528.5714285714286" width="76.57142857142857" height="8" rx="4" fill="#e0a53e"/><rect x="267.1428571428571" y="442.8571428571429" width="76.57142857142857" height="257.1428571428571" rx="10" fill="#1a4a79" fill-opacity="0.6"/><rect x="267.1428571428571" y="442.8571428571429" width="76.57142857142857" height="8" rx="4" fill="#e0a53e"/><rect x="355.7142857142857" y="357.14285714285717" width="76.57142857142857" height="342.85714285714283" rx="10" fill="#7ec1e8" fill-opacity="0.65"/><rect x="355.7142857142857" y="357.14285714285717" width="76.57142857142857" height="8" rx="4" fill="#e0a53e"/><rect x="444.2857142857143" y="271.42857142857144" width="76.57142857142857" height="428.57142857142856" rx="10" fill="#1a4a79" fill-opacity="0.7"/><rect x="444.2857142857143" y="271.42857142857144" width="76.57142857142857" height="8" rx="4" fill="#e0a53e"/><rect x="532.8571428571429" y="185.71428571428578" width="76.57142857142857" height="514.2857142857142" rx="10" fill="#7ec1e8" fill-opacity="0.75"/><rect x="532.8571428571429" y="185.71428571428578" width="76.57142857142857" height="8" rx="4" fill="#e0a53e"/><rect x="621.4285714285714" y="100" width="76.57142857142857" height="600" rx="10" fill="#1a4a79" fill-opacity="0.8"/><rect x="621.4285714285714" y="100" width="76.57142857142857" height="8" rx="4" fill="#e0a53e"/>
   <g transform="translate(654.4,40)" opacity="0.9">
-    <rect width="105.6" height="105.6" rx="21.119999999999997" fill="none" stroke="#f8c848" stroke-width="2" stroke-opacity="0.7"/>
-    <path d="M 24.64 82.72 V 22.880000000000003 L 80.96000000000001 82.72 V 22.880000000000003" fill="none" stroke="#f8c848" stroke-width="12.32" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect width="105.6" height="105.6" rx="21.119999999999997" fill="none" stroke="#7ec1e8" stroke-width="2" stroke-opacity="0.7"/>
+    <path d="M 24.64 82.72 V 22.880000000000003 L 80.96000000000001 82.72 V 22.880000000000003" fill="none" stroke="#7ec1e8" stroke-width="12.32" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-  <g font-family="'Space Mono', Consolas, monospace" fill="#fbe08f" opacity="0.85">
+  <g font-family="'Space Mono', Consolas, monospace" fill="#a9d8f0" opacity="0.85">
     <text x="40" y="756" font-size="20" letter-spacing="3">QUERMESSE DA ESCOLA</text>
-    <text x="760" y="756" font-size="20" letter-spacing="3" text-anchor="end" fill="#f5b942">N/11</text>
+    <text x="760" y="756" font-size="20" letter-spacing="3" text-anchor="end" fill="#e0a53e">N/11</text>
   </g>
-  <rect x="40" y="722" width="46" height="3" fill="#f8c848"/>
+  <rect x="40" y="722" width="46" height="3" fill="#7ec1e8"/>
 </svg>

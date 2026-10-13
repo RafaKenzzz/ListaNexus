@@ -1,32 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="clube de róbótica">
   <defs>
     <linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d1030"/><stop offset="1" stop-color="#080828"/>
+      <stop offset="0" stop-color="#0b1430"/><stop offset="1" stop-color="#070c22"/>
     </linearGradient>
     <radialGradient id="glow5" cx="0.8" cy="0.15" r="0.8">
-      <stop offset="0" stop-color="#c9962f" stop-opacity="0.55"/>
-      <stop offset="0.6" stop-color="#c9962f" stop-opacity="0"/>
+      <stop offset="0" stop-color="#2c6ba6" stop-opacity="0.55"/>
+      <stop offset="0.6" stop-color="#2c6ba6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glow25" cx="0.1" cy="1" r="0.7">
-      <stop offset="0" stop-color="#f8c848" stop-opacity="0.22"/>
-      <stop offset="0.7" stop-color="#f8c848" stop-opacity="0"/>
+      <stop offset="0" stop-color="#7ec1e8" stop-opacity="0.22"/>
+      <stop offset="0.7" stop-color="#7ec1e8" stop-opacity="0"/>
     </radialGradient>
     <pattern id="dots5" width="30" height="30" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.4" fill="#f8c848" fill-opacity="0.14"/>
+      <circle cx="2" cy="2" r="1.4" fill="#7ec1e8" fill-opacity="0.14"/>
     </pattern>
   </defs>
   <rect width="800" height="800" fill="url(#bg5)"/>
   <rect width="800" height="800" fill="url(#glow5)"/>
   <rect width="800" height="800" fill="url(#glow25)"/>
   <rect width="800" height="800" fill="url(#dots5)"/>
-  <rect x="490" y="60" width="78" height="78" rx="8" fill="#c9962f" fill-opacity="0.5636874142661179"/><rect x="576" y="60" width="78" height="78" rx="8" fill="#c9962f" fill-opacity="0.4641803840877915"/><rect x="662" y="60" width="78" height="78" rx="8" fill="#c9962f" fill-opacity="0.4937885802469135"/><rect x="232" y="146" width="78" height="78" rx="8" fill="#f5b942" fill-opacity="0.798375342935528"/><rect x="60" y="232" width="78" height="78" rx="8" fill="#c9962f" fill-opacity="0.4707411694101509"/><rect x="146" y="232" width="78" height="78" rx="8" fill="#c9962f" fill-opacity="0.3534872256515775"/><rect x="232" y="232" width="78" height="78" rx="8" fill="#f8c848" fill-opacity="0.7172003600823045"/><rect x="490" y="232" width="78" height="78" rx="8" fill="#c9962f" fill-opacity="0.3566636659807956"/><rect x="576" y="232" width="78" height="78" rx="8" fill="#f8c848" fill-opacity="0.6262409979423869"/><rect x="60" y="318" width="78" height="78" rx="8" fill="#f8c848" fill-opacity="0.7040252057613168"/><rect x="232" y="318" width="78" height="78" rx="8" fill="#c9962f" fill-opacity="0.4750964506172839"/><rect x="318" y="318" width="78" height="78" rx="8" fill="#f8c848" fill-opacity="0.6376778978052127"/><rect x="662" y="318" width="78" height="78" rx="8" fill="#c9962f" fill-opacity="0.5665723593964335"/><rect x="146" y="404" width="78" height="78" rx="8" fill="#f5b942" fill-opacity="0.8384152091906721"/><rect x="576" y="404" width="78" height="78" rx="8" fill="#c9962f" fill-opacity="0.3786286865569273"/><rect x="404" y="490" width="78" height="78" rx="8" fill="#c9962f" fill-opacity="0.4186642661179698"/><rect x="662" y="490" width="78" height="78" rx="8" fill="#c9962f" fill-opacity="0.48765432098765427"/><rect x="146" y="576" width="78" height="78" rx="8" fill="#f8c848" fill-opacity="0.6499292695473251"/><rect x="490" y="576" width="78" height="78" rx="8" fill="#c9962f" fill-opacity="0.44662208504801093"/><rect x="146" y="662" width="78" height="78" rx="8" fill="#f8c848" fill-opacity="0.7154085219478739"/><rect x="404" y="662" width="78" height="78" rx="8" fill="#c9962f" fill-opacity="0.4762710048010974"/><rect x="490" y="662" width="78" height="78" rx="8" fill="#f8c848" fill-opacity="0.6769182956104252"/>
+  <rect x="490" y="60" width="78" height="78" rx="8" fill="#2c6ba6" fill-opacity="0.5636874142661179"/><rect x="576" y="60" width="78" height="78" rx="8" fill="#2c6ba6" fill-opacity="0.4641803840877915"/><rect x="662" y="60" width="78" height="78" rx="8" fill="#2c6ba6" fill-opacity="0.4937885802469135"/><rect x="232" y="146" width="78" height="78" rx="8" fill="#e0a53e" fill-opacity="0.798375342935528"/><rect x="60" y="232" width="78" height="78" rx="8" fill="#2c6ba6" fill-opacity="0.4707411694101509"/><rect x="146" y="232" width="78" height="78" rx="8" fill="#2c6ba6" fill-opacity="0.3534872256515775"/><rect x="232" y="232" width="78" height="78" rx="8" fill="#7ec1e8" fill-opacity="0.7172003600823045"/><rect x="490" y="232" width="78" height="78" rx="8" fill="#2c6ba6" fill-opacity="0.3566636659807956"/><rect x="576" y="232" width="78" height="78" rx="8" fill="#7ec1e8" fill-opacity="0.6262409979423869"/><rect x="60" y="318" width="78" height="78" rx="8" fill="#7ec1e8" fill-opacity="0.7040252057613168"/><rect x="232" y="318" width="78" height="78" rx="8" fill="#2c6ba6" fill-opacity="0.4750964506172839"/><rect x="318" y="318" width="78" height="78" rx="8" fill="#7ec1e8" fill-opacity="0.6376778978052127"/><rect x="662" y="318" width="78" height="78" rx="8" fill="#2c6ba6" fill-opacity="0.5665723593964335"/><rect x="146" y="404" width="78" height="78" rx="8" fill="#e0a53e" fill-opacity="0.8384152091906721"/><rect x="576" y="404" width="78" height="78" rx="8" fill="#2c6ba6" fill-opacity="0.3786286865569273"/><rect x="404" y="490" width="78" height="78" rx="8" fill="#2c6ba6" fill-opacity="0.4186642661179698"/><rect x="662" y="490" width="78" height="78" rx="8" fill="#2c6ba6" fill-opacity="0.48765432098765427"/><rect x="146" y="576" width="78" height="78" rx="8" fill="#7ec1e8" fill-opacity="0.6499292695473251"/><rect x="490" y="576" width="78" height="78" rx="8" fill="#2c6ba6" fill-opacity="0.44662208504801093"/><rect x="146" y="662" width="78" height="78" rx="8" fill="#7ec1e8" fill-opacity="0.7154085219478739"/><rect x="404" y="662" width="78" height="78" rx="8" fill="#2c6ba6" fill-opacity="0.4762710048010974"/><rect x="490" y="662" width="78" height="78" rx="8" fill="#7ec1e8" fill-opacity="0.6769182956104252"/>
   <g transform="translate(654.4,40)" opacity="0.9">
-    <rect width="105.6" height="105.6" rx="21.119999999999997" fill="none" stroke="#f8c848" stroke-width="2" stroke-opacity="0.7"/>
-    <path d="M 24.64 82.72 V 22.880000000000003 L 80.96000000000001 82.72 V 22.880000000000003" fill="none" stroke="#f8c848" stroke-width="12.32" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect width="105.6" height="105.6" rx="21.119999999999997" fill="none" stroke="#7ec1e8" stroke-width="2" stroke-opacity="0.7"/>
+    <path d="M 24.64 82.72 V 22.880000000000003 L 80.96000000000001 82.72 V 22.880000000000003" fill="none" stroke="#7ec1e8" stroke-width="12.32" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-  <g font-family="'Space Mono', Consolas, monospace" fill="#fbe08f" opacity="0.85">
+  <g font-family="'Space Mono', Consolas, monospace" fill="#a9d8f0" opacity="0.85">
     <text x="40" y="756" font-size="20" letter-spacing="3">CLUBE DE RÓBÓTICA</text>
-    <text x="760" y="756" font-size="20" letter-spacing="3" text-anchor="end" fill="#f5b942">N/06</text>
+    <text x="760" y="756" font-size="20" letter-spacing="3" text-anchor="end" fill="#e0a53e">N/06</text>
   </g>
-  <rect x="40" y="722" width="46" height="3" fill="#f8c848"/>
+  <rect x="40" y="722" width="46" height="3" fill="#7ec1e8"/>
 </svg>

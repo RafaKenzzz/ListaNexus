@@ -1,32 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="maratona solidéria">
   <defs>
     <linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d1030"/><stop offset="1" stop-color="#080828"/>
+      <stop offset="0" stop-color="#0b1430"/><stop offset="1" stop-color="#070c22"/>
     </linearGradient>
     <radialGradient id="glow6" cx="0.8" cy="0.15" r="0.8">
-      <stop offset="0" stop-color="#c9962f" stop-opacity="0.55"/>
-      <stop offset="0.6" stop-color="#c9962f" stop-opacity="0"/>
+      <stop offset="0" stop-color="#2c6ba6" stop-opacity="0.55"/>
+      <stop offset="0.6" stop-color="#2c6ba6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glow26" cx="0.1" cy="1" r="0.7">
-      <stop offset="0" stop-color="#f8c848" stop-opacity="0.22"/>
-      <stop offset="0.7" stop-color="#f8c848" stop-opacity="0"/>
+      <stop offset="0" stop-color="#7ec1e8" stop-opacity="0.22"/>
+      <stop offset="0.7" stop-color="#7ec1e8" stop-opacity="0"/>
     </radialGradient>
     <pattern id="dots6" width="30" height="30" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.4" fill="#f8c848" fill-opacity="0.14"/>
+      <circle cx="2" cy="2" r="1.4" fill="#7ec1e8" fill-opacity="0.14"/>
     </pattern>
   </defs>
   <rect width="800" height="800" fill="url(#bg6)"/>
   <rect width="800" height="800" fill="url(#glow6)"/>
   <rect width="800" height="800" fill="url(#glow26)"/>
   <rect width="800" height="800" fill="url(#dots6)"/>
-  <path d="M 0 140 Q 20 106 40 140 Q 60 174 80 140 Q 100 106 120 140 Q 140 174 160 140 Q 180 106 200 140 Q 220 174 240 140 Q 260 106 280 140 Q 300 174 320 140 Q 340 106 360 140 Q 380 174 400 140 Q 420 106 440 140 Q 460 174 480 140 Q 500 106 520 140 Q 540 174 560 140 Q 580 106 600 140 Q 620 174 640 140 Q 660 106 680 140 Q 700 174 720 140 Q 740 106 760 140 Q 780 174 800 140 Q 820 106 840 140" fill="none" stroke="#f8c848" stroke-width="2.5" stroke-opacity="0.6"/><path d="M 0 232 Q 20 192 40 232 Q 60 272 80 232 Q 100 192 120 232 Q 140 272 160 232 Q 180 192 200 232 Q 220 272 240 232 Q 260 192 280 232 Q 300 272 320 232 Q 340 192 360 232 Q 380 272 400 232 Q 420 192 440 232 Q 460 272 480 232 Q 500 192 520 232 Q 540 272 560 232 Q 580 192 600 232 Q 620 272 640 232 Q 660 192 680 232 Q 700 272 720 232 Q 740 192 760 232 Q 780 272 800 232 Q 820 192 840 232" fill="none" stroke="#f5b942" stroke-width="2.5" stroke-opacity="0.53"/><path d="M 0 324 Q 20 278 40 324 Q 60 370 80 324 Q 100 278 120 324 Q 140 370 160 324 Q 180 278 200 324 Q 220 370 240 324 Q 260 278 280 324 Q 300 370 320 324 Q 340 278 360 324 Q 380 370 400 324 Q 420 278 440 324 Q 460 370 480 324 Q 500 278 520 324 Q 540 370 560 324 Q 580 278 600 324 Q 620 370 640 324 Q 660 278 680 324 Q 700 370 720 324 Q 740 278 760 324 Q 780 370 800 324 Q 820 278 840 324" fill="none" stroke="#f8c848" stroke-width="2.5" stroke-opacity="0.45999999999999996"/><path d="M 0 416 Q 20 364 40 416 Q 60 468 80 416 Q 100 364 120 416 Q 140 468 160 416 Q 180 364 200 416 Q 220 468 240 416 Q 260 364 280 416 Q 300 468 320 416 Q 340 364 360 416 Q 380 468 400 416 Q 420 364 440 416 Q 460 468 480 416 Q 500 364 520 416 Q 540 468 560 416 Q 580 364 600 416 Q 620 468 640 416 Q 660 364 680 416 Q 700 468 720 416 Q 740 364 760 416 Q 780 468 800 416 Q 820 364 840 416" fill="none" stroke="#f5b942" stroke-width="2.5" stroke-opacity="0.38999999999999996"/><path d="M 0 508 Q 20 450 40 508 Q 60 566 80 508 Q 100 450 120 508 Q 140 566 160 508 Q 180 450 200 508 Q 220 566 240 508 Q 260 450 280 508 Q 300 566 320 508 Q 340 450 360 508 Q 380 566 400 508 Q 420 450 440 508 Q 460 566 480 508 Q 500 450 520 508 Q 540 566 560 508 Q 580 450 600 508 Q 620 566 640 508 Q 660 450 680 508 Q 700 566 720 508 Q 740 450 760 508 Q 780 566 800 508 Q 820 450 840 508" fill="none" stroke="#f8c848" stroke-width="2.5" stroke-opacity="0.31999999999999995"/><path d="M 0 600 Q 20 536 40 600 Q 60 664 80 600 Q 100 536 120 600 Q 140 664 160 600 Q 180 536 200 600 Q 220 664 240 600 Q 260 536 280 600 Q 300 664 320 600 Q 340 536 360 600 Q 380 664 400 600 Q 420 536 440 600 Q 460 664 480 600 Q 500 536 520 600 Q 540 664 560 600 Q 580 536 600 600 Q 620 664 640 600 Q 660 536 680 600 Q 700 664 720 600 Q 740 536 760 600 Q 780 664 800 600 Q 820 536 840 600" fill="none" stroke="#f5b942" stroke-width="2.5" stroke-opacity="0.24999999999999994"/>
+  <path d="M 0 140 Q 20 106 40 140 Q 60 174 80 140 Q 100 106 120 140 Q 140 174 160 140 Q 180 106 200 140 Q 220 174 240 140 Q 260 106 280 140 Q 300 174 320 140 Q 340 106 360 140 Q 380 174 400 140 Q 420 106 440 140 Q 460 174 480 140 Q 500 106 520 140 Q 540 174 560 140 Q 580 106 600 140 Q 620 174 640 140 Q 660 106 680 140 Q 700 174 720 140 Q 740 106 760 140 Q 780 174 800 140 Q 820 106 840 140" fill="none" stroke="#7ec1e8" stroke-width="2.5" stroke-opacity="0.6"/><path d="M 0 232 Q 20 192 40 232 Q 60 272 80 232 Q 100 192 120 232 Q 140 272 160 232 Q 180 192 200 232 Q 220 272 240 232 Q 260 192 280 232 Q 300 272 320 232 Q 340 192 360 232 Q 380 272 400 232 Q 420 192 440 232 Q 460 272 480 232 Q 500 192 520 232 Q 540 272 560 232 Q 580 192 600 232 Q 620 272 640 232 Q 660 192 680 232 Q 700 272 720 232 Q 740 192 760 232 Q 780 272 800 232 Q 820 192 840 232" fill="none" stroke="#e0a53e" stroke-width="2.5" stroke-opacity="0.53"/><path d="M 0 324 Q 20 278 40 324 Q 60 370 80 324 Q 100 278 120 324 Q 140 370 160 324 Q 180 278 200 324 Q 220 370 240 324 Q 260 278 280 324 Q 300 370 320 324 Q 340 278 360 324 Q 380 370 400 324 Q 420 278 440 324 Q 460 370 480 324 Q 500 278 520 324 Q 540 370 560 324 Q 580 278 600 324 Q 620 370 640 324 Q 660 278 680 324 Q 700 370 720 324 Q 740 278 760 324 Q 780 370 800 324 Q 820 278 840 324" fill="none" stroke="#7ec1e8" stroke-width="2.5" stroke-opacity="0.45999999999999996"/><path d="M 0 416 Q 20 364 40 416 Q 60 468 80 416 Q 100 364 120 416 Q 140 468 160 416 Q 180 364 200 416 Q 220 468 240 416 Q 260 364 280 416 Q 300 468 320 416 Q 340 364 360 416 Q 380 468 400 416 Q 420 364 440 416 Q 460 468 480 416 Q 500 364 520 416 Q 540 468 560 416 Q 580 364 600 416 Q 620 468 640 416 Q 660 364 680 416 Q 700 468 720 416 Q 740 364 760 416 Q 780 468 800 416 Q 820 364 840 416" fill="none" stroke="#e0a53e" stroke-width="2.5" stroke-opacity="0.38999999999999996"/><path d="M 0 508 Q 20 450 40 508 Q 60 566 80 508 Q 100 450 120 508 Q 140 566 160 508 Q 180 450 200 508 Q 220 566 240 508 Q 260 450 280 508 Q 300 566 320 508 Q 340 450 360 508 Q 380 566 400 508 Q 420 450 440 508 Q 460 566 480 508 Q 500 450 520 508 Q 540 566 560 508 Q 580 450 600 508 Q 620 566 640 508 Q 660 450 680 508 Q 700 566 720 508 Q 740 450 760 508 Q 780 566 800 508 Q 820 450 840 508" fill="none" stroke="#7ec1e8" stroke-width="2.5" stroke-opacity="0.31999999999999995"/><path d="M 0 600 Q 20 536 40 600 Q 60 664 80 600 Q 100 536 120 600 Q 140 664 160 600 Q 180 536 200 600 Q 220 664 240 600 Q 260 536 280 600 Q 300 664 320 600 Q 340 536 360 600 Q 380 664 400 600 Q 420 536 440 600 Q 460 664 480 600 Q 500 536 520 600 Q 540 664 560 600 Q 580 536 600 600 Q 620 664 640 600 Q 660 536 680 600 Q 700 664 720 600 Q 740 536 760 600 Q 780 664 800 600 Q 820 536 840 600" fill="none" stroke="#e0a53e" stroke-width="2.5" stroke-opacity="0.24999999999999994"/>
   <g transform="translate(654.4,40)" opacity="0.9">
-    <rect width="105.6" height="105.6" rx="21.119999999999997" fill="none" stroke="#f8c848" stroke-width="2" stroke-opacity="0.7"/>
-    <path d="M 24.64 82.72 V 22.880000000000003 L 80.96000000000001 82.72 V 22.880000000000003" fill="none" stroke="#f8c848" stroke-width="12.32" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect width="105.6" height="105.6" rx="21.119999999999997" fill="none" stroke="#7ec1e8" stroke-width="2" stroke-opacity="0.7"/>
+    <path d="M 24.64 82.72 V 22.880000000000003 L 80.96000000000001 82.72 V 22.880000000000003" fill="none" stroke="#7ec1e8" stroke-width="12.32" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-  <g font-family="'Space Mono', Consolas, monospace" fill="#fbe08f" opacity="0.85">
+  <g font-family="'Space Mono', Consolas, monospace" fill="#a9d8f0" opacity="0.85">
     <text x="40" y="756" font-size="20" letter-spacing="3">MARATONA SOLIDÉRIA</text>
-    <text x="760" y="756" font-size="20" letter-spacing="3" text-anchor="end" fill="#f5b942">N/07</text>
+    <text x="760" y="756" font-size="20" letter-spacing="3" text-anchor="end" fill="#e0a53e">N/07</text>
   </g>
-  <rect x="40" y="722" width="46" height="3" fill="#f8c848"/>
+  <rect x="40" y="722" width="46" height="3" fill="#7ec1e8"/>
 </svg>

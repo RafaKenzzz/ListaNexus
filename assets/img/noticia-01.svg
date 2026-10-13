@@ -1,32 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="abertura de candidatura">
   <defs>
     <linearGradient id="bg40" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d1030"/><stop offset="1" stop-color="#080828"/>
+      <stop offset="0" stop-color="#0b1430"/><stop offset="1" stop-color="#070c22"/>
     </linearGradient>
     <radialGradient id="glow40" cx="0.8" cy="0.15" r="0.8">
-      <stop offset="0" stop-color="#c9962f" stop-opacity="0.55"/>
-      <stop offset="0.6" stop-color="#c9962f" stop-opacity="0"/>
+      <stop offset="0" stop-color="#2c6ba6" stop-opacity="0.55"/>
+      <stop offset="0.6" stop-color="#2c6ba6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glow240" cx="0.1" cy="1" r="0.7">
-      <stop offset="0" stop-color="#f8c848" stop-opacity="0.22"/>
-      <stop offset="0.7" stop-color="#f8c848" stop-opacity="0"/>
+      <stop offset="0" stop-color="#7ec1e8" stop-opacity="0.22"/>
+      <stop offset="0.7" stop-color="#7ec1e8" stop-opacity="0"/>
     </radialGradient>
     <pattern id="dots40" width="30" height="30" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.4" fill="#f8c848" fill-opacity="0.14"/>
+      <circle cx="2" cy="2" r="1.4" fill="#7ec1e8" fill-opacity="0.14"/>
     </pattern>
   </defs>
   <rect width="1200" height="675" fill="url(#bg40)"/>
   <rect width="1200" height="675" fill="url(#glow40)"/>
   <rect width="1200" height="675" fill="url(#glow240)"/>
   <rect width="1200" height="675" fill="url(#dots40)"/>
-  <rect x="-100" y="80" width="1420" height="22" rx="12" fill="#f8c848" fill-opacity="0.16" transform="rotate(-18 600 80)"/><rect x="-100" y="170" width="1420" height="36" rx="12" fill="#c9962f" fill-opacity="0.22" transform="rotate(-18 600 170)"/><rect x="-100" y="260" width="1420" height="50" rx="12" fill="#f5b942" fill-opacity="0.28" transform="rotate(-18 600 260)"/><rect x="-100" y="350" width="1420" height="22" rx="12" fill="#fbe08f" fill-opacity="0.16" transform="rotate(-18 600 350)"/><rect x="-100" y="440" width="1420" height="36" rx="12" fill="#f8c848" fill-opacity="0.22" transform="rotate(-18 600 440)"/><rect x="-100" y="530" width="1420" height="50" rx="12" fill="#c9962f" fill-opacity="0.28" transform="rotate(-18 600 530)"/><rect x="-100" y="620" width="1420" height="22" rx="12" fill="#f5b942" fill-opacity="0.16" transform="rotate(-18 600 620)"/>
+  <rect x="-100" y="80" width="1420" height="22" rx="12" fill="#7ec1e8" fill-opacity="0.16" transform="rotate(-18 600 80)"/><rect x="-100" y="170" width="1420" height="36" rx="12" fill="#2c6ba6" fill-opacity="0.22" transform="rotate(-18 600 170)"/><rect x="-100" y="260" width="1420" height="50" rx="12" fill="#e0a53e" fill-opacity="0.28" transform="rotate(-18 600 260)"/><rect x="-100" y="350" width="1420" height="22" rx="12" fill="#a9d8f0" fill-opacity="0.16" transform="rotate(-18 600 350)"/><rect x="-100" y="440" width="1420" height="36" rx="12" fill="#7ec1e8" fill-opacity="0.22" transform="rotate(-18 600 440)"/><rect x="-100" y="530" width="1420" height="50" rx="12" fill="#2c6ba6" fill-opacity="0.28" transform="rotate(-18 600 530)"/><rect x="-100" y="620" width="1420" height="22" rx="12" fill="#e0a53e" fill-opacity="0.16" transform="rotate(-18 600 620)"/>
   <g transform="translate(1070.9,40)" opacity="0.9">
-    <rect width="89.1" height="89.1" rx="17.82" fill="none" stroke="#f8c848" stroke-width="2" stroke-opacity="0.7"/>
-    <path d="M 20.790000000000003 69.795 V 19.305 L 68.31 69.795 V 19.305" fill="none" stroke="#f8c848" stroke-width="10.395000000000001" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect width="89.1" height="89.1" rx="17.82" fill="none" stroke="#7ec1e8" stroke-width="2" stroke-opacity="0.7"/>
+    <path d="M 20.790000000000003 69.795 V 19.305 L 68.31 69.795 V 19.305" fill="none" stroke="#7ec1e8" stroke-width="10.395000000000001" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-  <g font-family="'Space Mono', Consolas, monospace" fill="#fbe08f" opacity="0.85">
+  <g font-family="'Space Mono', Consolas, monospace" fill="#a9d8f0" opacity="0.85">
     <text x="40" y="631" font-size="20" letter-spacing="3">ABERTURA DE CANDIDATURA</text>
-    <text x="1160" y="631" font-size="20" letter-spacing="3" text-anchor="end" fill="#f5b942">N/N/01</text>
+    <text x="1160" y="631" font-size="20" letter-spacing="3" text-anchor="end" fill="#e0a53e">N/N/01</text>
   </g>
-  <rect x="40" y="597" width="46" height="3" fill="#f8c848"/>
+  <rect x="40" y="597" width="46" height="3" fill="#7ec1e8"/>
 </svg>

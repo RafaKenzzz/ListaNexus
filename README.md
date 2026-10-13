@@ -42,7 +42,8 @@ listaae/
 ├─ membros.html            # Roster completo dos 24 membros (foto, ano, curso, função, email)
 ├─ noticias.html           # Notícias, agenda de eventos, newsletter
 ├─ galeria.html            # Grelha de 12 itens + lightbox
-├─ contactos.html          # Formulário (demo) + contactos + transparência
+├─ contactos.html           # Formulário (demo) + contactos + transparência
+├─ patrocinadores.html      # Patrocinadores e apoios da lista
 ├─ faq.html                # Perguntas frequentes (accordions) + JSON-LD FAQPage
 ├─ privacidade.html        # Política de privacidade / RGPD (Lei 58/2019)
 ├─ termos.html             # Termos de utilização
@@ -73,7 +74,7 @@ Os números de telefone/e-mail, morada e nomes são **placeholders**. Procure e 
 | O quê | Onde |
 |---|---|
 | Domínio (`https://eclipsepenafirme.pt/`) | `canonical`/`og:url` em todos os `.html`, `sitemap.xml`, `robots.txt`, JSON-LD |
-| E-mails (`contacto@`, `imprensa@`, `privacidade@`) | `contactos.html`, `privacidade.html`, footer de todas as páginas |
+| E-mail da lista (`eclipse.extp@gmail.com`) | footer de todas as páginas, `contactos.html`, `privacidade.html` |
 | Instagram (`@eclipse.penafirme`) | footer, `contactos.html`, JSON-LD |
 | Nomes/dados da equipa | `equipa.html` |
 | Membros (nome, ano, curso, função, frase, email) | `membros.html` |
@@ -96,12 +97,12 @@ Definido como variáveis CSS no topo de `assets/css/styles.css`.
 
 | Variável | Valor | Uso |
 |---|---|---|
-| `--ink` | `#080828` | Fundo escuro principal |
-| `--ink-2` / `--ink-3` | `#0d1030` / `#141a42` | Superfícies escuras |
-| `--sky` / `--sky-2` | `#f8c848` / `#fbe08f` | Azul de destaque |
-| `--blue` / `--blue-deep` | `#c9962f` / `#a8791f` | Azuis de apoio |
-| `--ochre` / `--ochre-2` | `#f5b942` / `#ffe08a` | Realce (acento quente) |
-| `--clay` | `#c98a2e` | Acento terroso |
+| `--ink` | `#070c22` | Fundo escuro principal |
+| `--ink-2` / `--ink-3` | `#0b1430` / `#122048` | Superfícies escuras |
+| `--sky` / `--sky-2` | `#7ec1e8` / `#a9d8f0` | Azul de destaque |
+| `--blue` / `--blue-deep` | `#2c6ba6` / `#1a4a79` | Azuis de apoio |
+| `--ochre` / `--ochre-2` | `#e0a53e` / `#f0c466` | Realce (acento quente) |
+| `--clay` | `#b9542f` | Acento terroso |
 | `--paper` / `--paper-2` / `--paper-3` | `#f8e8c8` / `#f1ddb6` / `#e6cd97` | Fundos claros |
 
 **Tipografia** (Google Fonts, com fallback para _system fonts_)
@@ -115,7 +116,7 @@ Definido como variáveis CSS no topo de `assets/css/styles.css`.
 ## Funcionalidades
 
 - **Header** fixo transparente sobre o hero; fica sólido ao rolar.
-- **Navegação mobile** (<1024px) com botão toggle, fecha com `Esc`.
+- **Navegação mobile** (<1280px) com botão toggle, fecha com `Esc`.
 - **Revelação ao scroll** via `IntersectionObserver` (desativa com JS desligado).
 - **Galeria** com lightbox (fecha com `Esc` e clique no fundo).
 - **FAQ** com accordions acessíveis (`aria-expanded`/`aria-controls`).
