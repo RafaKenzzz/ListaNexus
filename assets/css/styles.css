@@ -995,6 +995,20 @@ table.data code { font-family: var(--font-mono); font-size: .82rem; background: 
   .btn--lg { font-size: 1rem; padding: .88em 1.25em; }
 }
 
+/* ---- Mobile polish ---- */
+h1, h2, h3, h4 { overflow-wrap: anywhere; }
+.post h3, .post-row h4, .post p, .cta-band h2, .cta-band p { overflow-wrap: anywhere; }
+
+@media (max-width: 480px) {
+  .hero__actions { gap: .7rem; }
+  .hero__actions .btn { flex: 1 1 100%; }
+  .cta-band { padding: 1.9rem 1.4rem; }
+}
+@media (max-width: 360px) {
+  h1 { font-size: 2.15rem; }
+  h2 { font-size: 1.7rem; }
+}
+
 /* print */
 @media print {
   .site-header, .mobile-nav, .cookie, .to-top, .ticker, .hero__medallion { display: none !important; }
