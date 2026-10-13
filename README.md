@@ -44,6 +44,7 @@ listaae/
 ├─ galeria.html            # Grelha de 12 itens + lightbox
 ├─ contactos.html           # Formulário de contacto + contactos + transparência
 ├─ patrocinadores.html      # Patrocinadores e apoios da lista
+├─ patrocinador-01..06.html # Página de cada patrocinador (negócio, contactos, links, apoio)
 ├─ faq.html                # Perguntas frequentes (accordions) + JSON-LD FAQPage
 ├─ privacidade.html        # Política de privacidade / RGPD (Lei 58/2019)
 ├─ termos.html             # Termos de utilização
@@ -77,6 +78,7 @@ Os números de telefone/e-mail, morada e nomes são **placeholders**. Procure e 
 | E-mail da lista (`eclipse.extp@gmail.com`) | footer de todas as páginas, `contactos.html`, `privacidade.html` |
 | Destino dos formulários | `action` de todos os `<form>` (FormSubmit) + `privacidade.html` |
 | Instagram (`@eclipse.penafirme`) | footer, `contactos.html`, JSON-LD |
+| Patrocinadores e páginas de cada um | `patrocinadores.html` + `patrocinador-01..06.html` |
 | Nomes/dados da equipa | `equipa.html` |
 | Membros (nome, ano, curso, função, frase, email) | `membros.html` |
 | Fotos dos membros | `assets/img/membros/01..24.svg` |
