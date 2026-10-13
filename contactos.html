@@ -98,7 +98,11 @@
             <p class="muted mt-2">Os campos marcados com <span class="req">*</span> são obrigatórios. Usamos os teus dados apenas para responder a esta mensagem — nada mais. Ver a <a href="privacidade.html">Política de Privacidade</a>.</p>
           </div>
 
-          <form class="form card mt-3" data-reveal data-reveal-delay="1" data-demo style="padding:clamp(1.4rem,3vw,2.2rem)">
+          <form class="form card mt-3" action="https://formsubmit.co/ajax/eclipse.extp@gmail.com" method="POST" data-ajax data-reveal data-reveal-delay="1" style="padding:clamp(1.4rem,3vw,2.2rem)">
+            <input type="hidden" name="_subject" value="Nova mensagem do formulário de contacto — Eclipse">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
             <div class="field-row">
               <div class="field">
                 <label for="c-nome">Nome <span class="req">*</span></label>
@@ -138,7 +142,7 @@
             <div>
               <button class="btn btn--primary btn--lg btn--noarrow" type="submit">Enviar mensagem</button>
             </div>
-            <p class="field__hint">Formulário de demonstração: nesta versão do site a mensagem não é enviada para nenhum servidor. Numa versão em produção, seria processada por um serviço de email seguro com base legal no consentimento.</p>
+            <p class="field__hint">A tua mensagem é enviada por email para eclipse.extp@gmail.com através do serviço FormSubmit e usada apenas para responder a este contacto, nos termos da <a href="privacidade.html">Política de Privacidade</a>.</p>
           </form>
         </div>
 
@@ -247,7 +251,11 @@
       <div>
         <h4>Fica a par</h4>
         <p style="color:rgba(169,216,240,.72);font-size:.92rem;margin-bottom:.6rem">Recebe, no máximo duas vezes por mês, o essencial da campanha. Sem spam.</p>
-        <form class="newsletter" data-demo>
+        <form class="newsletter" action="https://formsubmit.co/ajax/eclipse.extp@gmail.com" method="POST" data-ajax>
+          <input type="hidden" name="_subject" value="Nova subscrição da newsletter — Eclipse">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
           <label class="visually-hidden" for="news-email">Email</label>
           <input id="news-email" type="email" name="email" placeholder="o.teu@email.pt" required>
           <button class="btn btn--sky btn--noarrow" type="submit">Subscrever</button>

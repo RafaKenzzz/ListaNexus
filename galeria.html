@@ -220,7 +220,11 @@
       <div>
         <h4>Fica a par</h4>
         <p style="color:rgba(169,216,240,.72);font-size:.92rem;margin-bottom:.6rem">Recebe, no máximo duas vezes por mês, o essencial da campanha. Sem spam.</p>
-        <form class="newsletter" data-demo>
+        <form class="newsletter" action="https://formsubmit.co/ajax/eclipse.extp@gmail.com" method="POST" data-ajax>
+          <input type="hidden" name="_subject" value="Nova subscrição da newsletter — Eclipse">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
           <label class="visually-hidden" for="news-email">Email</label>
           <input id="news-email" type="email" name="email" placeholder="o.teu@email.pt" required>
           <button class="btn btn--sky btn--noarrow" type="submit">Subscrever</button>

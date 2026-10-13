@@ -128,27 +128,54 @@
     doc.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
   }
 
-  /* ---------- Forms (client-side demo validation) ---------------------- */
-  $$("form[data-demo]").forEach(function (form) {
+  /* ---------- Forms (AJAX submit via FormSubmit) ----------------------- */
+  $$("form[data-ajax]").forEach(function (form) {
+    var endpoint = form.getAttribute("action");
+    var btn = form.querySelector('button[type="submit"]');
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var status = $(".form-status", form) ||
         (form.nextElementSibling && form.nextElementSibling.classList.contains("form-status") ? form.nextElementSibling : null) ||
         (form.parentElement ? form.parentElement.querySelector(".form-status") : null);
-      var required = $$("[required]", form);
       var ok = true;
-      required.forEach(function (f) {
-        if (!f.value.trim()) ok = false;
+      $$("[required]", form).forEach(function (f) {
+        if (f.type === "checkbox") { if (!f.checked) ok = false; }
+        else if (!f.value.trim()) { ok = false; }
       });
       var email = $('input[type="email"]', form);
       if (email && email.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) ok = false;
       if (!status) return;
-      status.className = "form-status is-visible " + (ok ? "form-status--ok" : "form-status--err");
-      status.textContent = ok
-        ? "Obrigado! A tua mensagem foi registada nesta demonstração. A equipa Eclipse responde em 1 a 2 dias úteis."
-        : "Verifica os campos obrigatórios (e o formato do email) antes de enviar.";
-      if (ok) form.reset();
-      status.focus();
+      if (!ok) {
+        status.className = "form-status is-visible form-status--err";
+        status.textContent = "Verifica os campos obrigatórios (e o formato do email) antes de enviar.";
+        status.focus();
+        return;
+      }
+      if (!endpoint || !window.fetch) { form.submit(); return; }
+      var label = btn ? btn.textContent : "";
+      if (btn) { btn.disabled = true; btn.textContent = "A enviar…"; }
+      status.className = "form-status is-visible";
+      status.textContent = "A enviar…";
+      fetch(endpoint, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
+        .then(function (r) { return r.json().catch(function () { return {}; }); })
+        .then(function (res) {
+          if (res && (res.success === true || res.success === "true")) {
+            status.className = "form-status is-visible form-status--ok";
+            status.textContent = "Obrigado! Recebemos a tua mensagem. A equipa Eclipse responde em 1 a 2 dias úteis.";
+            form.reset();
+          } else {
+            status.className = "form-status is-visible form-status--err";
+            status.textContent = "Não foi possível enviar agora. Escreve-nos para eclipse.extp@gmail.com.";
+          }
+        })
+        .catch(function () {
+          status.className = "form-status is-visible form-status--err";
+          status.textContent = "Não foi possível enviar agora. Escreve-nos para eclipse.extp@gmail.com.";
+        })
+        .then(function () {
+          if (btn) { btn.disabled = false; btn.textContent = label; }
+          status.focus();
+        });
     });
   });
 

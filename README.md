@@ -42,7 +42,7 @@ listaae/
 ├─ membros.html            # Roster completo dos 24 membros (foto, ano, curso, função, email)
 ├─ noticias.html           # Notícias, agenda de eventos, newsletter
 ├─ galeria.html            # Grelha de 12 itens + lightbox
-├─ contactos.html           # Formulário (demo) + contactos + transparência
+├─ contactos.html           # Formulário de contacto + contactos + transparência
 ├─ patrocinadores.html      # Patrocinadores e apoios da lista
 ├─ faq.html                # Perguntas frequentes (accordions) + JSON-LD FAQPage
 ├─ privacidade.html        # Política de privacidade / RGPD (Lei 58/2019)
@@ -75,6 +75,7 @@ Os números de telefone/e-mail, morada e nomes são **placeholders**. Procure e 
 |---|---|
 | Domínio (`https://eclipsepenafirme.pt/`) | `canonical`/`og:url` em todos os `.html`, `sitemap.xml`, `robots.txt`, JSON-LD |
 | E-mail da lista (`eclipse.extp@gmail.com`) | footer de todas as páginas, `contactos.html`, `privacidade.html` |
+| Destino dos formulários | `action` de todos os `<form>` (FormSubmit) + `privacidade.html` |
 | Instagram (`@eclipse.penafirme`) | footer, `contactos.html`, JSON-LD |
 | Nomes/dados da equipa | `equipa.html` |
 | Membros (nome, ano, curso, função, frase, email) | `membros.html` |
@@ -122,8 +123,12 @@ Definido como variáveis CSS no topo de `assets/css/styles.css`.
 - **FAQ** com accordions acessíveis (`aria-expanded`/`aria-controls`).
 - **Consentimento de cookies** real (categorias: essenciais, medição, preferências),
   guardado em `localStorage` na chave `eclipse.consent.v1`. Reabertura via links `[data-open-cookie]`.
-- **Formulários** de demonstração: marque `data-demo` no `<form>`; o JS valida e mostra
-  mensagem, sem enviar (ligue ao seu backend quando existir).
+- **Formulários** (contacto + newsletter em todas as páginas) enviados por `fetch` para o
+  **FormSubmit** (`action="https://formsubmit.co/ajax/eclipse.extp@gmail.com"`), que encaminha
+  cada mensagem para `eclipse.extp@gmail.com`. Validação client-side + estados de envio/erro.
+  ⚠️ Requer **ativação**: o primeiro envio gera um email do FormSubmit com um link «Activate Form»
+  — clicar nesse link uma vez. Para mudar o destino, substitua o email no `action` de todos os
+  `<form>` e reative.
 
 ---
 
