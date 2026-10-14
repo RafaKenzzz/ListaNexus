@@ -687,7 +687,8 @@ body.nav-open { overflow: hidden; }
 .post__date { font-family: var(--font-mono); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--clay); margin: .9rem 0 .4rem; }
 .post h3 { margin-bottom: .5rem; }
 .post p { color: var(--muted); }
-.post--feature .post__media { aspect-ratio: 16/10; }
+.post--feature .post__media { aspect-ratio: 16/10; background: var(--ink); }
+.post--feature .post__media img { object-fit: contain; padding: clamp(1.2rem, 5%, 3.2rem); }
 .post--feature h3 { font-size: clamp(1.5rem, 1.1rem + 1.6vw, 2.2rem); }
 
 .post-list { display: flex; flex-direction: column; }
