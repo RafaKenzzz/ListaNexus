@@ -150,16 +150,16 @@
         .then(function (res) {
           if (res && (res.success === true || res.success === "true")) {
             status.className = "form-status is-visible form-status--ok";
-            status.textContent = "Obrigado! Recebemos a tua mensagem. A equipa Eclipse responde em 1 a 2 dias úteis.";
+            status.textContent = "Obrigado! Recebemos a tua mensagem. A equipa Eclipse responde num prazo de 1 a 2 dias úteis.";
             form.reset();
           } else {
             status.className = "form-status is-visible form-status--err";
-            status.textContent = "Não foi possível enviar agora. Escreve-nos para eclipse.extp@gmail.com.";
+            status.textContent = "Não foi possível enviar agora. Tenta novamente daqui a um minuto ou escreve-nos diretamente para eclipse.extp@gmail.com.";
           }
         })
         .catch(function () {
           status.className = "form-status is-visible form-status--err";
-          status.textContent = "Não foi possível enviar agora. Escreve-nos para eclipse.extp@gmail.com.";
+          status.textContent = "Não foi possível enviar agora. Verifica a ligação à internet e tenta outra vez, ou escreve-nos para eclipse.extp@gmail.com.";
         })
         .then(function () {
           if (btn) { btn.disabled = false; btn.textContent = label; }
