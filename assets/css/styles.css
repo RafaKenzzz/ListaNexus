@@ -435,6 +435,38 @@ body.nav-open { overflow: hidden; }
   width: clamp(180px, 22vw, 320px); opacity: .1; pointer-events: none; z-index: 0;
 }
 
+/* Página de patrocinador: logótipo em destaque no hero */
+.page-hero--sponsor .page-hero__mark { display: none; }
+.page-hero--sponsor .page-hero__inner {
+  max-width: none;
+  display: grid;
+  gap: clamp(1.6rem, 4vw, 3.2rem);
+  align-items: center;
+}
+.page-hero--sponsor .sponsor-hero__text { max-width: 62ch; }
+.sponsor-hero__logo {
+  justify-self: start;
+  width: 300px; max-width: 100%;
+  padding: 22px;
+  display: grid; place-items: center;
+  background: linear-gradient(180deg, #ffffff, #fbf7ee);
+  border: 1px solid rgba(126,193,232,.25);
+  border-radius: 18px;
+  box-shadow: 0 34px 80px -46px rgba(0,0,0,.75);
+}
+.sponsor-hero__logo img {
+  height: 140px; width: auto;
+  max-width: 100%;
+  object-fit: contain; display: block;
+}
+.sponsor-hero__logo--dark {
+  background: rgba(126,193,232,.10);
+  border-color: rgba(126,193,232,.38);
+}
+@media (min-width: 900px) {
+  .page-hero--sponsor .page-hero__inner { grid-template-columns: minmax(0, 1fr) auto; }
+}
+
 .crumbs { display: flex; flex-wrap: wrap; gap: .5rem; font-family: var(--font-mono); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--sky-dim); }
 .crumbs a:hover { color: var(--sky); }
 .crumbs li::after { content: "/"; margin-left: .5rem; color: var(--line-ink-2); }
@@ -495,6 +527,30 @@ body.nav-open { overflow: hidden; }
   display: grid; place-items: center; margin-bottom: 1.2rem;
 }
 .card__icon svg { width: 26px; height: 26px; }
+.card__logo {
+  width: 100%; height: 132px;
+  padding: 18px;
+  display: grid; place-items: center;
+  background: linear-gradient(180deg, #ffffff, #fbf7ee);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+.card__logo img {
+  max-width: 100%; max-height: 92px; width: auto; height: auto;
+  object-fit: contain; display: block;
+  transition: transform .5s var(--ease);
+}
+.card:hover .card__logo img { transform: scale(1.05); }
+.card__logo--dark { background: var(--ink); border-color: rgba(126,193,232,.22); }
+.card__logo--empty {
+  background: repeating-linear-gradient(135deg, rgba(7,12,34,.028) 0 10px, transparent 10px 20px);
+  border-style: dashed;
+  border-color: var(--line-ink-2);
+  color: var(--muted-2);
+}
+.card__logo--empty svg { width: 52px; height: 52px; }
 .card--ink .card__icon { background: rgba(126,193,232,.12); color: var(--sky); }
 .card h3 { margin-bottom: .5rem; }
 .card p { color: var(--muted); }
