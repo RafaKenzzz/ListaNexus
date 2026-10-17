@@ -51,6 +51,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://listanexus-nu.vercel.app/patrocinador-06.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://listanexus-nu.vercel.app/patrocinador-01.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
