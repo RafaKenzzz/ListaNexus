@@ -1,5 +1,5 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 
 # Área de campanha informativa. Conteúdo público.
-Sitemap: https://eclipsepenafirme.pt/sitemap.xml
+Sitemap: https://listanexus-nu.vercel.app/sitemap.xml

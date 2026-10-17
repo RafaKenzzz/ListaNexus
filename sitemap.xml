@@ -1,117 +1,111 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://eclipsepenafirme.pt/</loc>
+    <loc>https://listanexus-nu.vercel.app/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/sobre.html</loc>
+    <loc>https://listanexus-nu.vercel.app/sobre.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/programa.html</loc>
+    <loc>https://listanexus-nu.vercel.app/programa.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/equipa.html</loc>
+    <loc>https://listanexus-nu.vercel.app/equipa.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/membros.html</loc>
+    <loc>https://listanexus-nu.vercel.app/membros.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/noticias.html</loc>
+    <loc>https://listanexus-nu.vercel.app/noticias.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/galeria.html</loc>
+    <loc>https://listanexus-nu.vercel.app/galeria.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/faq.html</loc>
+    <loc>https://listanexus-nu.vercel.app/faq.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/contactos.html</loc>
+    <loc>https://listanexus-nu.vercel.app/contactos.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/patrocinadores.html</loc>
+    <loc>https://listanexus-nu.vercel.app/patrocinadores.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/patrocinador-01.html</loc>
+    <loc>https://listanexus-nu.vercel.app/patrocinador-01.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/patrocinador-02.html</loc>
+    <loc>https://listanexus-nu.vercel.app/patrocinador-02.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/patrocinador-03.html</loc>
+    <loc>https://listanexus-nu.vercel.app/patrocinador-03.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/patrocinador-04.html</loc>
+    <loc>https://listanexus-nu.vercel.app/patrocinador-04.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/patrocinador-05.html</loc>
+    <loc>https://listanexus-nu.vercel.app/patrocinador-05.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/patrocinador-06.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/patrocinador-07.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/patrocinador-08.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/patrocinador-09.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/patrocinador-10.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/patrocinador-11.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/privacidade.html</loc>
+    <loc>https://listanexus-nu.vercel.app/privacidade.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://eclipsepenafirme.pt/termos.html</loc>
+    <loc>https://listanexus-nu.vercel.app/termos.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
