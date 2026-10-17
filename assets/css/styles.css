@@ -455,7 +455,7 @@ body.nav-open { overflow: hidden; }
   box-shadow: 0 34px 80px -46px rgba(0,0,0,.75);
 }
 .sponsor-hero__logo img {
-  height: 180px; width: auto;
+  height: 220px; width: auto;
   max-width: 100%;
   object-fit: contain; display: block;
 }
