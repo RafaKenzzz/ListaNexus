@@ -239,6 +239,12 @@
     $$("[data-tiles]").forEach(function (el) { tio.observe(el); });
   }
 
+  /* ---------- Vídeos: só toca um de cada vez ---------- */
+  doc.addEventListener("play", function (e) {
+    if (!e.target || e.target.tagName !== "VIDEO") return;
+    $$("video").forEach(function (v) { if (v !== e.target && !v.paused) v.pause(); });
+  }, true);
+
   /* ---------- Vidro: o brilho segue o rato ---------- */
   if (finePointer) {
     $$(".vote, .note, .facts, .phero-meta, .finder__q, .sec--ink .card--ink").forEach(function (el) {

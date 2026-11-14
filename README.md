@@ -41,10 +41,10 @@ listaae/
 ├─ equipa.html             # Candidatos e organização
 ├─ membros.html            # Dirigentes por órgão (nome e função)
 ├─ noticias.html           # Notícias, agenda de eventos, newsletter
-├─ galeria.html            # Grelha de 12 itens + lightbox
+├─ galeria.html            # Vídeos de apoio + grelha de 12 itens com lightbox
 ├─ contactos.html           # Formulário de contacto + contactos + transparência
 ├─ patrocinadores.html      # Patrocinadores e apoios da lista
-├─ patrocinador-01..06.html # Página de cada patrocinador (negócio, contactos, links, apoio)
+├─ patrocinador-01..08.html # Página de cada patrocinador (negócio, contactos, links, apoio)
 ├─ faq.html                # Perguntas frequentes (accordions) + JSON-LD FAQPage
 ├─ privacidade.html        # Política de privacidade / RGPD (Lei 58/2019)
 ├─ termos.html             # Termos de utilização
@@ -82,7 +82,7 @@ Os números de telefone/e-mail, morada e nomes são **placeholders**. Procure e 
 | E-mail da lista (`eclipse.extp@gmail.com`) | footer de todas as páginas, `contactos.html`, `privacidade.html` |
 | Destino dos formulários | `action` de todos os `<form>` (FormSubmit) + `privacidade.html` |
 | Instagram (`@eclipse.penafirme`) | footer, `contactos.html`, JSON-LD |
-| Patrocinadores e páginas de cada um | `patrocinadores.html` + `patrocinador-01..06.html` |
+| Patrocinadores e páginas de cada um | `patrocinadores.html` + `patrocinador-01..08.html` |
 | Nomes/dados da equipa | `equipa.html` |
 | Membros (nome, ano, curso, função, frase, email) | `membros.html` |
 | Fotos dos membros | `assets/img/membros/01..24.svg` |
@@ -130,6 +130,10 @@ Definido como variáveis CSS no topo de `assets/css/styles.css`.
   acende com o scroll, fases do eclipse nos passos, transição entre páginas. Tudo abranda ou
   desliga com `prefers-reduced-motion`, e o conteúdo fica visível com JS desligado.
 - **Galeria** com lightbox (fecha com `Esc` e clique no fundo).
+- **Vídeos de apoio** na galeria (`galeria.html#videos`), em formato vertical. Para pôr um vídeo:
+  copiar o MP4 (e uma capa `.jpg` com o mesmo nome) para `assets/videossuporte/`, de preferência
+  com menos de 50 MB, tirar do comentário a linha `<video …>` de um cartão vazio e trocar
+  «Vídeo de apoio» / «Em breve.» pelo nome e por quem é. Só toca um vídeo de cada vez.
 - **FAQ** com `<details>` nativos (abre uma pergunta de cada vez).
 - **Consentimento de cookies** real (categorias: essenciais, medição, preferências),
   guardado em `localStorage` na chave `eclipse.consent.v1`. Reabertura via links `[data-open-cookie]`.
