@@ -1,11 +1,19 @@
-/* Dados da campanha usados em todo o site.
-   Para mudar o dia da votação basta alterar estes valores:
-   - voteDate:  texto que aparece nas páginas (em todos os elementos com data-vote-date)
-   - voteStart / voteEnd: abertura e fecho das urnas (hora de Lisboa), usados na contagem decrescente */
+/* Datas da campanha e da votação, usadas em todo o site.
+   Para mudar as datas basta alterar estes valores:
+   - campaign: texto do período de campanha (em todos os elementos com data-campaign)
+   - campaignStart / campaignEnd: primeiro e último dia de campanha (caixa de data na agenda)
+   - voteDate: texto do dia da votação (em todos os elementos com data-vote-date)
+   - voteStart / voteEnd: abertura e fecho das urnas (hora de Lisboa), usados na contagem
+     decrescente e no botão "Pôr no calendário"
+   Os textos de reserva escritos nas páginas (para quem não tem JavaScript e para o Google)
+   repetem estas datas: ao mudá-las, procure também a data antiga nos ficheiros .html. */
 (function () {
   window.ECLIPSE = {
-    voteDate: "29 de outubro de 2026",
-    voteStart: "2026-10-29T09:00:00",
-    voteEnd: "2026-10-29T17:00:00"
+    campaign: "23 a 25 de novembro",
+    campaignStart: "2026-11-23",
+    campaignEnd: "2026-11-25",
+    voteDate: "26 de novembro de 2026",
+    voteStart: "2026-11-26T09:00:00",
+    voteEnd: "2026-11-26T17:00:00"
   };
 })();

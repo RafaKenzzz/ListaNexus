@@ -1212,3 +1212,9 @@ a, button, label, summary, [role="button"] { -webkit-tap-highlight-color: transp
   .orb--a::after { left: 17%; top: 59%; }
   .orb--b::after { left: 70%; top: 28%; }
 }
+
+/* patch-6 */
+/* Datas da campanha */
+.vote__camp { display: flex; align-items: center; gap: .55rem; font-size: .95rem; font-weight: 650; color: var(--sky); }
+.vote__camp .star { width: .8rem; height: .8rem; margin: 0; }
+.event__date--range b { font-size: 1.05rem; font-stretch: 100%; letter-spacing: -.01em; white-space: nowrap; }

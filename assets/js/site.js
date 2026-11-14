@@ -160,15 +160,26 @@
   });
 
   /* ---------- Dia de votação e contagem decrescente ---------- */
+  var months = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
   if (CFG.voteDate) {
     $$("[data-vote-date]").forEach(function (el) { el.textContent = CFG.voteDate; });
+  }
+  if (CFG.campaign) {
+    $$("[data-campaign]").forEach(function (el) { el.textContent = CFG.campaign; });
   }
   if (CFG.voteStart) {
     var voteDay = new Date(CFG.voteStart);
     if (!isNaN(voteDay.getTime())) {
-      var months = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
       $$("[data-vote-day]").forEach(function (el) { el.textContent = voteDay.getDate(); });
       $$("[data-vote-month]").forEach(function (el) { el.textContent = months[voteDay.getMonth()]; });
+    }
+  }
+  if (CFG.campaignStart) {
+    var campA = new Date(CFG.campaignStart + "T12:00:00");
+    var campB = new Date((CFG.campaignEnd || CFG.campaignStart) + "T12:00:00");
+    if (!isNaN(campA.getTime()) && !isNaN(campB.getTime())) {
+      $$("[data-campaign-days]").forEach(function (el) { el.textContent = campA.getDate() + (campB > campA ? "–" + campB.getDate() : ""); });
+      $$("[data-campaign-month]").forEach(function (el) { el.textContent = months[campA.getMonth()]; });
     }
   }
   var countBox = $("[data-countdown]");

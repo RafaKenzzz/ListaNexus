@@ -88,7 +88,7 @@ Os números de telefone/e-mail, morada e nomes são **placeholders**. Procure e 
 | Fotos dos membros | `assets/img/membros/01..24.svg` |
 | Propostas do programa | `programa.html` |
 | Notícias e eventos | `noticias.html`, `assets/img/noticia-*.svg`, `evento-*.svg` |
-| Data das eleições (texto e contagem decrescente) | `assets/js/config.js` |
+| Datas da campanha e da votação (texto, agenda e contagem decrescente) | `assets/js/config.js` (e os textos de reserva nos `.html`) |
 | Cookies/finalidades (RGPD) | `privacidade.html` |
 
 Para alterar menus/footer em todas as páginas de uma vez, edite o bloco comum em cada
