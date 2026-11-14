@@ -37,11 +37,11 @@ Depois abra <http://localhost:8080>.
 listaae/
 ├─ index.html              # Início: herói com o dia de votação, vídeos, manifesto, assistente do programa, equipa, notícias
 ├─ sobre.html              # História, princípios, como trabalhamos
-├─ programa.html           # 8 eixos e 20 propostas, com prazos
+├─ programa.html           # 14 propostas em 5 áreas (digital, aprender, desporto, vida na escola, finalistas)
 ├─ equipa.html             # Candidatos e organização
 ├─ membros.html            # Dirigentes por órgão (nome e função)
 ├─ noticias.html           # Notícias, agenda de eventos, newsletter
-├─ galeria.html            # Vídeos de apoio + grelha de 12 itens com lightbox
+├─ galeria.html            # Vídeos de apoio + fotografias (campanha, bastidores, membros) com lightbox
 ├─ contactos.html           # Formulário de contacto + contactos + transparência
 ├─ patrocinadores.html      # Patrocinadores e apoios da lista
 ├─ patrocinador-01..08.html # Página de cada patrocinador (negócio, contactos, links, apoio)
@@ -122,14 +122,16 @@ Definido como variáveis CSS no topo de `assets/css/styles.css`.
 - **Navegação mobile** (<1100px) em ecrã inteiro, fecha com `Esc`; barra de ação fixa no telemóvel.
 - **Dia de votação** centralizado em `assets/js/config.js`, com contagem decrescente no herói
   (desaparece sozinha depois do fecho das urnas).
-- **Assistente do programa** na página inicial: escolhe-se um tema e aparece o eixo com as propostas.
+- **Assistente do programa** na página inicial: escolhe-se um tema e aparece a área com as propostas.
 - **Vidro e luz**: painéis translúcidos (`backdrop-filter`, com alternativa sólida) sobre a fotografia
   do eclipse e discos de luz; cabeçalho que passa a barra de vidro flutuante ao descer.
 - **Campanha**: botão para partilhar o site com a turma e para pôr o dia de votação no calendário (`.ics`).
 - **Animações**: títulos linha a linha, entradas em cascata, números que contam, manifesto que
   acende com o scroll, fases do eclipse nos passos, transição entre páginas. Tudo abranda ou
   desliga com `prefers-reduced-motion`, e o conteúdo fica visível com JS desligado.
-- **Galeria** com lightbox (fecha com `Esc` e clique no fundo).
+- **Galeria de fotografias** com filtro (Todas · Campanha · Bastidores · Membros) e lightbox (fecha com
+  `Esc` e clique no fundo). Fotografias em `assets/fotosgaleria/`; o modelo de cada bloco está num
+  comentário em `galeria.html`.
 - **Vídeos de apoio** na galeria (`galeria.html#videos`), em formato vertical. Para pôr um vídeo:
   copiar o MP4 (e uma capa `.jpg` com o mesmo nome) para `assets/videossuporte/`, de preferência
   com menos de 50 MB, tirar do comentário a linha `<video …>` de um cartão vazio e trocar

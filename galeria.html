@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Galeria — Eclipse | AE Externato de Penafirme</title>
-  <meta name="description" content="Vídeos de apoio e galeria visual da campanha Eclipse: assembleias, sessões de escuta, cultura, desporto e o dia a dia da lista à Associação de Estudantes do Externato de Penafirme.">
+  <meta name="description" content="Vídeos de apoio e fotografias da campanha Eclipse: ações de campanha, bastidores e os membros da lista à Associação de Estudantes do Externato de Penafirme.">
   <link rel="canonical" href="https://listanexus-nu.vercel.app/galeria.html">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_PT">
   <meta property="og:site_name" content="Eclipse — AE Externato de Penafirme">
   <meta property="og:title" content="Galeria — Eclipse">
-  <meta property="og:description" content="Momentos da campanha Eclipse em imagens.">
+  <meta property="og:description" content="Vídeos de apoio e fotografias da campanha Eclipse.">
   <meta property="og:url" content="https://listanexus-nu.vercel.app/galeria.html">
   <meta property="og:image" content="https://listanexus-nu.vercel.app/assets/img/og-image.png">
 
@@ -85,7 +85,7 @@
     <div class="w">
       <nav aria-label="Caminho de navegação"><ol class="crumbs"><li><a href="index.html">Início</a></li><li aria-current="page">Galeria</li></ol></nav>
       <h1 class="lines"><span class="split-line" style="--i:0"><span>Galeria</span></span></h1>
-      <p class="lead rv">Os vídeos de apoio e as ilustrações da campanha Eclipse. Cada cartaz, cada sessão e cada atividade tem uma identidade própria; clica em qualquer imagem para a veres maior.</p>
+      <p class="lead rv">Os vídeos de apoio e as fotografias da campanha Eclipse: as ações nas turmas, os bastidores e as pessoas que fazem a lista.</p>
     </div>
   </section>
 
@@ -156,63 +156,61 @@
     </div>
   </section>
 
-  <section class="sec sec--paper">
+  <section class="sec sec--paper" id="fotografias">
     <div class="w">
       <div class="sec-head">
-        <h2 class="lines"><span class="split-line" style="--i:0"><span>Doze peças,</span></span> <span class="split-line" style="--i:1"><span>uma linguagem.</span></span></h2>
-        <p class="lead rv">Uma série visual criada pela nossa coordenação de comunicação para identificar a lista em cartazes, redes e no pavilhão.</p>
+        <h2 class="lines"><span class="split-line" style="--i:0"><span>A campanha,</span></span> <span class="split-line" style="--i:1"><span>por dentro.</span></span></h2>
+        <p class="lead rv">Fotografias das ações de campanha, dos bastidores e das pessoas que fazem a Eclipse. Clica numa fotografia para a veres maior.</p>
       </div>
-      <div class="gallery">
-        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver imagem: Assembleia geral">
-          <div><img src="assets/img/galeria/01.svg" data-full="assets/img/galeria/01.svg" data-caption="Assembleia geral" alt="Peça gráfica da campanha: Assembleia geral" width="800" height="800" loading="lazy"></div>
-          <figcaption>Assembleia geral</figcaption>
+      <div class="filters rv" role="group" aria-label="Mostrar fotografias de" data-gallery-filter="#fotos">
+        <button type="button" aria-pressed="true" data-filter="todas">Todas</button>
+        <button type="button" aria-pressed="false" data-filter="campanha">Campanha</button>
+        <button type="button" aria-pressed="false" data-filter="bastidores">Bastidores</button>
+        <button type="button" aria-pressed="false" data-filter="membros">Membros</button>
+      </div>
+      <!-- Fotografias. Para pôr uma fotografia:
+           1. Copiar a imagem para a pasta assets/fotosgaleria/ (JPG, idealmente com 1600 px no lado maior).
+           2. Acrescentar dentro da grelha um bloco destes, com data-cat="campanha", "bastidores" ou "membros":
+              <figure class="gallery__item rv" data-cat="campanha" tabindex="0" role="button" aria-label="Ver fotografia: Descrição">
+                <div><img src="assets/fotosgaleria/nome.jpg" data-full="assets/fotosgaleria/nome.jpg" data-caption="Descrição" alt="Descrição" loading="lazy"></div>
+                <figcaption>Descrição</figcaption>
+              </figure>
+           3. Apagar um dos blocos «Em breve» (shot-soon) dessa categoria. -->
+      <div class="gallery" id="fotos">
+        <figure class="gallery__item rv" data-cat="bastidores" tabindex="0" role="button" aria-label="Ver fotografia: A sala de trabalho a meio da preparação dos materiais da campanha">
+          <div><img src="assets/fotosgaleria/bastidores-01-mini.jpg" data-full="assets/fotosgaleria/bastidores-01.jpg" data-caption="A sala de trabalho a meio da preparação dos materiais da campanha." alt="Sala de trabalho da Eclipse com mesas cheias de cartão, tintas e recortes azuis, um sinal «Start voting» e caixas de camisolas azuis marcadas «Sábado» e «Semana»" width="720" height="956" loading="lazy" style="object-position: 50% 62%"></div>
+          <figcaption>Bastidores · preparar os materiais</figcaption>
         </figure>
-        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver imagem: Semana da ciência">
-          <div><img src="assets/img/galeria/02.svg" data-full="assets/img/galeria/02.svg" data-caption="Semana da ciência" alt="Peça gráfica da campanha: Semana da ciência" width="800" height="800" loading="lazy"></div>
-          <figcaption>Semana da ciência</figcaption>
+        <figure class="shot-soon rv" data-cat="campanha">
+          <div class="shot-soon__frame on-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l1.6-2.4h6.8L17 8h3v11H4V8Z"/><circle cx="12" cy="13.2" r="3.6"/></svg><span class="chip">Em breve</span></div>
+          <figcaption>Campanha</figcaption>
         </figure>
-        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver imagem: Cultura em movimento">
-          <div><img src="assets/img/galeria/03.svg" data-full="assets/img/galeria/03.svg" data-caption="Cultura em movimento" alt="Peça gráfica da campanha: Cultura em movimento" width="800" height="800" loading="lazy"></div>
-          <figcaption>Cultura em movimento</figcaption>
+        <figure class="shot-soon rv" data-cat="campanha">
+          <div class="shot-soon__frame on-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l1.6-2.4h6.8L17 8h3v11H4V8Z"/><circle cx="12" cy="13.2" r="3.6"/></svg><span class="chip">Em breve</span></div>
+          <figcaption>Campanha</figcaption>
         </figure>
-        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver imagem: Desporto e bem-estar">
-          <div><img src="assets/img/galeria/04.svg" data-full="assets/img/galeria/04.svg" data-caption="Desporto e bem-estar" alt="Peça gráfica da campanha: Desporto e bem-estar" width="800" height="800" loading="lazy"></div>
-          <figcaption>Desporto e bem-estar</figcaption>
+        <figure class="shot-soon rv" data-cat="campanha">
+          <div class="shot-soon__frame on-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l1.6-2.4h6.8L17 8h3v11H4V8Z"/><circle cx="12" cy="13.2" r="3.6"/></svg><span class="chip">Em breve</span></div>
+          <figcaption>Campanha</figcaption>
         </figure>
-        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver imagem: Torneio inter-turmas">
-          <div><img src="assets/img/galeria/05.svg" data-full="assets/img/galeria/05.svg" data-caption="Torneio inter-turmas" alt="Peça gráfica da campanha: Torneio inter-turmas" width="800" height="800" loading="lazy"></div>
-          <figcaption>Torneio inter-turmas</figcaption>
+        <figure class="shot-soon rv" data-cat="bastidores">
+          <div class="shot-soon__frame on-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l1.6-2.4h6.8L17 8h3v11H4V8Z"/><circle cx="12" cy="13.2" r="3.6"/></svg><span class="chip">Em breve</span></div>
+          <figcaption>Bastidores</figcaption>
         </figure>
-        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver imagem: Clube de robótica">
-          <div><img src="assets/img/galeria/06.svg" data-full="assets/img/galeria/06.svg" data-caption="Clube de robótica" alt="Peça gráfica da campanha: Clube de robótica" width="800" height="800" loading="lazy"></div>
-          <figcaption>Clube de robótica</figcaption>
+        <figure class="shot-soon rv" data-cat="bastidores">
+          <div class="shot-soon__frame on-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l1.6-2.4h6.8L17 8h3v11H4V8Z"/><circle cx="12" cy="13.2" r="3.6"/></svg><span class="chip">Em breve</span></div>
+          <figcaption>Bastidores</figcaption>
         </figure>
-        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver imagem: Maratona solidária">
-          <div><img src="assets/img/galeria/07.svg" data-full="assets/img/galeria/07.svg" data-caption="Maratona solidária" alt="Peça gráfica da campanha: Maratona solidária" width="800" height="800" loading="lazy"></div>
-          <figcaption>Maratona solidária</figcaption>
+        <figure class="shot-soon rv" data-cat="membros">
+          <div class="shot-soon__frame on-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l1.6-2.4h6.8L17 8h3v11H4V8Z"/><circle cx="12" cy="13.2" r="3.6"/></svg><span class="chip">Em breve</span></div>
+          <figcaption>Membros</figcaption>
         </figure>
-        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver imagem: Festa de finalistas">
-          <div><img src="assets/img/galeria/08.svg" data-full="assets/img/galeria/08.svg" data-caption="Festa de finalistas" alt="Peça gráfica da campanha: Festa de finalistas" width="800" height="800" loading="lazy"></div>
-          <figcaption>Festa de finalistas</figcaption>
-        </figure>
-        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver imagem: Feira de talentos">
-          <div><img src="assets/img/galeria/09.svg" data-full="assets/img/galeria/09.svg" data-caption="Feira de talentos" alt="Peça gráfica da campanha: Feira de talentos" width="800" height="800" loading="lazy"></div>
-          <figcaption>Feira de talentos</figcaption>
-        </figure>
-        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver imagem: Oficinas criativas">
-          <div><img src="assets/img/galeria/10.svg" data-full="assets/img/galeria/10.svg" data-caption="Oficinas criativas" alt="Peça gráfica da campanha: Oficinas criativas" width="800" height="800" loading="lazy"></div>
-          <figcaption>Oficinas criativas</figcaption>
-        </figure>
-        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver imagem: Quermesse da escola">
-          <div><img src="assets/img/galeria/11.svg" data-full="assets/img/galeria/11.svg" data-caption="Quermesse da escola" alt="Peça gráfica da campanha: Quermesse da escola" width="800" height="800" loading="lazy"></div>
-          <figcaption>Quermesse da escola</figcaption>
-        </figure>
-        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver imagem: Assembleia de alunos">
-          <div><img src="assets/img/galeria/12.svg" data-full="assets/img/galeria/12.svg" data-caption="Assembleia de alunos" alt="Peça gráfica da campanha: Assembleia de alunos" width="800" height="800" loading="lazy"></div>
-          <figcaption>Assembleia de alunos</figcaption>
+        <figure class="shot-soon rv" data-cat="membros">
+          <div class="shot-soon__frame on-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l1.6-2.4h6.8L17 8h3v11H4V8Z"/><circle cx="12" cy="13.2" r="3.6"/></svg><span class="chip">Em breve</span></div>
+          <figcaption>Membros</figcaption>
         </figure>
       </div>
-      <p class="muted small mt-3 text rv">Nota: as imagens desta galeria são peças gráficas originais da campanha. Fotografias de eventos escolares só serão publicadas com autorização das pessoas retratadas, em linha com a nossa <a href="privacidade.html">Política de Privacidade</a> e as regras de proteção de menores.</p>
+      <p class="muted small mt-3 text rv">As fotografias de alunos só são publicadas com autorização das pessoas retratadas e, no caso de menores, de quem exerce a responsabilidade parental, como explica a nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
     </div>
   </section>
 

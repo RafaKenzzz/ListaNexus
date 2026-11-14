@@ -307,6 +307,23 @@
     }
   }
 
+  /* ---------- Galeria: filtro por tema (campanha, bastidores, membros) ---------- */
+  $$("[data-gallery-filter]").forEach(function (bar) {
+    var grid = $(bar.getAttribute("data-gallery-filter"));
+    if (!grid) return;
+    var btns = $$("button[data-filter]", bar);
+    btns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var f = b.getAttribute("data-filter");
+        btns.forEach(function (o) { o.setAttribute("aria-pressed", o === b ? "true" : "false"); });
+        $$("[data-cat]", grid).forEach(function (it) { it.hidden = f !== "todas" && it.getAttribute("data-cat") !== f; });
+        grid.classList.remove("is-filtering");
+        void grid.offsetWidth;
+        grid.classList.add("is-filtering");
+      });
+    });
+  });
+
   /* ---------- Galeria ---------- */
   var lightbox = $("#lightbox");
   if (lightbox) {
