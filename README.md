@@ -35,11 +35,11 @@ Depois abra <http://localhost:8080>.
 
 ```
 listaae/
-├─ index.html              # Início: hero, manifesto, eixos, números, notícias, CTA
+├─ index.html              # Início: herói com o dia de votação, vídeos, manifesto, assistente do programa, equipa, notícias
 ├─ sobre.html              # História, princípios, como trabalhamos
-├─ programa.html           # 8 eixos × 5 propostas, com prazos
+├─ programa.html           # 8 eixos e 20 propostas, com prazos
 ├─ equipa.html             # Candidatos e organização
-├─ membros.html            # Roster completo dos 24 membros (foto, ano, curso, função, email)
+├─ membros.html            # Dirigentes por órgão (nome e função)
 ├─ noticias.html           # Notícias, agenda de eventos, newsletter
 ├─ galeria.html            # Grelha de 12 itens + lightbox
 ├─ contactos.html           # Formulário de contacto + contactos + transparência
@@ -55,9 +55,13 @@ listaae/
 ├─ sitemap.xml
 └─ assets/
    ├─ css/styles.css        # Design system completo (variáveis, componentes)
-   ├─ js/site.js            # Interações + consentimento de cookies
+   ├─ js/config.js          # Dia de votação (texto, abertura e fecho das urnas)
+   ├─ js/site.js            # Interações, animações + consentimento de cookies
    └─ img/
       ├─ eclipse-logo.png   # Logótipo (recortado, fundo transparente)
+      ├─ eclipse-logo.svg · eclipse-logo-ink.svg · eclipse-mark.svg   # Logótipo e símbolo vetoriais
+      ├─ pattern-dark.svg · pattern-light.svg · pattern-sun.svg     # Padrão de estrelas da marca
+      ├─ fotos/             # Fotografias com licença aberta (ver «Imagens e ícones»)
       ├─ eclipse-square.png # Versão quadrada (ícones e medalhão)
       ├─ og-image.png       # Imagem de partilha (1200×630)
       ├─ favicon-16.png · favicon-32.png · apple-touch-icon.png · icon-192.png · icon-512.png
@@ -84,7 +88,7 @@ Os números de telefone/e-mail, morada e nomes são **placeholders**. Procure e 
 | Fotos dos membros | `assets/img/membros/01..24.svg` |
 | Propostas do programa | `programa.html` |
 | Notícias e eventos | `noticias.html`, `assets/img/noticia-*.svg`, `evento-*.svg` |
-| Data das eleições e métricas | `index.html`, `sobre.html`, `faq.html` |
+| Data das eleições (texto e contagem decrescente) | `assets/js/config.js` |
 | Cookies/finalidades (RGPD) | `privacidade.html` |
 
 Para alterar menus/footer em todas as páginas de uma vez, edite o bloco comum em cada
@@ -96,33 +100,37 @@ ficheiro (não há sistema de templates — é HTML estático).
 
 Definido como variáveis CSS no topo de `assets/css/styles.css`.
 
-**Cores**
+**Cores** — saem do logótipo e do eclipse: noite, céu e sol.
 
 | Variável | Valor | Uso |
 |---|---|---|
-| `--ink` | `#070c22` | Fundo escuro principal |
-| `--ink-2` / `--ink-3` | `#0b1430` / `#122048` | Superfícies escuras |
-| `--sky` / `--sky-2` | `#7ec1e8` / `#a9d8f0` | Azul de destaque |
-| `--blue` / `--blue-deep` | `#2c6ba6` / `#1a4a79` | Azuis de apoio |
-| `--ochre` / `--ochre-2` | `#e0a53e` / `#f0c466` | Realce (acento quente) |
-| `--clay` | `#b9542f` | Acento terroso |
-| `--paper` / `--paper-2` / `--paper-3` | `#f8e8c8` / `#f1ddb6` / `#e6cd97` | Fundos claros |
+| `--ink` / `--ink-2` / `--ink-3` | `#060a1f` / `#0c1330` / `#18234f` | Noite: texto e secções escuras |
+| `--paper` / `--paper-2` / `--white` | `#f3f7fb` / `#e3ecf6` / `#fcfdff` | Fundos claros |
+| `--sky` / `--sky-2` | `#b8e4f8` / `#93d2f3` | O azul do logótipo |
+| `--blue` / `--blue-deep` | `#1d4fd7` / `#1339a9` | Destaque sobre fundo claro |
+| `--sun` / `--sun-2` | `#ffc533` / `#ffd666` | O sol: botões e chamadas |
 
 **Tipografia** (Google Fonts, com fallback para _system fonts_)
 
-- **Outfit** — títulos
-- **Manrope** — texto
-- **Space Mono** — etiquetas / números
+- **Archivo** (largura e peso variáveis) — títulos largos em itálico e texto corrido
 
 ---
 
 ## Funcionalidades
 
-- **Header** fixo transparente sobre o hero; fica sólido ao rolar.
-- **Navegação mobile** (<1280px) com botão toggle, fecha com `Esc`.
-- **Revelação ao scroll** via `IntersectionObserver` (desativa com JS desligado).
+- **Header** fixo transparente sobre o hero; fica sólido ao rolar e esconde-se ao descer.
+- **Navegação mobile** (<1100px) em ecrã inteiro, fecha com `Esc`; barra de ação fixa no telemóvel.
+- **Dia de votação** centralizado em `assets/js/config.js`, com contagem decrescente no herói
+  (desaparece sozinha depois do fecho das urnas).
+- **Assistente do programa** na página inicial: escolhe-se um tema e aparece o eixo com as propostas.
+- **Vidro e luz**: painéis translúcidos (`backdrop-filter`, com alternativa sólida) sobre a fotografia
+  do eclipse e discos de luz; cabeçalho que passa a barra de vidro flutuante ao descer.
+- **Campanha**: botão para partilhar o site com a turma e para pôr o dia de votação no calendário (`.ics`).
+- **Animações**: títulos linha a linha, entradas em cascata, números que contam, manifesto que
+  acende com o scroll, fases do eclipse nos passos, transição entre páginas. Tudo abranda ou
+  desliga com `prefers-reduced-motion`, e o conteúdo fica visível com JS desligado.
 - **Galeria** com lightbox (fecha com `Esc` e clique no fundo).
-- **FAQ** com accordions acessíveis (`aria-expanded`/`aria-controls`).
+- **FAQ** com `<details>` nativos (abre uma pergunta de cada vez).
 - **Consentimento de cookies** real (categorias: essenciais, medição, preferências),
   guardado em `localStorage` na chave `eclipse.consent.v1`. Reabertura via links `[data-open-cookie]`.
 - **Formulários** (contacto + newsletter em todas as páginas) enviados por `fetch` para o
@@ -137,8 +145,14 @@ Definido como variáveis CSS no topo de `assets/css/styles.css`.
 
 ## Imagens e ícones
 
-Todos os SVGs são arte original da marca (sem _stock_). Para trocar por fotografias reais,
-substitua os ficheiros mantendo as proporções:
+Os SVGs são arte original da marca. As fotografias em `assets/img/fotos/` vêm do Wikimedia Commons
+e estão creditadas junto de cada imagem:
+
+- `eclipse-anel-de-diamante*.jpg` — eclipse total de 21/08/2017, NASA/Aubrey Gemignani (domínio público)
+- `externato-de-penafirme.jpg` — Vitor Oliveira, CC BY-SA 2.0
+- `seminario-de-penafirme.jpg` — Peter Gpetr, CC BY 3.0
+
+Para trocar imagens, substitua os ficheiros mantendo as proporções:
 
 - `assets/img/galeria/*.svg` — 800×800
 - `assets/img/noticia-*.svg`, `evento-*.svg` — 1200×675

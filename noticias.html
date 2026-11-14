@@ -1,16 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-PT">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Notícias & eventos — Eclipse | AE Externato de Penafirme</title>
+  <title>Notícias &amp; eventos — Eclipse | AE Externato de Penafirme</title>
   <meta name="description" content="Acompanha a campanha da Eclipse: notícias, sessões de escuta, eventos e a agenda da candidatura à Associação de Estudantes do Externato de Penafirme.">
   <link rel="canonical" href="https://listanexus-nu.vercel.app/noticias.html">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_PT">
   <meta property="og:site_name" content="Eclipse — AE Externato de Penafirme">
-  <meta property="og:title" content="Notícias & eventos — Eclipse">
+  <meta property="og:title" content="Notícias &amp; eventos — Eclipse">
   <meta property="og:description" content="O que anda a Eclipse a preparar, sessão a sessão.">
   <meta property="og:url" content="https://listanexus-nu.vercel.app/noticias.html">
   <meta property="og:image" content="https://listanexus-nu.vercel.app/assets/img/og-image.png">
@@ -20,220 +20,154 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#070c22">
+  <meta name="theme-color" content="#060a1f">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <script>document.documentElement.classList.add("js");</script>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,100..125,400..800;1,100..125,400..800&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__ecl)document.documentElement.classList.remove("js")},3000);</script>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
 <a class="skip-link" href="#main">Saltar para o conteúdo principal</a>
+<div class="progress" aria-hidden="true"></div>
 
-<header class="site-header">
-  <div class="site-header__inner">
+<header class="hdr" data-hdr>
+  <div class="w hdr__in">
     <a class="brand" href="index.html" aria-label="Eclipse, página inicial">
-      <img class="brand__logo" src="assets/img/eclipse-logo.png" alt="Eclipse — Associação de Estudantes do Externato de Penafirme" height="42">
+      <img class="brand__logo brand__logo--sky" src="assets/img/eclipse-logo.svg" alt="Eclipse" width="90" height="50">
+      <img class="brand__logo brand__logo--ink" src="assets/img/eclipse-logo-ink.svg" alt="" width="90" height="50">
     </a>
     <nav class="nav" aria-label="Navegação principal">
-      <a href="index.html">Início</a>
       <a href="sobre.html">Quem somos</a>
       <a href="programa.html">Programa</a>
-      <a href="patrocinadores.html">Patrocinadores</a>
       <a href="equipa.html">Coordenação</a>
       <a href="membros.html">Membros</a>
+      <a href="patrocinadores.html">Patrocinadores</a>
       <a href="noticias.html" aria-current="page">Notícias</a>
       <a href="galeria.html">Galeria</a>
       <a href="faq.html">FAQ</a>
-      <a href="contactos.html">Contactos</a>
     </nav>
-    <div class="header-actions">
-      <a class="btn btn--primary btn--sm header-cta" href="contactos.html">Fala com a Eclipse</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu de navegação"><span></span></button>
+    <div class="hdr__end">
+      <a class="btn btn--sun btn--sm" href="contactos.html">Fala connosco</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mmenu" aria-label="Abrir menu de navegação"><span></span><span></span></button>
     </div>
   </div>
 </header>
 
-<nav class="mobile-nav" id="mobile-nav" aria-label="Navegação móvel">
-  <a href="index.html"><span class="idx">01</span>Início</a>
-  <a href="sobre.html"><span class="idx">02</span>Quem somos</a>
-  <a href="programa.html"><span class="idx">03</span>Programa</a>
-  <a href="patrocinadores.html"><span class="idx">04</span>Patrocinadores</a>
-  <a href="equipa.html"><span class="idx">05</span>Coordenação</a>
-  <a href="membros.html"><span class="idx">06</span>Membros</a>
-  <a href="noticias.html" aria-current="page"><span class="idx">07</span>Notícias</a>
-  <a href="galeria.html"><span class="idx">08</span>Galeria</a>
-  <a href="faq.html"><span class="idx">09</span>FAQ</a>
-  <a href="contactos.html"><span class="idx">10</span>Contactos</a>
-  <div class="mobile-nav__foot">
-    <a class="btn btn--primary btn--noarrow" href="contactos.html">Fala com a Eclipse</a>
-    <span class="mono">eclipse.extp@gmail.com</span>
+<div class="mmenu" id="mmenu">
+  <nav aria-label="Navegação móvel">
+    <ul class="mmenu__main">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Quem somos</a></li>
+      <li><a href="programa.html">Programa</a></li>
+      <li><a href="equipa.html">Coordenação</a></li>
+      <li><a href="membros.html">Membros</a></li>
+      <li><a href="patrocinadores.html">Patrocinadores</a></li>
+      <li><a href="noticias.html" aria-current="page">Notícias</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contactos.html">Contactos</a></li>
+    </ul>
+  </nav>
+  <div class="mmenu__foot">
+    <a class="btn" href="contactos.html">Fala com a Eclipse</a>
+    <p><a href="mailto:eclipse.extp@gmail.com">eclipse.extp@gmail.com</a><a href="https://www.instagram.com/eclipse_extp/" rel="noopener" target="_blank">@eclipse_extp</a></p>
   </div>
-</nav>
+</div>
 
 <main id="main">
 
-  <section class="page-hero">
-    <img class="page-hero__mark" src="assets/img/eclipse-logo.png" alt="" aria-hidden="true">
-    <div class="wrap page-hero__inner">
-      <ol class="crumbs">
-        <li><a href="index.html">Início</a></li>
-        <li aria-current="page">Notícias & eventos</li>
-      </ol>
-      <span class="kicker mt-2">Diário de campanha</span>
-      <h1>Notícias & eventos</h1>
-      <p class="lede">Aqui publicamos tudo o que fazemos — as sessões, os números do inquérito, as posições que assumimos e a agenda até ao dia da votação.</p>
+  <section class="phero">
+    <span class="shoot" aria-hidden="true"></span>
+    <img class="phero__mark" src="assets/img/eclipse-mark.svg" alt="" width="749" height="553">
+    <div class="w">
+      <nav aria-label="Caminho de navegação"><ol class="crumbs"><li><a href="index.html">Início</a></li><li aria-current="page">Notícias e eventos</li></ol></nav>
+      <h1 class="lines"><span class="split-line" style="--i:0"><span>Notícias</span></span> <span class="split-line" style="--i:1"><span>e eventos</span></span></h1>
+      <p class="lead rv">Aqui publicamos tudo o que fazemos: as sessões, os números do inquérito, as posições que assumimos e a agenda até ao dia da votação.</p>
     </div>
   </section>
 
-  <section class="section">
-    <div class="wrap">
-      <div class="sec-head__row mb-3">
-        <div data-reveal>
-          <span class="kicker">Em destaque</span>
-          <h2 class="mt-2">A notícia mais recente.</h2>
-        </div>
-      </div>
-
-      <div class="news-grid">
-        <article class="post post--feature" data-reveal>
-          <div class="post__media"><img src="assets/img/eclipse-logo.png" alt="Logótipo da lista Eclipse, associação de estudantes do Externato de Penafirme" width="999" height="553" loading="lazy"></div>
-          <div class="post__date">29 de outubro de 2026 · Candidatura</div>
-          <h3>A Eclipse é candidata à Associação de Estudantes</h3>
-          <p>Já entregámos a candidatura: sessenta alunos de todos os anos, oito eixos de intervenção e vinte propostas com prazos definidos. Não viemos fazer promessas vazias — viemos trabalhar por uma escola melhor.</p>
+  <section class="sec sec--paper">
+    <div class="w">
+      <div class="news">
+        <article class="post post--feature rv">
+          <div class="post__media"><img src="assets/img/eclipse-logo.svg" alt="Logótipo da lista Eclipse" width="999" height="553"></div>
+          <p class="post__date"><span data-vote-date>29 de outubro de 2026</span> · Candidatura</p>
+          <h2>A Eclipse é candidata à Associação de Estudantes</h2>
+          <p>Já entregámos a candidatura: sessenta alunos de todos os anos, oito eixos de intervenção e vinte propostas com prazos definidos. Não viemos fazer promessas vazias. Viemos trabalhar por uma escola melhor.</p>
           <p>O programa está publicado, a equipa está pronta a apresentar-se e a campanha começa agora. Lê as propostas, conhece quem se candidata e fala connosco até ao dia da votação.</p>
-          <a class="link-arrow mt-2" href="programa.html">Consultar o programa</a>
+          <a class="link" href="programa.html">Consultar o programa <span class="ar" aria-hidden="true">→</span></a>
         </article>
-
-        <div class="post-list" data-reveal data-reveal-delay="1">
-          <a class="post-row" href="#">
-            <img class="post-row__thumb" src="assets/img/galeria/02.svg" alt="" width="800" height="800" loading="lazy">
-            <div><h4>xxxxxxxxxxxxxxxxxxxxxxx</h4><p>xxxxxxxxxxxxxxxxxxxxxxx</p></div>
-            <time datetime="2026-11-10">xx xxx</time>
-          </a>
-          <a class="post-row" href="#">
-            <img class="post-row__thumb" src="assets/img/galeria/05.svg" alt="" width="800" height="800" loading="lazy">
-            <div><h4>xxxxxxxxxxxxxxxxxxxxxxx</h4><p>xxxxxxxxxxxxxxxxxxxxxxx</p></div>
-            <time datetime="2026-11-05">xx xxx</time>
-          </a>
-          <a class="post-row" href="#">
-            <img class="post-row__thumb" src="assets/img/noticia-05.svg" alt="" width="1200" height="675" loading="lazy">
-            <div><h4>xxxxxxxxxxxxxxxxxxxxxxx</h4><p>xxxxxxxxxxxxxxxxxxxxxxx</p></div>
-            <time datetime="2026-10-28">xx xxx</time>
-          </a>
-          <a class="post-row" href="#">
-            <img class="post-row__thumb" src="assets/img/galeria/10.svg" alt="" width="800" height="800" loading="lazy">
-            <div><h4>xxxxxxxxxxxxxxxxxxxxxxx</h4><p>xxxxxxxxxxxxxxxxxxxxxxx</p></div>
-            <time datetime="2026-10-22">xx xxx</time>
-          </a>
-          <a class="post-row" href="#">
-            <img class="post-row__thumb" src="assets/img/galeria/11.svg" alt="" width="800" height="800" loading="lazy">
-            <div><h4>xxxxxxxxxxxxxxxxxxxxxxx</h4><p>xxxxxxxxxxxxxxxxxxxxxxx</p></div>
-            <time datetime="2026-10-08">xx xxx</time>
-          </a>
-        </div>
+        <aside class="stack stack--lg rv">
+          <!-- A preencher: próximas notícias (título e resumo: xxxxxxxxxxxxxxxxxxxxxxx · data: xx xxx) -->
+          <div class="card card--ink">
+            <h3>As próximas notícias aparecem aqui</h3>
+            <p>Sessões nas turmas, resultados do inquérito e posições da lista: publicamos à medida que acontecem. Entretanto, o dia a dia da campanha está no Instagram.</p>
+            <p class="mt-2"><a class="link" href="https://www.instagram.com/eclipse_extp/" rel="noopener" target="_blank">Seguir @eclipse_extp <span class="ar" aria-hidden="true">→</span></a></p>
+          </div>
+          <div class="card">
+            <h3>Tens uma notícia para nós?</h3>
+            <p>Se a tua turma organizou alguma coisa que a escola devia saber, conta-nos.</p>
+            <p class="mt-2"><a class="link" href="contactos.html">Escrever à Eclipse <span class="ar" aria-hidden="true">→</span></a></p>
+          </div>
+        </aside>
       </div>
     </div>
   </section>
 
-  <section class="section section--paper-2">
-    <div class="wrap">
+  <section class="sec sec--mist" id="agenda">
+    <div class="w">
       <div class="sec-head">
-        <div data-reveal>
-          <span class="kicker">Mais notícias</span>
-          <h2 class="mt-2">Do lado da campanha.</h2>
-        </div>
+        <h2 class="lines"><span class="split-line" style="--i:0"><span>Próximos</span></span> <span class="split-line" style="--i:1"><span>eventos.</span></span></h2>
+        <p class="lead rv">Todos os eventos são abertos à comunidade escolar. As entradas são livres, exceto quando indicado.</p>
       </div>
-      <div class="grid grid--3">
-        <article class="post card" data-reveal style="padding:0;overflow:hidden">
-          <div class="post__media" style="border:0;border-radius:0;border-bottom:1px solid var(--line)"><img src="assets/img/noticia-06.svg" alt="Ilustração gráfica da assembleia de alunos" width="1200" height="675" loading="lazy"></div>
-          <div style="padding:1.3rem">
-            <div class="post__date">29 de outubro de 2026</div>
-            <h3 style="font-size:1.25rem">xxxxxxxxxxxxxxxxxxxxxxx</h3>
-            <p>xxxxxxxxxxxxxxxxxxxxxxx</p>
-          </div>
-        </article>
-        <article class="post card" data-reveal data-reveal-delay="1" style="padding:0;overflow:hidden">
-          <div class="post__media" style="border:0;border-radius:0;border-bottom:1px solid var(--line)"><img src="assets/img/galeria/06.svg" alt="Ilustração gráfica do clube de robótica" width="800" height="800" loading="lazy"></div>
-          <div style="padding:1.3rem">
-            <div class="post__date">29 de outubro de 2026</div>
-            <h3 style="font-size:1.25rem">xxxxxxxxxxxxxxxxxxxxxxx</h3>
-            <p>xxxxxxxxxxxxxxxxxxxxxxx</p>
-          </div>
-        </article>
-        <article class="post card" data-reveal data-reveal-delay="2" style="padding:0;overflow:hidden">
-          <div class="post__media" style="border:0;border-radius:0;border-bottom:1px solid var(--line)"><img src="assets/img/noticia-04.svg" alt="Ilustração gráfica da maratona solidária" width="1200" height="675" loading="lazy"></div>
-          <div style="padding:1.3rem">
-            <div class="post__date">29 de outubro de 2026</div>
-            <h3 style="font-size:1.25rem">xxxxxxxxxxxxxxxxxxxxxxx</h3>
-            <p>xxxxxxxxxxxxxxxxxxxxxxx</p>
-          </div>
-        </article>
-      </div>
+      <ol class="events">
+        <li class="event rv">
+          <div class="event__date"><b data-vote-day>29</b><span data-vote-month>out</span></div>
+          <div><h3>Dia de votação para a Associação de Estudantes</h3><p>Biblioteca · 9h00–17h00 · Traz o cartão de estudante.</p></div>
+          <a class="btn btn--ghost btn--sm" href="faq.html">Como votar</a>
+        </li>
+        <li class="event rv">
+          <div class="event__date event__date--tba" aria-hidden="true"><i class="star"></i></div>
+          <div><h3>Sessão de apresentação do programa Eclipse</h3><p>Auditório · 14h30 · Apresentação do programa e espaço para perguntas. Data a anunciar.</p></div>
+          <a class="btn btn--ghost btn--sm" href="programa.html">Ver programa</a>
+        </li>
+        <li class="event rv">
+          <div class="event__date event__date--tba" aria-hidden="true"><i class="star"></i></div>
+          <div><h3>Torneio inter-turmas de futsal</h3><p>Pavilhão · Todo o dia · Inscrições por turma até 29 de outubro. Data a anunciar.</p></div>
+        </li>
+        <li class="event rv">
+          <div class="event__date event__date--tba" aria-hidden="true"><i class="star"></i></div>
+          <div><h3>Dia aberto Eclipse</h3><p>Pátio central · 10h00–13h00 · Convívio, jogos e conversa com a coordenação. Data a anunciar.</p></div>
+          <a class="btn btn--ghost btn--sm" href="contactos.html">Falar connosco</a>
+        </li>
+        <li class="event rv">
+          <div class="event__date event__date--tba" aria-hidden="true"><i class="star"></i></div>
+          <div><h3>Assembleia de alunos aberta</h3><p>Sala de convívio · 15h00 · Levar as propostas dos alunos e votar prioridades. Data a anunciar.</p></div>
+          <a class="btn btn--ghost btn--sm" href="programa.html#eixo-1">Ver o eixo 01</a>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <section class="section">
-    <div class="wrap">
-      <div class="sec-head sec-head--split">
-        <div data-reveal>
-          <span class="kicker">Agenda</span>
-          <h2 class="mt-2">Próximos eventos.</h2>
-        </div>
-        <p class="lede" data-reveal data-reveal-delay="1">Todos os eventos são abertos à comunidade escolar. As entradas são livres, exceto quando indicado.</p>
-      </div>
-
-      <div>
-        <article class="event" data-reveal>
-          <div class="event__date"><b>xx</b><span>Xxx</span></div>
-          <div><h4>Dia de votação para a Associação de Estudantes</h4><p>Biblioteca · 9h00–17h00 · Traz o cartão de estudante.</p></div>
-          <a class="btn btn--ghost-ink btn--sm" href="faq.html">Como votar</a>
-        </article>
-        <article class="event" data-reveal data-reveal-delay="1">
-          <div class="event__date"><b>xx</b><span>Xxx</span></div>
-          <div><h4>Sessão de apresentação do programa Eclipse</h4><p>Auditório · 14h30 · Apresentação do programa e espaço para perguntas.</p></div>
-          <a class="btn btn--ghost-ink btn--sm" href="programa.html">Ver programa</a>
-        </article>
-        <article class="event" data-reveal data-reveal-delay="2">
-          <div class="event__date"><b>xx</b><span>Xxx</span></div>
-          <div><h4>Torneio inter-turmas de futsal</h4><p>Pavilhão · Todo o dia · Inscrições por turma até 29 de outubro.</p></div>
-          <a class="btn btn--ghost-ink btn--sm" href="noticias.html">Saber mais</a>
-        </article>
-        <article class="event" data-reveal data-reveal-delay="3">
-          <div class="event__date"><b>xx</b><span>Xxx</span></div>
-          <div><h4>Dia aberto Eclipse</h4><p>Pátio central · 10h00–13h00 · Convívio, jogos e conversa com a coordenação.</p></div>
-          <a class="btn btn--ghost-ink btn--sm" href="contactos.html">Falar connosco</a>
-        </article>
-        <article class="event" data-reveal data-reveal-delay="4">
-          <div class="event__date"><b>xx</b><span>Xxx</span></div>
-          <div><h4>Assembleia de alunos aberta</h4><p>Sala de convívio · 15h00 · Levar as propostas dos alunos e votar prioridades.</p></div>
-          <a class="btn btn--ghost-ink btn--sm" href="programa.html">Eixo 01</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--tight">
-    <div class="wrap">
-      <div class="cta-band" data-reveal>
-        <img class="cta-band__logo" src="assets/img/eclipse-logo.png" alt="" aria-hidden="true">
-        <div style="position:relative;z-index:1">
-          <span class="kicker">Não percas nada</span>
-          <h2 class="mt-2">Uma mensagem por mês,<br>sem encher a caixa.</h2>
-          <p>Os avisos importantes da campanha e as datas da agenda, direto para o teu email. Podes sair quando quiseres.</p>
-          <form class="newsletter" action="https://formsubmit.co/ajax/b27be4651bf7003b8eaa9fe9e6ee7276" method="POST" data-ajax style="max-width:430px">
-            <input type="hidden" name="_subject" value="Nova subscrição da newsletter — Eclipse">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
-            <label class="visually-hidden" for="news-cta">Email</label>
-            <input id="news-cta" type="email" name="email" placeholder="o.teu@email.pt" required>
-            <button class="btn btn--primary btn--noarrow" type="submit">Subscrever</button>
-          </form>
-          <p class="form-status mt-2" role="status" tabindex="-1"></p>
-        </div>
+  <section class="cta" data-tiles>
+    <div class="w">
+      <div class="cta__card rv">
+        <svg class="mark mark-anim cta__mark" viewBox="250 0 749 553" aria-hidden="true" focusable="false"><path class="m-arc m-arc--a" d="M512.2 35.9 494.7 37.1 473.7 40 443.7 47.2 405.8 61.1 375.7 76.8 347.3 96.2 325.2 115.2 309.1 132.3 300.8 142.9 283.3 169.6 300.4 148 320 127.4 343.5 108 368.2 92.2 390.7 81 417.3 71 446.5 64 475.3 60.8 496 60.9 530.5 65 561.3 73 584.3 82 614.6 98.2 635.8 113.2 656.4 133.8 678.4 161.1 688 165.7 698.2 168.7 701 168.7 705.5 166.5 713.5 160.3 718 155 723.6 143.5 725.3 137.5 715.6 124.2 695.5 103 679.5 89.1 667.8 80.6 651.7 70.5 631.7 60.1 610 51.2 594.3 46.2 573.8 41.1 555.2 38 532.5 36Z"/><path class="m-arc m-arc--b" d="M725 362.2 708.7 396.3 696.8 415.3 688 427.3 677.8 439.6 656.9 460.5 635.6 477.7 606.3 495.8 592.2 502.8 572.3 510.8 536 520.9 504.3 525 476.2 525 463.8 524 434.3 518.8 399.5 507.8 366.3 491.6 338 472.5 323.5 460 304.2 440.8 285 417.3 267.1 388.8 275.3 406.5 284.6 422.7 296.3 439.7 309.5 455.8 336.7 482 368.2 504.5 386.3 514.6 405.5 523.6 440.5 535.7 458.3 539.8 485.8 543.7 520.2 544.6 543.5 542.8 571.7 537.7 593.3 531.7 610 525.7 626.7 518.5 652.7 504.4 667.7 494.5 687.2 479.1 709.9 456.3 727.4 433.7 744.7 403.5 756.7 373.7 759.6 363.7 759.2 362.2Z"/><path class="m-star" d="M744 9C746.2 177.3 764.9 191.2 990 191C764.9 194.3 746.2 206.5 744 352C742.3 206.5 727.7 194.7 552 196C727.7 191.6 742.3 177.4 744 9Z"/></svg>
+        <h2>Só o essencial, <br>no teu email.</h2>
+        <p class="lead">Os avisos importantes da campanha e as datas da agenda, no máximo duas vezes por mês. Podes sair quando quiseres.</p>
+        <form class="newsletter" action="https://formsubmit.co/ajax/b27be4651bf7003b8eaa9fe9e6ee7276" method="POST" data-ajax>
+          <input type="hidden" name="_subject" value="Nova subscrição da newsletter — Eclipse">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+          <label class="visually-hidden" for="news-cta">Email</label>
+          <input id="news-cta" type="email" name="email" placeholder="o.teu@email.pt" autocomplete="email" required>
+          <button class="btn btn--sun" type="submit">Subscrever</button>
+        </form>
+        <p class="form-status" role="status" tabindex="-1"></p>
       </div>
     </div>
   </section>
@@ -241,91 +175,90 @@
 </main>
 
 <footer class="site-footer">
-  <div class="wrap">
-    <div class="site-footer__top">
-      <div class="site-footer__brand">
-        <a class="brand" href="index.html" aria-label="Eclipse, página inicial">
-          <img class="brand__logo" src="assets/img/eclipse-logo.png" alt="Eclipse — Associação de Estudantes do Externato de Penafirme" height="42">
-        </a>
-        <p>Lista concorrente à Associação de Estudantes do Externato de Penafirme. Ligamos alunos, ideias e vontades — com um programa a sério e contas transparentes.</p>
-        <div class="site-footer__social">
-          <a href="https://www.instagram.com/eclipse_extp/" aria-label="Instagram da Eclipse" rel="noopener" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>
-          </a>
-          <a href="mailto:eclipse.extp@gmail.com" aria-label="Email da Eclipse">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-          </a>
-        </div>
-      </div>
-      <div>
-        <h4>A lista</h4>
-        <nav class="site-footer__links" aria-label="Ligações da lista">
-          <a href="sobre.html">Quem somos</a>
-          <a href="programa.html">Programa</a>
-          <a href="equipa.html">Coordenação</a>
-          <a href="membros.html">Membros</a>
-          <a href="noticias.html">Notícias</a>
-          <a href="patrocinadores.html">Patrocinadores</a>
-        </nav>
-      </div>
-      <div>
-        <h4>Recursos</h4>
-        <nav class="site-footer__links" aria-label="Recursos">
-          <a href="galeria.html">Galeria</a>
-          <a href="faq.html">Perguntas frequentes</a>
-          <a href="contactos.html">Contactos</a>
-          <a href="#" data-open-cookie>Preferências de cookies</a>
-        </nav>
-      </div>
-      <div>
-        <h4>Fica a par</h4>
-        <p style="color:rgba(169,216,240,.72);font-size:.92rem;margin-bottom:.6rem">Recebe, no máximo duas vezes por mês, o essencial da campanha. Sem spam.</p>
+  <div class="w">
+    <div class="ft-top">
+      <div class="ft-pitch">
+        <p>Vota E. Vota Eclipse<i class="star" aria-hidden="true"></i></p>
+        <p class="ft-sub">Lista E às eleições da Associação de Estudantes do Externato de Penafirme. Recebe o essencial da campanha por email, no máximo duas vezes por mês. Sem spam.</p>
         <form class="newsletter" action="https://formsubmit.co/ajax/b27be4651bf7003b8eaa9fe9e6ee7276" method="POST" data-ajax>
           <input type="hidden" name="_subject" value="Nova subscrição da newsletter — Eclipse">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
-          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
           <label class="visually-hidden" for="news-email">Email</label>
-          <input id="news-email" type="email" name="email" placeholder="o.teu@email.pt" required>
-          <button class="btn btn--sky btn--noarrow" type="submit">Subscrever</button>
+          <input id="news-email" type="email" name="email" placeholder="o.teu@email.pt" autocomplete="email" required>
+          <button class="btn btn--sun" type="submit">Subscrever</button>
         </form>
         <p class="form-status" role="status" tabindex="-1"></p>
       </div>
-    </div>
-    <div class="site-footer__bottom">
-      <p>© <span data-year>2026</span> Eclipse — Associação de Estudantes do Externato de Penafirme.</p>
-      <div class="site-footer__bottom-links">
-        <a href="privacidade.html">Política de Privacidade</a>
-        <a href="termos.html">Termos de Utilização</a>
-        <a href="#" data-open-cookie>Cookies</a>
+      <div class="ft-col">
+        <h2>A lista</h2>
+        <ul>
+          <li><a href="sobre.html">Quem somos</a></li>
+          <li><a href="programa.html">Programa</a></li>
+          <li><a href="equipa.html">Coordenação</a></li>
+          <li><a href="membros.html">Membros</a></li>
+          <li><a href="patrocinadores.html">Patrocinadores</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h2>Campanha</h2>
+        <ul>
+          <li><a href="noticias.html">Notícias e agenda</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="faq.html">Perguntas frequentes</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h2>Fala connosco</h2>
+        <ul>
+          <li><a href="mailto:eclipse.extp@gmail.com">eclipse.extp@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/eclipse_extp/" rel="noopener" target="_blank">Instagram @eclipse_extp</a></li>
+        </ul>
+        <div class="ft-social mt-2">
+          <a href="https://www.instagram.com/eclipse_extp/" aria-label="Instagram da Eclipse" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="mailto:eclipse.extp@gmail.com" aria-label="Email da Eclipse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+        </div>
       </div>
     </div>
-    <p style="color:rgba(169,216,240,.42);font-size:.78rem;padding-bottom:1.6rem;max-width:80ch">Página informativa de campanha estudantil. O domínio é demonstrativo e os contactos são de exemplo enquanto decorre o período eleitoral.</p>
+    <div class="ft-word" aria-hidden="true"><img src="assets/img/eclipse-logo.svg" alt="" width="999" height="553" loading="lazy"></div>
+    <div class="ft-bottom">
+      <p>© <span data-year>2026</span> Eclipse — Lista E à Associação de Estudantes do Externato de Penafirme.</p>
+      <ul>
+        <li><a href="privacidade.html">Política de Privacidade</a></li>
+        <li><a href="termos.html">Termos de Utilização</a></li>
+        <li><a href="#" data-open-cookie>Preferências de cookies</a></li>
+      </ul>
+    </div>
+    <p class="ft-note">Página informativa de campanha estudantil. O domínio é demonstrativo e os contactos são de exemplo enquanto decorre o período eleitoral.</p>
   </div>
 </footer>
 
-<button class="to-top" type="button" aria-label="Voltar ao topo">
-  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
-</button>
+<div class="dock" data-dock>
+  <a class="btn btn--sun" href="programa.html">Ler o programa <span class="ar" aria-hidden="true">→</span></a>
+  <a class="dock__mail" href="contactos.html" aria-label="Contactar a Eclipse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+</div>
 
 <aside class="cookie" id="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-hidden="true">
   <h4 id="cookie-title">A tua privacidade</h4>
   <p>Usamos cookies essenciais para o site funcionar. Com o teu consentimento, usamos também medição de audiência e preferências para o melhorar. Podes aceitar, recusar ou escolher ao detalhe. Sabe mais na <a href="privacidade.html">Política de Privacidade</a>.</p>
   <div class="cookie__actions">
-    <button class="btn btn--primary btn--sm btn--noarrow" id="cookie-accept" type="button">Aceitar todos</button>
-    <button class="btn btn--ghost-ink btn--sm btn--noarrow" id="cookie-reject" type="button">Recusar não essenciais</button>
-    <button class="btn btn--ghost-ink btn--sm btn--noarrow" id="cookie-open-prefs" type="button">Escolher preferências</button>
+    <button class="btn" id="cookie-accept" type="button">Aceitar todos</button>
+    <button class="btn btn--ghost" id="cookie-reject" type="button">Recusar não essenciais</button>
+    <button class="btn btn--ghost" id="cookie-open-prefs" type="button">Escolher preferências</button>
   </div>
   <div class="cookie__prefs" id="cookie-prefs">
     <label class="cookie__pref"><input type="checkbox" checked disabled> <span><b>Essenciais</b> — necessários ao funcionamento e à segurança do site. Não podem ser desativados.</span></label>
     <label class="cookie__pref"><input type="checkbox" id="pref-analytics"> <span><b>Medição de audiência</b> — estatísticas anónimas sobre visitas, para percebermos o que é útil.</span></label>
     <label class="cookie__pref"><input type="checkbox" id="pref-preferences"> <span><b>Preferências</b> — guardar escolhas como o idioma ou a aceitação de cookies.</span></label>
     <div class="cookie__actions">
-      <button class="btn btn--ink btn--sm btn--noarrow" id="cookie-save" type="button">Guardar escolhas</button>
+      <button class="btn" id="cookie-save" type="button">Guardar escolhas</button>
     </div>
   </div>
 </aside>
 
+<script src="assets/js/config.js" defer></script>
 <script src="assets/js/site.js" defer></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-PT">
 <head>
   <meta charset="utf-8">
@@ -8,134 +8,178 @@
   <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="https://listanexus-nu.vercel.app/">
 
+
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#070c22">
+  <meta name="theme-color" content="#060a1f">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <script>document.documentElement.classList.add("js");</script>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,100..125,400..800;1,100..125,400..800&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__ecl)document.documentElement.classList.remove("js")},3000);</script>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
 <a class="skip-link" href="#main">Saltar para o conteúdo principal</a>
+<div class="progress" aria-hidden="true"></div>
 
-<header class="site-header is-solid">
-  <div class="site-header__inner">
+<header class="hdr" data-hdr>
+  <div class="w hdr__in">
     <a class="brand" href="index.html" aria-label="Eclipse, página inicial">
-      <img class="brand__logo" src="assets/img/eclipse-logo.png" alt="Eclipse — Associação de Estudantes do Externato de Penafirme" height="42">
+      <img class="brand__logo brand__logo--sky" src="assets/img/eclipse-logo.svg" alt="Eclipse" width="90" height="50">
+      <img class="brand__logo brand__logo--ink" src="assets/img/eclipse-logo-ink.svg" alt="" width="90" height="50">
     </a>
     <nav class="nav" aria-label="Navegação principal">
-      <a href="index.html">Início</a>
       <a href="sobre.html">Quem somos</a>
       <a href="programa.html">Programa</a>
-      <a href="patrocinadores.html">Patrocinadores</a>
       <a href="equipa.html">Coordenação</a>
       <a href="membros.html">Membros</a>
+      <a href="patrocinadores.html">Patrocinadores</a>
       <a href="noticias.html">Notícias</a>
       <a href="galeria.html">Galeria</a>
       <a href="faq.html">FAQ</a>
-      <a href="contactos.html">Contactos</a>
     </nav>
-    <div class="header-actions">
-      <a class="btn btn--primary btn--sm header-cta" href="contactos.html">Fala com a Eclipse</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu de navegação"><span></span></button>
+    <div class="hdr__end">
+      <a class="btn btn--sun btn--sm" href="contactos.html">Fala connosco</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mmenu" aria-label="Abrir menu de navegação"><span></span><span></span></button>
     </div>
   </div>
 </header>
 
-<nav class="mobile-nav" id="mobile-nav" aria-label="Navegação móvel">
-  <a href="index.html"><span class="idx">01</span>Início</a>
-  <a href="sobre.html"><span class="idx">02</span>Quem somos</a>
-  <a href="programa.html"><span class="idx">03</span>Programa</a>
-  <a href="patrocinadores.html"><span class="idx">04</span>Patrocinadores</a>
-  <a href="equipa.html"><span class="idx">05</span>Coordenação</a>
-  <a href="membros.html"><span class="idx">06</span>Membros</a>
-  <a href="noticias.html"><span class="idx">07</span>Notícias</a>
-  <a href="galeria.html"><span class="idx">08</span>Galeria</a>
-  <a href="faq.html"><span class="idx">09</span>FAQ</a>
-  <a href="contactos.html"><span class="idx">10</span>Contactos</a>
-  <div class="mobile-nav__foot">
-    <a class="btn btn--primary btn--noarrow" href="contactos.html">Fala com a Eclipse</a>
-    <span class="mono">eclipse.extp@gmail.com</span>
+<div class="mmenu" id="mmenu">
+  <nav aria-label="Navegação móvel">
+    <ul class="mmenu__main">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Quem somos</a></li>
+      <li><a href="programa.html">Programa</a></li>
+      <li><a href="equipa.html">Coordenação</a></li>
+      <li><a href="membros.html">Membros</a></li>
+      <li><a href="patrocinadores.html">Patrocinadores</a></li>
+      <li><a href="noticias.html">Notícias</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contactos.html">Contactos</a></li>
+    </ul>
+  </nav>
+  <div class="mmenu__foot">
+    <a class="btn" href="contactos.html">Fala com a Eclipse</a>
+    <p><a href="mailto:eclipse.extp@gmail.com">eclipse.extp@gmail.com</a><a href="https://www.instagram.com/eclipse_extp/" rel="noopener" target="_blank">@eclipse_extp</a></p>
   </div>
-</nav>
+</div>
 
 <main id="main">
 
-  <section class="hero" style="min-height:88dvh;display:flex;align-items:center">
-    <div class="wrap hero__inner">
-      <div class="hero__grid">
-        <div>
-          <span class="kicker">Erro 404</span>
-          <h1 class="mt-2">Esta página<br>já mudou de sala<span class="accent">.</span></h1>
-          <p class="hero__lede mt-3">O endereço que procuras não existe ou foi movido. Não faz mal — acontece. Escolhe um dos caminhos abaixo e continuamos a conversa.</p>
-          <div class="hero__actions">
-            <a class="btn btn--primary btn--lg" href="index.html">Voltar ao início</a>
-            <a class="btn btn--ghost btn--lg" href="programa.html">Ver o programa</a>
-          </div>
-        </div>
-        <div class="hero__medallion" aria-hidden="true">
-          <img src="assets/img/eclipse-square.png" alt="" width="420" height="420">
-        </div>
+  <section class="endpage">
+    <span class="shoot" aria-hidden="true"></span>
+    <div class="endpage__eclipse" aria-hidden="true"><img src="assets/img/fotos/eclipse-anel-de-diamante.jpg" alt="" width="1500" height="1500"></div>
+    <div class="w">
+      <h1 class="lines"><span class="split-line" style="--i:0"><span>Esta página</span></span> <span class="split-line" style="--i:1"><span>já mudou de sala<i class="star star--twinkle" aria-hidden="true"></i></span></span></h1>
+      <p class="lead rv">O endereço que procuras não existe ou foi movido. Não faz mal, acontece. Escolhe um dos caminhos abaixo e continuamos a conversa.</p>
+      <div class="actions rv">
+        <a class="btn btn--sun" href="index.html">Voltar ao início <span class="ar" aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost" href="programa.html">Ver o programa</a>
       </div>
-    </div>
-  </section>
-
-  <section class="section section--tight">
-    <div class="wrap">
-      <h2 class="mb-3">Talvez procurasses</h2>
-      <div class="grid grid--4">
-        <a class="card" href="sobre.html"><h4>Quem somos</h4><p class="muted mt-1">A história e os princípios da Eclipse.</p></a>
-        <a class="card" href="programa.html"><h4>Programa</h4><p class="muted mt-1">Oito eixos, vinte propostas.</p></a>
-        <a class="card" href="noticias.html"><h4>Notícias</h4><p class="muted mt-1">Agenda e diário de campanha.</p></a>
-        <a class="card" href="contactos.html"><h4>Contactos</h4><p class="muted mt-1">Envia uma proposta ou dúvida.</p></a>
-      </div>
+      <nav class="index" aria-label="Talvez procurasses">
+        <a href="sobre.html"><strong>Quem somos</strong><span class="n">A história e os princípios da Eclipse.</span><span class="ar" aria-hidden="true">↘</span></a>
+        <a href="programa.html"><strong>Programa</strong><span class="n">Oito eixos, vinte propostas.</span><span class="ar" aria-hidden="true">↘</span></a>
+        <a href="noticias.html"><strong>Notícias</strong><span class="n">Agenda e diário de campanha.</span><span class="ar" aria-hidden="true">↘</span></a>
+        <a href="contactos.html"><strong>Contactos</strong><span class="n">Envia uma proposta ou dúvida.</span><span class="ar" aria-hidden="true">↘</span></a>
+      </nav>
+      <p class="credit mt-3">Eclipse total do Sol de 21 de agosto de 2017. Fotografia: <a href="https://commons.wikimedia.org/wiki/File:2017_Total_Solar_Eclipse_(NHQ201708210102).jpg" rel="noopener" target="_blank">NASA/Aubrey Gemignani</a>, domínio público.</p>
     </div>
   </section>
 
 </main>
 
 <footer class="site-footer">
-  <div class="wrap">
-    <div class="site-footer__bottom" style="border-top:1px solid var(--line-ink)">
-      <p>© <span data-year>2026</span> Eclipse — Associação de Estudantes do Externato de Penafirme.</p>
-      <div class="site-footer__bottom-links">
-        <a href="privacidade.html">Política de Privacidade</a>
-        <a href="termos.html">Termos de Utilização</a>
-        <a href="#" data-open-cookie>Cookies</a>
+  <div class="w">
+    <div class="ft-top">
+      <div class="ft-pitch">
+        <p>Vota E. Vota Eclipse<i class="star" aria-hidden="true"></i></p>
+        <p class="ft-sub">Lista E às eleições da Associação de Estudantes do Externato de Penafirme. Recebe o essencial da campanha por email, no máximo duas vezes por mês. Sem spam.</p>
+        <form class="newsletter" action="https://formsubmit.co/ajax/b27be4651bf7003b8eaa9fe9e6ee7276" method="POST" data-ajax>
+          <input type="hidden" name="_subject" value="Nova subscrição da newsletter — Eclipse">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+          <label class="visually-hidden" for="news-email">Email</label>
+          <input id="news-email" type="email" name="email" placeholder="o.teu@email.pt" autocomplete="email" required>
+          <button class="btn btn--sun" type="submit">Subscrever</button>
+        </form>
+        <p class="form-status" role="status" tabindex="-1"></p>
+      </div>
+      <div class="ft-col">
+        <h2>A lista</h2>
+        <ul>
+          <li><a href="sobre.html">Quem somos</a></li>
+          <li><a href="programa.html">Programa</a></li>
+          <li><a href="equipa.html">Coordenação</a></li>
+          <li><a href="membros.html">Membros</a></li>
+          <li><a href="patrocinadores.html">Patrocinadores</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h2>Campanha</h2>
+        <ul>
+          <li><a href="noticias.html">Notícias e agenda</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="faq.html">Perguntas frequentes</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h2>Fala connosco</h2>
+        <ul>
+          <li><a href="mailto:eclipse.extp@gmail.com">eclipse.extp@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/eclipse_extp/" rel="noopener" target="_blank">Instagram @eclipse_extp</a></li>
+        </ul>
+        <div class="ft-social mt-2">
+          <a href="https://www.instagram.com/eclipse_extp/" aria-label="Instagram da Eclipse" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="mailto:eclipse.extp@gmail.com" aria-label="Email da Eclipse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+        </div>
       </div>
     </div>
+    <div class="ft-word" aria-hidden="true"><img src="assets/img/eclipse-logo.svg" alt="" width="999" height="553" loading="lazy"></div>
+    <div class="ft-bottom">
+      <p>© <span data-year>2026</span> Eclipse — Lista E à Associação de Estudantes do Externato de Penafirme.</p>
+      <ul>
+        <li><a href="privacidade.html">Política de Privacidade</a></li>
+        <li><a href="termos.html">Termos de Utilização</a></li>
+        <li><a href="#" data-open-cookie>Preferências de cookies</a></li>
+      </ul>
+    </div>
+    <p class="ft-note">Página informativa de campanha estudantil. O domínio é demonstrativo e os contactos são de exemplo enquanto decorre o período eleitoral.</p>
   </div>
 </footer>
 
-<button class="to-top" type="button" aria-label="Voltar ao topo">
-  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
-</button>
+<div class="dock" data-dock>
+  <a class="btn btn--sun" href="programa.html">Ler o programa <span class="ar" aria-hidden="true">→</span></a>
+  <a class="dock__mail" href="contactos.html" aria-label="Contactar a Eclipse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+</div>
 
 <aside class="cookie" id="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-hidden="true">
   <h4 id="cookie-title">A tua privacidade</h4>
   <p>Usamos cookies essenciais para o site funcionar. Com o teu consentimento, usamos também medição de audiência e preferências para o melhorar. Podes aceitar, recusar ou escolher ao detalhe. Sabe mais na <a href="privacidade.html">Política de Privacidade</a>.</p>
   <div class="cookie__actions">
-    <button class="btn btn--primary btn--sm btn--noarrow" id="cookie-accept" type="button">Aceitar todos</button>
-    <button class="btn btn--ghost-ink btn--sm btn--noarrow" id="cookie-reject" type="button">Recusar não essenciais</button>
-    <button class="btn btn--ghost-ink btn--sm btn--noarrow" id="cookie-open-prefs" type="button">Escolher preferências</button>
+    <button class="btn" id="cookie-accept" type="button">Aceitar todos</button>
+    <button class="btn btn--ghost" id="cookie-reject" type="button">Recusar não essenciais</button>
+    <button class="btn btn--ghost" id="cookie-open-prefs" type="button">Escolher preferências</button>
   </div>
   <div class="cookie__prefs" id="cookie-prefs">
     <label class="cookie__pref"><input type="checkbox" checked disabled> <span><b>Essenciais</b> — necessários ao funcionamento e à segurança do site. Não podem ser desativados.</span></label>
     <label class="cookie__pref"><input type="checkbox" id="pref-analytics"> <span><b>Medição de audiência</b> — estatísticas anónimas sobre visitas, para percebermos o que é útil.</span></label>
     <label class="cookie__pref"><input type="checkbox" id="pref-preferences"> <span><b>Preferências</b> — guardar escolhas como o idioma ou a aceitação de cookies.</span></label>
     <div class="cookie__actions">
-      <button class="btn btn--ink btn--sm btn--noarrow" id="cookie-save" type="button">Guardar escolhas</button>
+      <button class="btn" id="cookie-save" type="button">Guardar escolhas</button>
     </div>
   </div>
 </aside>
 
+<script src="assets/js/config.js" defer></script>
 <script src="assets/js/site.js" defer></script>
 </body>
 </html>

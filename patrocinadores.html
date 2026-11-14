@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-PT">
 <head>
   <meta charset="utf-8">
@@ -20,199 +20,160 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#070c22">
+  <meta name="theme-color" content="#060a1f">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <script>document.documentElement.classList.add("js");</script>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,100..125,400..800;1,100..125,400..800&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__ecl)document.documentElement.classList.remove("js")},3000);</script>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
 <a class="skip-link" href="#main">Saltar para o conteúdo principal</a>
+<div class="progress" aria-hidden="true"></div>
 
-<header class="site-header">
-  <div class="site-header__inner">
+<header class="hdr" data-hdr>
+  <div class="w hdr__in">
     <a class="brand" href="index.html" aria-label="Eclipse, página inicial">
-      <img class="brand__logo" src="assets/img/eclipse-logo.png" alt="Eclipse — Associação de Estudantes do Externato de Penafirme" height="42">
+      <img class="brand__logo brand__logo--sky" src="assets/img/eclipse-logo.svg" alt="Eclipse" width="90" height="50">
+      <img class="brand__logo brand__logo--ink" src="assets/img/eclipse-logo-ink.svg" alt="" width="90" height="50">
     </a>
     <nav class="nav" aria-label="Navegação principal">
-      <a href="index.html">Início</a>
       <a href="sobre.html">Quem somos</a>
       <a href="programa.html">Programa</a>
-      <a href="patrocinadores.html" aria-current="page">Patrocinadores</a>
       <a href="equipa.html">Coordenação</a>
       <a href="membros.html">Membros</a>
+      <a href="patrocinadores.html" aria-current="page">Patrocinadores</a>
       <a href="noticias.html">Notícias</a>
       <a href="galeria.html">Galeria</a>
       <a href="faq.html">FAQ</a>
-      <a href="contactos.html">Contactos</a>
     </nav>
-    <div class="header-actions">
-      <a class="btn btn--primary btn--sm header-cta" href="contactos.html">Fala com a Eclipse</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu de navegação"><span></span></button>
+    <div class="hdr__end">
+      <a class="btn btn--sun btn--sm" href="contactos.html">Fala connosco</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mmenu" aria-label="Abrir menu de navegação"><span></span><span></span></button>
     </div>
   </div>
 </header>
 
-<nav class="mobile-nav" id="mobile-nav" aria-label="Navegação móvel">
-  <a href="index.html"><span class="idx">01</span>Início</a>
-  <a href="sobre.html"><span class="idx">02</span>Quem somos</a>
-  <a href="programa.html"><span class="idx">03</span>Programa</a>
-  <a href="patrocinadores.html" aria-current="page"><span class="idx">04</span>Patrocinadores</a>
-  <a href="equipa.html"><span class="idx">05</span>Coordenação</a>
-  <a href="membros.html"><span class="idx">06</span>Membros</a>
-  <a href="noticias.html"><span class="idx">07</span>Notícias</a>
-  <a href="galeria.html"><span class="idx">08</span>Galeria</a>
-  <a href="faq.html"><span class="idx">09</span>FAQ</a>
-  <a href="contactos.html"><span class="idx">10</span>Contactos</a>
-  <div class="mobile-nav__foot">
-    <a class="btn btn--primary btn--noarrow" href="contactos.html">Fala com a Eclipse</a>
-    <span class="mono">eclipse.extp@gmail.com</span>
+<div class="mmenu" id="mmenu">
+  <nav aria-label="Navegação móvel">
+    <ul class="mmenu__main">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Quem somos</a></li>
+      <li><a href="programa.html">Programa</a></li>
+      <li><a href="equipa.html">Coordenação</a></li>
+      <li><a href="membros.html">Membros</a></li>
+      <li><a href="patrocinadores.html" aria-current="page">Patrocinadores</a></li>
+      <li><a href="noticias.html">Notícias</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contactos.html">Contactos</a></li>
+    </ul>
+  </nav>
+  <div class="mmenu__foot">
+    <a class="btn" href="contactos.html">Fala com a Eclipse</a>
+    <p><a href="mailto:eclipse.extp@gmail.com">eclipse.extp@gmail.com</a><a href="https://www.instagram.com/eclipse_extp/" rel="noopener" target="_blank">@eclipse_extp</a></p>
   </div>
-</nav>
+</div>
 
 <main id="main">
 
-  <section class="page-hero">
-    <img class="page-hero__mark" src="assets/img/eclipse-logo.png" alt="" aria-hidden="true">
-    <div class="wrap page-hero__inner">
-      <ol class="crumbs">
-        <li><a href="index.html">Início</a></li>
-        <li aria-current="page">Patrocinadores</li>
-      </ol>
-      <span class="kicker mt-2">Patrocinadores</span>
-      <h1>Com quem contamos</h1>
-      <p class="lede">Uma lista estudantil não se faz só com alunos. Aqui ficam as entidades e pessoas que apoiam a Eclipse — e aquilo que esse apoio torna possível.</p>
+  <section class="phero">
+    <span class="shoot" aria-hidden="true"></span>
+    <img class="phero__mark" src="assets/img/eclipse-mark.svg" alt="" width="749" height="553">
+    <div class="w">
+      <nav aria-label="Caminho de navegação"><ol class="crumbs"><li><a href="index.html">Início</a></li><li aria-current="page">Patrocinadores</li></ol></nav>
+      <h1 class="lines"><span class="split-line" style="--i:0"><span>Com quem</span></span> <span class="split-line" style="--i:1"><span>contamos</span></span></h1>
+      <p class="lead rv">Uma lista estudantil não se faz só com alunos. Aqui ficam as entidades e pessoas que apoiam a Eclipse, e aquilo que esse apoio torna possível.</p>
     </div>
   </section>
 
-  <section class="section">
-    <div class="wrap">
-      <div class="sec-head sec-head--split">
-        <div data-reveal>
-          <span class="kicker">Porquê</span>
-          <h2 class="mt-2">Apoio transparente, do princípio ao fim.</h2>
-        </div>
-        <p class="lede" data-reveal data-reveal-delay="1">Cada patrocínio é registado e explicado: a quem pedimos, para quê e onde foi usado. Preferimos poucos apoios bem contados a uma lista comprida e vaga.</p>
+  <section class="sec sec--paper sec--tight">
+    <div class="w">
+      <div class="duo">
+        <h2 class="statement rv">Apoio transparente, do princípio ao fim.</h2>
+        <p class="lead rv">Cada patrocínio é registado e explicado: a quem pedimos, para quê e onde foi usado. Preferimos poucos apoios bem contados a uma lista comprida e vaga.</p>
       </div>
     </div>
   </section>
 
-  <section class="section section--paper-2">
-    <div class="wrap">
-      <div class="sec-head sec-head--split">
-        <div data-reveal>
-          <span class="kicker">Quem nos apoia</span>
-          <h2 class="mt-2">Os nossos patrocinadores.</h2>
-        </div>
-        <p class="lede" data-reveal data-reveal-delay="1">Cada bloco abaixo representa um patrocínio, com o tipo de apoio e o que ele permite fazer. Os espaços ainda em aberto ficam sinalizados.</p>
+  <section class="sec sec--mist">
+    <div class="w">
+      <div class="sec-head">
+        <h2 class="lines"><span class="split-line" style="--i:0"><span>Os nossos</span></span> <span class="split-line" style="--i:1"><span>patrocinadores.</span></span></h2>
+        <p class="lead rv">Cada bloco representa um patrocínio. Clica para conhecer o negócio e saber como nos apoia.</p>
       </div>
-      <div class="grid grid--3 mt-3">
-        <a class="card card--link" href="patrocinador-06.html" data-reveal><div class="card__logo card__logo--dark"><img src="assets/img/galeria/westsites.png" alt="Logótipo da WestSites"  loading="lazy"></div><h3>WestSites</h3><p class="mono" style="color:var(--muted-2)">Tipo de apoio: Apoio técnico</p><p>Estúdio de websites que apoia a nossa presença digital.</p><span class="card__more">Ver patrocinador <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a><a class="card card--link" href="patrocinador-01.html" data-reveal>
-          <div class="card__logo"><img src="assets/img/galeria/valluz.jpg" alt="Logótipo da Valluz Soluções" loading="lazy"></div>
-          <h3>Valluz Soluções</h3>
-          <p class="mono" style="color:var(--muted-2)">Tipo de apoio: A anunciar</p>
-          <p>Em breve.</p>
-          <span class="card__more">Ver patrocinador <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      <div class="cards">
+        <a class="card card--link rv" href="patrocinador-06.html">
+          <div class="card__logo card__logo--dark logo--strip"><img src="assets/img/galeria/westsites.png" alt="Logótipo da WestSites" loading="lazy"></div>
+          <h3>WestSites</h3>
+          <p class="card__type">Tipo de apoio: Apoio técnico</p>
+          <p>Estúdio de websites que apoia a nossa presença digital.</p>
+          <span class="card__more">Ver patrocinador <span class="ar" aria-hidden="true">→</span></span>
         </a>
-        <a class="card card--link" href="patrocinador-02.html" data-reveal data-reveal-delay="1">
+        <a class="card card--link rv" href="patrocinador-01.html">
+          <div class="card__logo" style="background-color:#20448e"><img src="assets/img/galeria/valluz.jpg" alt="Logótipo da Valluz Soluções" loading="lazy"></div>
+          <h3>Valluz Soluções</h3>
+          <!-- A preencher: tipo de apoio (xxxxxxxxxxxxxxxxxxxxxxx) -->
+          <p>Apoia a lista Eclipse.</p>
+          <span class="card__more">Ver patrocinador <span class="ar" aria-hidden="true">→</span></span>
+        </a>
+        <a class="card card--link rv" href="patrocinador-02.html">
           <div class="card__logo"><img src="assets/img/galeria/futourism.jpeg" alt="Logótipo da Futourism" loading="lazy"></div>
           <h3>Futourism</h3>
-          <p class="mono" style="color:var(--muted-2)">Tipo de apoio: A anunciar</p>
-          <p>Em breve.</p>
-          <span class="card__more">Ver patrocinador <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          <!-- A preencher: tipo de apoio (xxxxxxxxxxxxxxxxxxxxxxx) -->
+          <p>Apoia a lista Eclipse.</p>
+          <span class="card__more">Ver patrocinador <span class="ar" aria-hidden="true">→</span></span>
         </a>
-        <a class="card card--link" href="patrocinador-03.html" data-reveal data-reveal-delay="2">
-          <div class="card__logo"><img src="assets/img/galeria/tasquinhadarita.webp" alt="Logótipo da Tasquinha da Rita" loading="lazy"></div>
+        <a class="card card--link rv" href="patrocinador-03.html">
+          <div class="card__logo" style="background-color:#fcf6eb"><img src="assets/img/galeria/tasquinhadarita.webp" alt="Logótipo da Tasquinha da Rita" loading="lazy"></div>
           <h3>Tasquinha da Rita</h3>
-          <p class="mono" style="color:var(--muted-2)">Tipo de apoio: A anunciar</p>
+          <!-- A preencher: tipo de apoio (xxxxxxxxxxxxxxxxxxxxxxx) -->
           <p>Cozinha tradicional portuguesa e petiscos, em A dos Cunhados (Torres Vedras).</p>
-          <span class="card__more">Ver patrocinador <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          <span class="card__more">Ver patrocinador <span class="ar" aria-hidden="true">→</span></span>
         </a>
-        <a class="card card--link" href="patrocinador-04.html" data-reveal>
+        <a class="card card--link rv" href="patrocinador-04.html">
           <div class="card__logo card__logo--dark"><img src="assets/img/galeria/360surfschool.webp" alt="Logótipo da 360 Surfschool" loading="lazy"></div>
           <h3>360 Surfschool</h3>
-          <p class="mono" style="color:var(--muted-2)">Tipo de apoio: A anunciar</p>
+          <!-- A preencher: tipo de apoio (xxxxxxxxxxxxxxxxxxxxxxx) -->
           <p>Escola de surf com alojamento, em A dos Cunhados e na praia de Santa Cruz.</p>
-          <span class="card__more">Ver patrocinador <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          <span class="card__more">Ver patrocinador <span class="ar" aria-hidden="true">→</span></span>
         </a>
-        <a class="card card--link" href="patrocinador-05.html" data-reveal data-reveal-delay="1">
-          <div class="card__logo"><img src="assets/img/galeria/higiapadel.png" alt="Logótipo do Higia Padel Club" loading="lazy"></div>
+        <a class="card card--link rv" href="patrocinador-05.html">
+          <div class="card__logo" style="background-color:#0f0f0f"><img src="assets/img/galeria/higiapadel.png" alt="Logótipo do Higia Padel Club" loading="lazy"></div>
           <h3>Higia Padel Club</h3>
-          <p class="mono" style="color:var(--muted-2)">Tipo de apoio: A anunciar</p>
+          <!-- A preencher: tipo de apoio (xxxxxxxxxxxxxxxxxxxxxxx) -->
           <p>Clube de padel em Torres Vedras, com campos interiores, bar, loja e ginásio.</p>
-          <span class="card__more">Ver patrocinador <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          <span class="card__more">Ver patrocinador <span class="ar" aria-hidden="true">→</span></span>
         </a>
-        <a class="card card--link" href="patrocinador-06.html" data-reveal data-reveal-delay="2">
-          <div class="card__logo card__logo--empty" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div>
-          <h3>A anunciar</h3>
-          <p class="mono" style="color:var(--muted-2)">Tipo de apoio: A anunciar</p>
-          <p>Em breve.</p>
-          <span class="card__more">Ver patrocinador <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-        </a>
-        <a class="card card--link" href="patrocinador-07.html" data-reveal>
-          <div class="card__logo card__logo--empty" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></div>
-          <h3>A anunciar</h3>
-          <p class="mono" style="color:var(--muted-2)">Tipo de apoio: A anunciar</p>
-          <p>Em breve.</p>
-          <span class="card__more">Ver patrocinador <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-        </a>
-        <a class="card card--link" href="patrocinador-08.html" data-reveal data-reveal-delay="1">
-          <div class="card__logo card__logo--empty" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></svg></div>
-          <h3>A anunciar</h3>
-          <p class="mono" style="color:var(--muted-2)">Tipo de apoio: A anunciar</p>
-          <p>Em breve.</p>
-          <span class="card__more">Ver patrocinador <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-        </a>
-        <a class="card card--link" href="patrocinador-09.html" data-reveal data-reveal-delay="2">
-          <div class="card__logo card__logo--empty" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7 9 18l-5-5"/></svg></div>
-          <h3>A anunciar</h3>
-          <p class="mono" style="color:var(--muted-2)">Tipo de apoio: A anunciar</p>
-          <p>Em breve.</p>
-          <span class="card__more">Ver patrocinador <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-        </a>
-        <a class="card card--link" href="patrocinador-10.html" data-reveal>
-          <div class="card__logo card__logo--empty" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div>
-          <h3>A anunciar</h3>
-          <p class="mono" style="color:var(--muted-2)">Tipo de apoio: A anunciar</p>
-          <p>Em breve.</p>
-          <span class="card__more">Ver patrocinador <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-        </a>
-        <a class="card card--link" href="patrocinador-11.html" data-reveal data-reveal-delay="1">
-          <div class="card__logo card__logo--empty" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M5 7h14l-2 5 2 5H5l2-5-2-5Z"/></svg></div>
-          <h3>A anunciar</h3>
-          <p class="mono" style="color:var(--muted-2)">Tipo de apoio: A anunciar</p>
-          <p>Em breve.</p>
-          <span class="card__more">Ver patrocinador <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
-        </a>
+      </div>
+      <div class="card card--sun mt-3 rv">
+        <h3>Este espaço pode ser teu</h3>
+        <p>Ainda há lugar para mais apoios. Se representas uma entidade local, explicamos-te para que servem e como são comunicados.</p>
+        <p class="mt-2"><a class="link" href="contactos.html">Falar sobre patrocínio <span class="ar" aria-hidden="true">→</span></a></p>
       </div>
     </div>
   </section>
 
-  <section class="section section--ink texture-dots">
-    <div class="wrap">
-      <div class="sec-head sec-head--split">
-        <div data-reveal>
-          <span class="kicker">Como funciona</span>
-          <h2 class="mt-2">Regras claras,<br>antes de qualquer apoio.</h2>
-        </div>
-        <p class="lede" data-reveal data-reveal-delay="1">Antes de aceitar um patrocínio, sabemos exatamente o que pedimos, para que serve e como vamos explicá-lo a quem vota.</p>
+  <section class="sec sec--ink sec--stars" data-tiles>
+    <span class="orb orb--a" aria-hidden="true"></span>
+    <span class="orb orb--b" aria-hidden="true"></span>
+    <div class="w">
+      <div class="sec-head">
+        <h2 class="lines"><span class="split-line" style="--i:0"><span>Regras claras, antes</span></span> <span class="split-line" style="--i:1"><span>de qualquer apoio.</span></span></h2>
+        <p class="lead rv">Antes de aceitar um patrocínio, sabemos exatamente o que pedimos, para que serve e como vamos explicá-lo a quem vota.</p>
       </div>
-      <div class="grid grid--3 mt-3">
-        <article class="card card--ink" data-reveal>
-          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg></div>
+      <div class="features features--3">
+        <article class="feature rv">
           <h3>Sem contrapartidas escondidas</h3>
           <p>Não aceitamos apoios que condicionem decisões da associação ou que comprem visibilidade indevida durante a campanha.</p>
         </article>
-        <article class="card card--ink" data-reveal data-reveal-delay="1">
-          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 9h8"/><path d="M8 13h5"/></svg></div>
+        <article class="feature rv">
           <h3>Tudo registado</h3>
-          <p>Cada contributo — dinheiro, material ou serviço — fica anotado com data e finalidade, num registo que qualquer aluno pode consultar.</p>
+          <p>Cada contributo, seja dinheiro, material ou serviço, fica anotado com data e finalidade, num registo que qualquer aluno pode consultar.</p>
         </article>
-        <article class="card card--ink" data-reveal data-reveal-delay="2">
-          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15h4"/><path d="M7 11h10"/><path d="M7 7h7"/></svg></div>
+        <article class="feature rv">
           <h3>Prestação de contas</h3>
           <p>No fim de cada semestre mostramos como o apoio foi usado. Se algo não correr como planeado, somos os primeiros a dizê-lo.</p>
         </article>
@@ -220,19 +181,13 @@
     </div>
   </section>
 
-  <section class="section section--tight">
-    <div class="wrap">
-      <div class="cta-band" data-reveal>
-        <img class="cta-band__logo" src="assets/img/eclipse-logo.png" alt="" aria-hidden="true">
-        <div style="position:relative;z-index:1">
-          <span class="kicker">Queres apoiar?</span>
-          <h2 class="mt-2">Fala connosco<br>sobre patrocínio.</h2>
-          <p>Se representas uma entidade local e queres apoiar a Eclipse, escreve-nos. Explicamos para que servem os apoios e como são comunicados.</p>
-          <div class="hero__actions">
-            <a class="btn btn--primary btn--lg" href="mailto:eclipse.extp@gmail.com">Enviar email</a>
-            <a class="btn btn--ghost btn--lg" href="contactos.html">Ver contactos</a>
-          </div>
-        </div>
+  <section class="cta" data-tiles>
+    <div class="w">
+      <div class="cta__card rv">
+        <svg class="mark mark-anim cta__mark" viewBox="250 0 749 553" aria-hidden="true" focusable="false"><path class="m-arc m-arc--a" d="M512.2 35.9 494.7 37.1 473.7 40 443.7 47.2 405.8 61.1 375.7 76.8 347.3 96.2 325.2 115.2 309.1 132.3 300.8 142.9 283.3 169.6 300.4 148 320 127.4 343.5 108 368.2 92.2 390.7 81 417.3 71 446.5 64 475.3 60.8 496 60.9 530.5 65 561.3 73 584.3 82 614.6 98.2 635.8 113.2 656.4 133.8 678.4 161.1 688 165.7 698.2 168.7 701 168.7 705.5 166.5 713.5 160.3 718 155 723.6 143.5 725.3 137.5 715.6 124.2 695.5 103 679.5 89.1 667.8 80.6 651.7 70.5 631.7 60.1 610 51.2 594.3 46.2 573.8 41.1 555.2 38 532.5 36Z"/><path class="m-arc m-arc--b" d="M725 362.2 708.7 396.3 696.8 415.3 688 427.3 677.8 439.6 656.9 460.5 635.6 477.7 606.3 495.8 592.2 502.8 572.3 510.8 536 520.9 504.3 525 476.2 525 463.8 524 434.3 518.8 399.5 507.8 366.3 491.6 338 472.5 323.5 460 304.2 440.8 285 417.3 267.1 388.8 275.3 406.5 284.6 422.7 296.3 439.7 309.5 455.8 336.7 482 368.2 504.5 386.3 514.6 405.5 523.6 440.5 535.7 458.3 539.8 485.8 543.7 520.2 544.6 543.5 542.8 571.7 537.7 593.3 531.7 610 525.7 626.7 518.5 652.7 504.4 667.7 494.5 687.2 479.1 709.9 456.3 727.4 433.7 744.7 403.5 756.7 373.7 759.6 363.7 759.2 362.2Z"/><path class="m-star" d="M744 9C746.2 177.3 764.9 191.2 990 191C764.9 194.3 746.2 206.5 744 352C742.3 206.5 727.7 194.7 552 196C727.7 191.6 742.3 177.4 744 9Z"/></svg>
+        <h2>Fala connosco <br>sobre patrocínio.</h2>
+        <p class="lead">Se representas uma entidade local e queres apoiar a Eclipse, escreve-nos. Explicamos para que servem os apoios e como são comunicados.</p>
+        <div class="actions"><a class="btn btn--sun" href="mailto:eclipse.extp@gmail.com">Enviar email <span class="ar" aria-hidden="true">→</span></a><a class="btn btn--ghost" href="contactos.html">Ver contactos</a></div>
       </div>
     </div>
   </section>
@@ -240,91 +195,90 @@
 </main>
 
 <footer class="site-footer">
-  <div class="wrap">
-    <div class="site-footer__top">
-      <div class="site-footer__brand">
-        <a class="brand" href="index.html" aria-label="Eclipse, página inicial">
-          <img class="brand__logo" src="assets/img/eclipse-logo.png" alt="Eclipse — Associação de Estudantes do Externato de Penafirme" height="42">
-        </a>
-        <p>Lista concorrente à Associação de Estudantes do Externato de Penafirme. Ligamos alunos, ideias e vontades — com um programa a sério e contas transparentes.</p>
-        <div class="site-footer__social">
-          <a href="https://www.instagram.com/eclipse_extp/" aria-label="Instagram da Eclipse" rel="noopener" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>
-          </a>
-          <a href="mailto:eclipse.extp@gmail.com" aria-label="Email da Eclipse">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-          </a>
-        </div>
-      </div>
-      <div>
-        <h4>A lista</h4>
-        <nav class="site-footer__links" aria-label="Ligações da lista">
-          <a href="sobre.html">Quem somos</a>
-          <a href="programa.html">Programa</a>
-          <a href="equipa.html">Coordenação</a>
-          <a href="membros.html">Membros</a>
-          <a href="noticias.html">Notícias</a>
-          <a href="patrocinadores.html">Patrocinadores</a>
-        </nav>
-      </div>
-      <div>
-        <h4>Recursos</h4>
-        <nav class="site-footer__links" aria-label="Recursos">
-          <a href="galeria.html">Galeria</a>
-          <a href="faq.html">Perguntas frequentes</a>
-          <a href="contactos.html">Contactos</a>
-          <a href="#" data-open-cookie>Preferências de cookies</a>
-        </nav>
-      </div>
-      <div>
-        <h4>Fica a par</h4>
-        <p style="color:rgba(169,216,240,.72);font-size:.92rem;margin-bottom:.6rem">Recebe, no máximo duas vezes por mês, o essencial da campanha. Sem spam.</p>
+  <div class="w">
+    <div class="ft-top">
+      <div class="ft-pitch">
+        <p>Vota E. Vota Eclipse<i class="star" aria-hidden="true"></i></p>
+        <p class="ft-sub">Lista E às eleições da Associação de Estudantes do Externato de Penafirme. Recebe o essencial da campanha por email, no máximo duas vezes por mês. Sem spam.</p>
         <form class="newsletter" action="https://formsubmit.co/ajax/b27be4651bf7003b8eaa9fe9e6ee7276" method="POST" data-ajax>
           <input type="hidden" name="_subject" value="Nova subscrição da newsletter — Eclipse">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
-          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
           <label class="visually-hidden" for="news-email">Email</label>
-          <input id="news-email" type="email" name="email" placeholder="o.teu@email.pt" required>
-          <button class="btn btn--sky btn--noarrow" type="submit">Subscrever</button>
+          <input id="news-email" type="email" name="email" placeholder="o.teu@email.pt" autocomplete="email" required>
+          <button class="btn btn--sun" type="submit">Subscrever</button>
         </form>
         <p class="form-status" role="status" tabindex="-1"></p>
       </div>
-    </div>
-    <div class="site-footer__bottom">
-      <p>© <span data-year>2026</span> Eclipse — Associação de Estudantes do Externato de Penafirme.</p>
-      <div class="site-footer__bottom-links">
-        <a href="privacidade.html">Política de Privacidade</a>
-        <a href="termos.html">Termos de Utilização</a>
-        <a href="#" data-open-cookie>Cookies</a>
+      <div class="ft-col">
+        <h2>A lista</h2>
+        <ul>
+          <li><a href="sobre.html">Quem somos</a></li>
+          <li><a href="programa.html">Programa</a></li>
+          <li><a href="equipa.html">Coordenação</a></li>
+          <li><a href="membros.html">Membros</a></li>
+          <li><a href="patrocinadores.html">Patrocinadores</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h2>Campanha</h2>
+        <ul>
+          <li><a href="noticias.html">Notícias e agenda</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="faq.html">Perguntas frequentes</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h2>Fala connosco</h2>
+        <ul>
+          <li><a href="mailto:eclipse.extp@gmail.com">eclipse.extp@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/eclipse_extp/" rel="noopener" target="_blank">Instagram @eclipse_extp</a></li>
+        </ul>
+        <div class="ft-social mt-2">
+          <a href="https://www.instagram.com/eclipse_extp/" aria-label="Instagram da Eclipse" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="mailto:eclipse.extp@gmail.com" aria-label="Email da Eclipse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+        </div>
       </div>
     </div>
-    <p style="color:rgba(169,216,240,.42);font-size:.78rem;padding-bottom:1.6rem;max-width:80ch">Página informativa de campanha estudantil. O domínio é demonstrativo e os contactos são de exemplo enquanto decorre o período eleitoral.</p>
+    <div class="ft-word" aria-hidden="true"><img src="assets/img/eclipse-logo.svg" alt="" width="999" height="553" loading="lazy"></div>
+    <div class="ft-bottom">
+      <p>© <span data-year>2026</span> Eclipse — Lista E à Associação de Estudantes do Externato de Penafirme.</p>
+      <ul>
+        <li><a href="privacidade.html">Política de Privacidade</a></li>
+        <li><a href="termos.html">Termos de Utilização</a></li>
+        <li><a href="#" data-open-cookie>Preferências de cookies</a></li>
+      </ul>
+    </div>
+    <p class="ft-note">Página informativa de campanha estudantil. O domínio é demonstrativo e os contactos são de exemplo enquanto decorre o período eleitoral.</p>
   </div>
 </footer>
 
-<button class="to-top" type="button" aria-label="Voltar ao topo">
-  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
-</button>
+<div class="dock" data-dock>
+  <a class="btn btn--sun" href="programa.html">Ler o programa <span class="ar" aria-hidden="true">→</span></a>
+  <a class="dock__mail" href="contactos.html" aria-label="Contactar a Eclipse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+</div>
 
 <aside class="cookie" id="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-hidden="true">
   <h4 id="cookie-title">A tua privacidade</h4>
   <p>Usamos cookies essenciais para o site funcionar. Com o teu consentimento, usamos também medição de audiência e preferências para o melhorar. Podes aceitar, recusar ou escolher ao detalhe. Sabe mais na <a href="privacidade.html">Política de Privacidade</a>.</p>
   <div class="cookie__actions">
-    <button class="btn btn--primary btn--sm btn--noarrow" id="cookie-accept" type="button">Aceitar todos</button>
-    <button class="btn btn--ghost-ink btn--sm btn--noarrow" id="cookie-reject" type="button">Recusar não essenciais</button>
-    <button class="btn btn--ghost-ink btn--sm btn--noarrow" id="cookie-open-prefs" type="button">Escolher preferências</button>
+    <button class="btn" id="cookie-accept" type="button">Aceitar todos</button>
+    <button class="btn btn--ghost" id="cookie-reject" type="button">Recusar não essenciais</button>
+    <button class="btn btn--ghost" id="cookie-open-prefs" type="button">Escolher preferências</button>
   </div>
   <div class="cookie__prefs" id="cookie-prefs">
     <label class="cookie__pref"><input type="checkbox" checked disabled> <span><b>Essenciais</b> — necessários ao funcionamento e à segurança do site. Não podem ser desativados.</span></label>
     <label class="cookie__pref"><input type="checkbox" id="pref-analytics"> <span><b>Medição de audiência</b> — estatísticas anónimas sobre visitas, para percebermos o que é útil.</span></label>
     <label class="cookie__pref"><input type="checkbox" id="pref-preferences"> <span><b>Preferências</b> — guardar escolhas como o idioma ou a aceitação de cookies.</span></label>
     <div class="cookie__actions">
-      <button class="btn btn--ink btn--sm btn--noarrow" id="cookie-save" type="button">Guardar escolhas</button>
+      <button class="btn" id="cookie-save" type="button">Guardar escolhas</button>
     </div>
   </div>
 </aside>
 
+<script src="assets/js/config.js" defer></script>
 <script src="assets/js/site.js" defer></script>
 </body>
 </html>

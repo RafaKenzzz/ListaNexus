@@ -22,11 +22,11 @@
   <rect x="90" y="614.2857142857143" width="76.57142857142857" height="85.71428571428571" rx="10" fill="#1a4a79" fill-opacity="0.5"/><rect x="90" y="614.2857142857143" width="76.57142857142857" height="8" rx="4" fill="#e0a53e"/><rect x="178.57142857142856" y="528.5714285714286" width="76.57142857142857" height="171.42857142857142" rx="10" fill="#7ec1e8" fill-opacity="0.55"/><rect x="178.57142857142856" y="528.5714285714286" width="76.57142857142857" height="8" rx="4" fill="#e0a53e"/><rect x="267.1428571428571" y="442.8571428571429" width="76.57142857142857" height="257.1428571428571" rx="10" fill="#1a4a79" fill-opacity="0.6"/><rect x="267.1428571428571" y="442.8571428571429" width="76.57142857142857" height="8" rx="4" fill="#e0a53e"/><rect x="355.7142857142857" y="357.14285714285717" width="76.57142857142857" height="342.85714285714283" rx="10" fill="#7ec1e8" fill-opacity="0.65"/><rect x="355.7142857142857" y="357.14285714285717" width="76.57142857142857" height="8" rx="4" fill="#e0a53e"/><rect x="444.2857142857143" y="271.42857142857144" width="76.57142857142857" height="428.57142857142856" rx="10" fill="#1a4a79" fill-opacity="0.7"/><rect x="444.2857142857143" y="271.42857142857144" width="76.57142857142857" height="8" rx="4" fill="#e0a53e"/><rect x="532.8571428571429" y="185.71428571428578" width="76.57142857142857" height="514.2857142857142" rx="10" fill="#7ec1e8" fill-opacity="0.75"/><rect x="532.8571428571429" y="185.71428571428578" width="76.57142857142857" height="8" rx="4" fill="#e0a53e"/><rect x="621.4285714285714" y="100" width="76.57142857142857" height="600" rx="10" fill="#1a4a79" fill-opacity="0.8"/><rect x="621.4285714285714" y="100" width="76.57142857142857" height="8" rx="4" fill="#e0a53e"/>
   <g transform="translate(654.4,40)" opacity="0.9">
     <rect width="105.6" height="105.6" rx="21.119999999999997" fill="none" stroke="#7ec1e8" stroke-width="2" stroke-opacity="0.7"/>
-    <path d="M 24.64 82.72 V 22.880000000000003 L 80.96000000000001 82.72 V 22.880000000000003" fill="none" stroke="#7ec1e8" stroke-width="12.32" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 80.96 22.88 H 24.64 V 82.72 H 80.96 M 24.64 52.8 H 67.44" fill="none" stroke="#7ec1e8" stroke-width="12.32" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   <g font-family="'Space Mono', Consolas, monospace" fill="#a9d8f0" opacity="0.85">
     <text x="40" y="756" font-size="20" letter-spacing="3">QUERMESSE DA ESCOLA</text>
-    <text x="760" y="756" font-size="20" letter-spacing="3" text-anchor="end" fill="#e0a53e">N/11</text>
+    <text x="760" y="756" font-size="20" letter-spacing="3" text-anchor="end" fill="#e0a53e">E/11</text>
   </g>
   <rect x="40" y="722" width="46" height="3" fill="#7ec1e8"/>
 </svg>

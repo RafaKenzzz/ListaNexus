@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-PT">
 <head>
   <meta charset="utf-8">
@@ -20,201 +20,198 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#070c22">
+  <meta name="theme-color" content="#060a1f">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <script>document.documentElement.classList.add("js");</script>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,100..125,400..800;1,100..125,400..800&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__ecl)document.documentElement.classList.remove("js")},3000);</script>
   <link rel="stylesheet" href="assets/css/styles.css">
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {"@type":"Question","name":"O que é a Associação de Estudantes?","acceptedAnswer":{"@type":"Answer","text":"É o órgão que representa os alunos da escola. Organiza atividades, leva as questões dos estudantes à direção e gere um orçamento próprio para projetos e eventos."}},
-      {"@type":"Question","name":"Quem pode votar nas eleições?","acceptedAnswer":{"@type":"Answer","text":"Todos os alunos matriculados no Externato de Penafirme podem votar, apresentando o cartão de estudante no dia da votação."}},
-      {"@type":"Question","name":"Quando e onde é a votação?","acceptedAnswer":{"@type":"Answer","text":"A votação decorre a 29 de outubro de 2026, na biblioteca, das 9h00 às 17h00. O voto é secreto."}},
-      {"@type":"Question","name":"A Eclipse tem apoio da escola?","acceptedAnswer":{"@type":"Answer","text":"A lista é independente e feita por alunos. Qualquer associação eleita trabalha necessariamente em conjunto com a direção, mas as decisões da Eclipse são sempre dos alunos."}},
-      {"@type":"Question","name":"Como é tratada a minha privacidade neste site?","acceptedAnswer":{"@type":"Answer","text":"Recolhemos apenas os dados que nos dás voluntariamente nos formulários, usamos cookies essenciais e só ativamos cookies não essenciais com o teu consentimento. Podes pedir acesso, correção ou eliminação dos teus dados a qualquer momento."}}
-    ]
-  }
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"O que é a Associação de Estudantes?","acceptedAnswer":{"@type":"Answer","text":"É o órgão que representa os alunos da escola. Organiza atividades, leva as questões dos estudantes à direção e gere um orçamento próprio para projetos e eventos."}},
+        {"@type":"Question","name":"Quem pode votar nas eleições?","acceptedAnswer":{"@type":"Answer","text":"Todos os alunos matriculados no Externato de Penafirme podem votar, apresentando o cartão de estudante no dia da votação."}},
+        {"@type":"Question","name":"Quando e onde é a votação?","acceptedAnswer":{"@type":"Answer","text":"A votação decorre a 29 de outubro de 2026, na biblioteca, das 9h00 às 17h00. O voto é secreto."}},
+        {"@type":"Question","name":"A Eclipse tem apoio da escola?","acceptedAnswer":{"@type":"Answer","text":"A lista é independente e feita por alunos. Qualquer associação eleita trabalha necessariamente em conjunto com a direção, mas as decisões da Eclipse são sempre dos alunos."}},
+        {"@type":"Question","name":"Como é tratada a minha privacidade neste site?","acceptedAnswer":{"@type":"Answer","text":"Recolhemos apenas os dados que nos dás voluntariamente nos formulários, usamos cookies essenciais e só ativamos cookies não essenciais com o teu consentimento. Podes pedir acesso, correção ou eliminação dos teus dados a qualquer momento."}}
+      ]
+    }
+
   </script>
 </head>
 <body>
 
 <a class="skip-link" href="#main">Saltar para o conteúdo principal</a>
+<div class="progress" aria-hidden="true"></div>
 
-<header class="site-header">
-  <div class="site-header__inner">
+<header class="hdr" data-hdr>
+  <div class="w hdr__in">
     <a class="brand" href="index.html" aria-label="Eclipse, página inicial">
-      <img class="brand__logo" src="assets/img/eclipse-logo.png" alt="Eclipse — Associação de Estudantes do Externato de Penafirme" height="42">
+      <img class="brand__logo brand__logo--sky" src="assets/img/eclipse-logo.svg" alt="Eclipse" width="90" height="50">
+      <img class="brand__logo brand__logo--ink" src="assets/img/eclipse-logo-ink.svg" alt="" width="90" height="50">
     </a>
     <nav class="nav" aria-label="Navegação principal">
-      <a href="index.html">Início</a>
       <a href="sobre.html">Quem somos</a>
       <a href="programa.html">Programa</a>
-      <a href="patrocinadores.html">Patrocinadores</a>
       <a href="equipa.html">Coordenação</a>
       <a href="membros.html">Membros</a>
+      <a href="patrocinadores.html">Patrocinadores</a>
       <a href="noticias.html">Notícias</a>
       <a href="galeria.html">Galeria</a>
       <a href="faq.html" aria-current="page">FAQ</a>
-      <a href="contactos.html">Contactos</a>
     </nav>
-    <div class="header-actions">
-      <a class="btn btn--primary btn--sm header-cta" href="contactos.html">Fala com a Eclipse</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu de navegação"><span></span></button>
+    <div class="hdr__end">
+      <a class="btn btn--sun btn--sm" href="contactos.html">Fala connosco</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mmenu" aria-label="Abrir menu de navegação"><span></span><span></span></button>
     </div>
   </div>
 </header>
 
-<nav class="mobile-nav" id="mobile-nav" aria-label="Navegação móvel">
-  <a href="index.html"><span class="idx">01</span>Início</a>
-  <a href="sobre.html"><span class="idx">02</span>Quem somos</a>
-  <a href="programa.html"><span class="idx">03</span>Programa</a>
-  <a href="patrocinadores.html"><span class="idx">04</span>Patrocinadores</a>
-  <a href="equipa.html"><span class="idx">05</span>Coordenação</a>
-  <a href="membros.html"><span class="idx">06</span>Membros</a>
-  <a href="noticias.html"><span class="idx">07</span>Notícias</a>
-  <a href="galeria.html"><span class="idx">08</span>Galeria</a>
-  <a href="faq.html" aria-current="page"><span class="idx">09</span>FAQ</a>
-  <a href="contactos.html"><span class="idx">10</span>Contactos</a>
-  <div class="mobile-nav__foot">
-    <a class="btn btn--primary btn--noarrow" href="contactos.html">Fala com a Eclipse</a>
-    <span class="mono">eclipse.extp@gmail.com</span>
+<div class="mmenu" id="mmenu">
+  <nav aria-label="Navegação móvel">
+    <ul class="mmenu__main">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Quem somos</a></li>
+      <li><a href="programa.html">Programa</a></li>
+      <li><a href="equipa.html">Coordenação</a></li>
+      <li><a href="membros.html">Membros</a></li>
+      <li><a href="patrocinadores.html">Patrocinadores</a></li>
+      <li><a href="noticias.html">Notícias</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="faq.html" aria-current="page">FAQ</a></li>
+      <li><a href="contactos.html">Contactos</a></li>
+    </ul>
+  </nav>
+  <div class="mmenu__foot">
+    <a class="btn" href="contactos.html">Fala com a Eclipse</a>
+    <p><a href="mailto:eclipse.extp@gmail.com">eclipse.extp@gmail.com</a><a href="https://www.instagram.com/eclipse_extp/" rel="noopener" target="_blank">@eclipse_extp</a></p>
   </div>
-</nav>
+</div>
 
 <main id="main">
 
-  <section class="page-hero">
-    <img class="page-hero__mark" src="assets/img/eclipse-logo.png" alt="" aria-hidden="true">
-    <div class="wrap page-hero__inner">
-      <ol class="crumbs">
-        <li><a href="index.html">Início</a></li>
-        <li aria-current="page">FAQ</li>
-      </ol>
-      <span class="kicker mt-2">Dúvidas frequentes</span>
-      <h1>Perguntas frequentes</h1>
-      <p class="lede">Reunimos aqui as perguntas que mais nos fazem. Se a tua não estiver respondida, escreve-nos — e acrescentamos.</p>
+  <section class="phero">
+    <span class="shoot" aria-hidden="true"></span>
+    <img class="phero__mark" src="assets/img/eclipse-mark.svg" alt="" width="749" height="553">
+    <div class="w">
+      <nav aria-label="Caminho de navegação"><ol class="crumbs"><li><a href="index.html">Início</a></li><li aria-current="page">Perguntas frequentes</li></ol></nav>
+      <h1 class="lines"><span class="split-line" style="--i:0"><span>Perguntas</span></span> <span class="split-line" style="--i:1"><span>frequentes</span></span></h1>
+      <p class="lead rv">Reunimos aqui as perguntas que mais nos fazem. Se a tua não estiver respondida, escreve-nos, e acrescentamos.</p>
     </div>
   </section>
 
-  <section class="section">
-    <div class="wrap">
-      <div class="grid grid--editorial" style="align-items:start">
-        <div>
-          <div data-reveal>
-            <span class="kicker">As eleições</span>
-            <h2 class="mt-2">Como funciona tudo isto.</h2>
-          </div>
-          <div class="acc mt-3" data-reveal>
-            <div class="acc__item">
-              <h3 style="margin:0"><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="q1" id="q1-btn">O que é a Associação de Estudantes?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-              <div class="acc__panel" id="q1" role="region" aria-labelledby="q1-btn"><div class="acc__panel-inner">É o órgão que representa os alunos da escola. Organiza atividades, leva as questões dos estudantes à direção e gere um orçamento próprio para projetos e eventos. É eleita anualmente por votação dos alunos.</div></div>
-            </div>
-            <div class="acc__item">
-              <h3 style="margin:0"><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="q2" id="q2-btn">Quem pode votar?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-              <div class="acc__panel" id="q2" role="region" aria-labelledby="q2-btn"><div class="acc__panel-inner">Todos os alunos matriculados no Externato de Penafirme, de qualquer ano, apresentando o cartão de estudante no dia da votação. Uma pessoa, um voto.</div></div>
-            </div>
-            <div class="acc__item">
-              <h3 style="margin:0"><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="q3" id="q3-btn">Quando e onde é a votação?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-              <div class="acc__panel" id="q3" role="region" aria-labelledby="q3-btn"><div class="acc__panel-inner">A votação decorre a <strong>29 de outubro de 2026</strong>, na biblioteca, das 9h00 às 17h00. Podes votar em qualquer intervalo ou antes/depois das aulas.</div></div>
-            </div>
-            <div class="acc__item">
-              <h3 style="margin:0"><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="q4" id="q4-btn">O voto é secreto?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-              <div class="acc__panel" id="q4" role="region" aria-labelledby="q4-btn"><div class="acc__panel-inner">Sim. Votas numa cédula em urna fechada, sem qualquer forma de identificar o teu voto. A contagem é feita à frente dos representantes das listas.</div></div>
-            </div>
-          </div>
-
-          <div data-reveal class="mt-4" style="margin-top:clamp(2.6rem,6vw,4rem)">
-            <span class="kicker">A lista e o programa</span>
-            <h2 class="mt-2">O que a Eclipse propõe.</h2>
-          </div>
-          <div class="acc mt-3" data-reveal>
-            <div class="acc__item">
-              <h3 style="margin:0"><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="q5" id="q5-btn">Quem é a Eclipse?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-              <div class="acc__panel" id="q5" role="region" aria-labelledby="q5-btn"><div class="acc__panel-inner">Sessenta alunos de toda a escola que se juntaram para concorrer à associação de estudantes. Podes conhecer cada um na página da <a href="equipa.html">Coordenação</a>.</div></div>
-            </div>
-            <div class="acc__item">
-              <h3 style="margin:0"><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="q6" id="q6-btn">O que faz a Eclipse se ganhar?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-              <div class="acc__panel" id="q6" role="region" aria-labelledby="q6-btn"><div class="acc__panel-inner">Implementa os oito eixos do <a href="programa.html">programa</a>: representação, bem-estar, cultura, desporto, apoio ao estudo, ambiente, comunidade e digital. Cada eixo reúne as suas propostas, com prazo e responsável.</div></div>
-            </div>
-            <div class="acc__item">
-              <h3 style="margin:0"><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="q7" id="q7-btn">Os cargos são remunerados?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-              <div class="acc__panel" id="q7" role="region" aria-labelledby="q7-btn"><div class="acc__panel-inner">Não. Todos os cargos são voluntários. O orçamento da associação é usado em atividades e materiais para os alunos — nunca em pagamentos a membros.</div></div>
-            </div>
-            <div class="acc__item">
-              <h3 style="margin:0"><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="q8" id="q8-btn">Quanto tempo dedica a coordenação?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-              <div class="acc__panel" id="q8" role="region" aria-labelledby="q8-btn"><div class="acc__panel-inner">Uma reunião semanal de uma hora e o trabalho de cada coordenação no seu eixo. Nada que ponha em causa o estudo — pelo contrário, é uma das nossas prioridades.</div></div>
-            </div>
-            <div class="acc__item">
-              <h3 style="margin:0"><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="q9" id="q9-btn">A Eclipse tem apoio da escola?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-              <div class="acc__panel" id="q9" role="region" aria-labelledby="q9-btn"><div class="acc__panel-inner">A lista é independente e feita por alunos. A associação eleita trabalha sempre em conjunto com a direção, mas as decisões da Eclipse são dos alunos e para os alunos.</div></div>
-            </div>
-            <div class="acc__item">
-              <h3 style="margin:0"><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="q10" id="q10-btn">Como garantem que cumprem o programa?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-              <div class="acc__panel" id="q10" role="region" aria-labelledby="q10-btn"><div class="acc__panel-inner">Cada proposta tem um responsável e um prazo. No fim de cada semestre publicamos um relatório com o que ficou feito, o que atrasou e o novo prazo. As contas também são públicas.</div></div>
-            </div>
-          </div>
-
-          <div data-reveal class="mt-4" style="margin-top:clamp(2.6rem,6vw,4rem)">
-            <span class="kicker">Participar</span>
-            <h2 class="mt-2">Como te podes envolver.</h2>
-          </div>
-          <div class="acc mt-3" data-reveal>
-            <div class="acc__item">
-              <h3 style="margin:0"><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="q11" id="q11-btn">Posso propor ideias sem estar na lista?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-              <div class="acc__panel" id="q11" role="region" aria-labelledby="q11-btn"><div class="acc__panel-inner">Sim — e é exatamente isso que queremos. Usa o <a href="contactos.html">formulário de contacto</a> ou a caixa de propostas. Se fizer sentido, entra no programa com o teu nome associado à ideia.</div></div>
-            </div>
-            <div class="acc__item">
-              <h3 style="margin:0"><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="q12" id="q12-btn">Como posso ajudar na campanha?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-              <div class="acc__panel" id="q12" role="region" aria-labelledby="q12-btn"><div class="acc__panel-inner">Podes ajudar na comunicação, na organização de eventos, na recolha de propostas ou simplesmente divulgando a lista. Escreve-nos e dizemos-te onde és mais útil.</div></div>
-            </div>
-            <div class="acc__item">
-              <h3 style="margin:0"><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="q13" id="q13-btn">Um aluno do 7.º ano conta para alguma coisa?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-              <div class="acc__panel" id="q13" role="region" aria-labelledby="q13-btn"><div class="acc__panel-inner">Conta para tudo. A associação representa toda a escola e uma das nossas críticas é que os mais novos raramente são ouvidos. Queremos mudar isso.</div></div>
-            </div>
-          </div>
-
-          <div data-reveal class="mt-4" style="margin-top:clamp(2.6rem,6vw,4rem)">
-            <span class="kicker">Privacidade</span>
-            <h2 class="mt-2">Os teus dados.</h2>
-          </div>
-          <div class="acc mt-3" data-reveal>
-            <div class="acc__item">
-              <h3 style="margin:0"><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="q14" id="q14-btn">Que dados recolhe este site?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-              <div class="acc__panel" id="q14" role="region" aria-labelledby="q14-btn"><div class="acc__panel-inner">Apenas os que nos dás voluntariamente nos formulários (por exemplo, nome e email) e cookies essenciais. Cookies de medição ou preferências só são ativados com o teu consentimento. Detalhes na <a href="privacidade.html">Política de Privacidade</a>.</div></div>
-            </div>
-            <div class="acc__item">
-              <h3 style="margin:0"><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="q15" id="q15-btn">E quanto a fotografias de alunos?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-              <div class="acc__panel" id="q15" role="region" aria-labelledby="q15-btn"><div class="acc__panel-inner">Só publicamos imagens de pessoas identificáveis com autorização, e no caso de menores é exigido o consentimento de quem exerce a responsabilidade parental. Podes pedir a remoção de qualquer imagem a qualquer momento.</div></div>
-            </div>
-            <div class="acc__item">
-              <h3 style="margin:0"><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="q16" id="q16-btn">Como exerço os meus direitos?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-              <div class="acc__panel" id="q16" role="region" aria-labelledby="q16-btn"><div class="acc__panel-inner">Enviando um email para <a href="mailto:eclipse.extp@gmail.com">eclipse.extp@gmail.com</a>. Podes pedir acesso, correção, eliminação, limitação ou portabilidade, e tens sempre o direito de apresentar reclamação à CNPD.</div></div>
-            </div>
-          </div>
+  <section class="sec sec--paper">
+    <div class="w">
+      <div class="faq-grid">
+        <header>
+          <h2 class="lines"><span class="split-line" style="--i:0"><span>Como funciona tudo isto.</span></span></h2>
+          <p class="muted rv">As eleições</p>
+        </header>
+        <div class="faq rv">
+          <details id="q1" name="faq">
+            <summary>O que é a Associação de Estudantes?</summary>
+            <div class="answer"><p>É o órgão que representa os alunos da escola. Organiza atividades, leva as questões dos estudantes à direção e gere um orçamento próprio para projetos e eventos. É eleita anualmente por votação dos alunos.</p></div>
+          </details>
+          <details id="q2" name="faq">
+            <summary>Quem pode votar?</summary>
+            <div class="answer"><p>Todos os alunos matriculados no Externato de Penafirme, de qualquer ano, apresentando o cartão de estudante no dia da votação. Uma pessoa, um voto.</p></div>
+          </details>
+          <details id="q3" name="faq">
+            <summary>Quando e onde é a votação?</summary>
+            <div class="answer"><p>A votação decorre a <strong data-vote-date>29 de outubro de 2026</strong>, na biblioteca, das 9h00 às 17h00. Podes votar em qualquer intervalo ou antes/depois das aulas.</p></div>
+          </details>
+          <details id="q4" name="faq">
+            <summary>O voto é secreto?</summary>
+            <div class="answer"><p>Sim. Votas numa cédula em urna fechada, sem qualquer forma de identificar o teu voto. A contagem é feita à frente dos representantes das listas.</p></div>
+          </details>
         </div>
+      </div>
+      <div class="faq-grid">
+        <header>
+          <h2 class="lines"><span class="split-line" style="--i:0"><span>O que a Eclipse propõe.</span></span></h2>
+          <p class="muted rv">A lista e o programa</p>
+        </header>
+        <div class="faq rv">
+          <details id="q5" name="faq">
+            <summary>Quem é a Eclipse?</summary>
+            <div class="answer"><p>Sessenta alunos de toda a escola que se juntaram para concorrer à associação de estudantes. Podes conhecer cada um na página da <a href="equipa.html">Coordenação</a>.</p></div>
+          </details>
+          <details id="q6" name="faq">
+            <summary>O que faz a Eclipse se ganhar?</summary>
+            <div class="answer"><p>Implementa os oito eixos do <a href="programa.html">programa</a>: representação, bem-estar, cultura, desporto, apoio ao estudo, ambiente, comunidade e digital. Cada eixo reúne as suas propostas, com prazo e responsável.</p></div>
+          </details>
+          <details id="q7" name="faq">
+            <summary>Os cargos são remunerados?</summary>
+            <div class="answer"><p>Não. Todos os cargos são voluntários. O orçamento da associação é usado em atividades e materiais para os alunos — nunca em pagamentos a membros.</p></div>
+          </details>
+          <details id="q8" name="faq">
+            <summary>Quanto tempo dedica a coordenação?</summary>
+            <div class="answer"><p>Uma reunião semanal de uma hora e o trabalho de cada coordenação no seu eixo. Nada que ponha em causa o estudo — pelo contrário, é uma das nossas prioridades.</p></div>
+          </details>
+          <details id="q9" name="faq">
+            <summary>A Eclipse tem apoio da escola?</summary>
+            <div class="answer"><p>A lista é independente e feita por alunos. A associação eleita trabalha sempre em conjunto com a direção, mas as decisões da Eclipse são dos alunos e para os alunos.</p></div>
+          </details>
+          <details id="q10" name="faq">
+            <summary>Como garantem que cumprem o programa?</summary>
+            <div class="answer"><p>Cada proposta tem um responsável e um prazo. No fim de cada semestre publicamos um relatório com o que ficou feito, o que atrasou e o novo prazo. As contas também são públicas.</p></div>
+          </details>
+        </div>
+      </div>
+      <div class="faq-grid">
+        <header>
+          <h2 class="lines"><span class="split-line" style="--i:0"><span>Como te podes envolver.</span></span></h2>
+          <p class="muted rv">Participar</p>
+        </header>
+        <div class="faq rv">
+          <details id="q11" name="faq">
+            <summary>Posso propor ideias sem estar na lista?</summary>
+            <div class="answer"><p>Sim — e é exatamente isso que queremos. Usa o <a href="contactos.html">formulário de contacto</a> ou a caixa de propostas. Se fizer sentido, entra no programa com o teu nome associado à ideia.</p></div>
+          </details>
+          <details id="q12" name="faq">
+            <summary>Como posso ajudar na campanha?</summary>
+            <div class="answer"><p>Podes ajudar na comunicação, na organização de eventos, na recolha de propostas ou simplesmente divulgando a lista. Escreve-nos e dizemos-te onde és mais útil.</p></div>
+          </details>
+          <details id="q13" name="faq">
+            <summary>Um aluno do 7.º ano conta para alguma coisa?</summary>
+            <div class="answer"><p>Conta para tudo. A associação representa toda a escola e uma das nossas críticas é que os mais novos raramente são ouvidos. Queremos mudar isso.</p></div>
+          </details>
+        </div>
+      </div>
+      <div class="faq-grid">
+        <header>
+          <h2 class="lines"><span class="split-line" style="--i:0"><span>Os teus dados.</span></span></h2>
+          <p class="muted rv">Privacidade</p>
+        </header>
+        <div class="faq rv">
+          <details id="q14" name="faq">
+            <summary>Que dados recolhe este site?</summary>
+            <div class="answer"><p>Apenas os que nos dás voluntariamente nos formulários (por exemplo, nome e email) e cookies essenciais. Cookies de medição ou preferências só são ativados com o teu consentimento. Detalhes na <a href="privacidade.html">Política de Privacidade</a>.</p></div>
+          </details>
+          <details id="q15" name="faq">
+            <summary>E quanto a fotografias de alunos?</summary>
+            <div class="answer"><p>Só publicamos imagens de pessoas identificáveis com autorização, e no caso de menores é exigido o consentimento de quem exerce a responsabilidade parental. Podes pedir a remoção de qualquer imagem a qualquer momento.</p></div>
+          </details>
+          <details id="q16" name="faq">
+            <summary>Como exerço os meus direitos?</summary>
+            <div class="answer"><p>Enviando um email para <a href="mailto:eclipse.extp@gmail.com">eclipse.extp@gmail.com</a>. Podes pedir acesso, correção, eliminação, limitação ou portabilidade, e tens sempre o direito de apresentar reclamação à CNPD.</p></div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <aside data-reveal data-reveal-delay="1" class="stack" style="gap:1.6rem">
-          <div class="card card--ink">
-            <h3>Não encontraste?</h3>
-            <p>Escreve-nos diretamente. Respondemos num prazo de 1 a 2 dias úteis e acrescentamos a tua pergunta a esta lista se for útil para mais gente.</p>
-            <a class="btn btn--primary btn--noarrow mt-2" href="contactos.html">Falar connosco</a>
-          </div>
-          <div class="card">
-            <h3>Atalhos</h3>
-            <nav class="stack mt-2" aria-label="Ligações úteis">
-              <a class="link-arrow" href="programa.html">Programa completo</a>
-              <a class="link-arrow" href="equipa.html">A coordenação</a>
-              <a class="link-arrow" href="noticias.html">Agenda e notícias</a>
-              <a class="link-arrow" href="privacidade.html">Privacidade</a>
-            </nav>
-          </div>
-        </aside>
+  <section class="cta" data-tiles>
+    <div class="w">
+      <div class="cta__card rv">
+        <svg class="mark mark-anim cta__mark" viewBox="250 0 749 553" aria-hidden="true" focusable="false"><path class="m-arc m-arc--a" d="M512.2 35.9 494.7 37.1 473.7 40 443.7 47.2 405.8 61.1 375.7 76.8 347.3 96.2 325.2 115.2 309.1 132.3 300.8 142.9 283.3 169.6 300.4 148 320 127.4 343.5 108 368.2 92.2 390.7 81 417.3 71 446.5 64 475.3 60.8 496 60.9 530.5 65 561.3 73 584.3 82 614.6 98.2 635.8 113.2 656.4 133.8 678.4 161.1 688 165.7 698.2 168.7 701 168.7 705.5 166.5 713.5 160.3 718 155 723.6 143.5 725.3 137.5 715.6 124.2 695.5 103 679.5 89.1 667.8 80.6 651.7 70.5 631.7 60.1 610 51.2 594.3 46.2 573.8 41.1 555.2 38 532.5 36Z"/><path class="m-arc m-arc--b" d="M725 362.2 708.7 396.3 696.8 415.3 688 427.3 677.8 439.6 656.9 460.5 635.6 477.7 606.3 495.8 592.2 502.8 572.3 510.8 536 520.9 504.3 525 476.2 525 463.8 524 434.3 518.8 399.5 507.8 366.3 491.6 338 472.5 323.5 460 304.2 440.8 285 417.3 267.1 388.8 275.3 406.5 284.6 422.7 296.3 439.7 309.5 455.8 336.7 482 368.2 504.5 386.3 514.6 405.5 523.6 440.5 535.7 458.3 539.8 485.8 543.7 520.2 544.6 543.5 542.8 571.7 537.7 593.3 531.7 610 525.7 626.7 518.5 652.7 504.4 667.7 494.5 687.2 479.1 709.9 456.3 727.4 433.7 744.7 403.5 756.7 373.7 759.6 363.7 759.2 362.2Z"/><path class="m-star" d="M744 9C746.2 177.3 764.9 191.2 990 191C764.9 194.3 746.2 206.5 744 352C742.3 206.5 727.7 194.7 552 196C727.7 191.6 742.3 177.4 744 9Z"/></svg>
+        <h2>Não encontraste <br>a tua pergunta?</h2>
+        <p class="lead">Escreve-nos diretamente. Respondemos num prazo de 1 a 2 dias úteis e acrescentamos a tua pergunta a esta lista se for útil para mais gente.</p>
+        <div class="actions"><a class="btn btn--sun" href="contactos.html">Falar connosco <span class="ar" aria-hidden="true">→</span></a><a class="btn btn--ghost" href="programa.html">Programa completo</a></div>
       </div>
     </div>
   </section>
@@ -222,91 +219,90 @@
 </main>
 
 <footer class="site-footer">
-  <div class="wrap">
-    <div class="site-footer__top">
-      <div class="site-footer__brand">
-        <a class="brand" href="index.html" aria-label="Eclipse, página inicial">
-          <img class="brand__logo" src="assets/img/eclipse-logo.png" alt="Eclipse — Associação de Estudantes do Externato de Penafirme" height="42">
-        </a>
-        <p>Lista concorrente à Associação de Estudantes do Externato de Penafirme. Ligamos alunos, ideias e vontades — com um programa a sério e contas transparentes.</p>
-        <div class="site-footer__social">
-          <a href="https://www.instagram.com/eclipse_extp/" aria-label="Instagram da Eclipse" rel="noopener" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>
-          </a>
-          <a href="mailto:eclipse.extp@gmail.com" aria-label="Email da Eclipse">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-          </a>
-        </div>
-      </div>
-      <div>
-        <h4>A lista</h4>
-        <nav class="site-footer__links" aria-label="Ligações da lista">
-          <a href="sobre.html">Quem somos</a>
-          <a href="programa.html">Programa</a>
-          <a href="equipa.html">Coordenação</a>
-          <a href="membros.html">Membros</a>
-          <a href="noticias.html">Notícias</a>
-          <a href="patrocinadores.html">Patrocinadores</a>
-        </nav>
-      </div>
-      <div>
-        <h4>Recursos</h4>
-        <nav class="site-footer__links" aria-label="Recursos">
-          <a href="galeria.html">Galeria</a>
-          <a href="faq.html">Perguntas frequentes</a>
-          <a href="contactos.html">Contactos</a>
-          <a href="#" data-open-cookie>Preferências de cookies</a>
-        </nav>
-      </div>
-      <div>
-        <h4>Fica a par</h4>
-        <p style="color:rgba(169,216,240,.72);font-size:.92rem;margin-bottom:.6rem">Recebe, no máximo duas vezes por mês, o essencial da campanha. Sem spam.</p>
+  <div class="w">
+    <div class="ft-top">
+      <div class="ft-pitch">
+        <p>Vota E. Vota Eclipse<i class="star" aria-hidden="true"></i></p>
+        <p class="ft-sub">Lista E às eleições da Associação de Estudantes do Externato de Penafirme. Recebe o essencial da campanha por email, no máximo duas vezes por mês. Sem spam.</p>
         <form class="newsletter" action="https://formsubmit.co/ajax/b27be4651bf7003b8eaa9fe9e6ee7276" method="POST" data-ajax>
           <input type="hidden" name="_subject" value="Nova subscrição da newsletter — Eclipse">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
-          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
           <label class="visually-hidden" for="news-email">Email</label>
-          <input id="news-email" type="email" name="email" placeholder="o.teu@email.pt" required>
-          <button class="btn btn--sky btn--noarrow" type="submit">Subscrever</button>
+          <input id="news-email" type="email" name="email" placeholder="o.teu@email.pt" autocomplete="email" required>
+          <button class="btn btn--sun" type="submit">Subscrever</button>
         </form>
         <p class="form-status" role="status" tabindex="-1"></p>
       </div>
-    </div>
-    <div class="site-footer__bottom">
-      <p>© <span data-year>2026</span> Eclipse — Associação de Estudantes do Externato de Penafirme.</p>
-      <div class="site-footer__bottom-links">
-        <a href="privacidade.html">Política de Privacidade</a>
-        <a href="termos.html">Termos de Utilização</a>
-        <a href="#" data-open-cookie>Cookies</a>
+      <div class="ft-col">
+        <h2>A lista</h2>
+        <ul>
+          <li><a href="sobre.html">Quem somos</a></li>
+          <li><a href="programa.html">Programa</a></li>
+          <li><a href="equipa.html">Coordenação</a></li>
+          <li><a href="membros.html">Membros</a></li>
+          <li><a href="patrocinadores.html">Patrocinadores</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h2>Campanha</h2>
+        <ul>
+          <li><a href="noticias.html">Notícias e agenda</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="faq.html">Perguntas frequentes</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h2>Fala connosco</h2>
+        <ul>
+          <li><a href="mailto:eclipse.extp@gmail.com">eclipse.extp@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/eclipse_extp/" rel="noopener" target="_blank">Instagram @eclipse_extp</a></li>
+        </ul>
+        <div class="ft-social mt-2">
+          <a href="https://www.instagram.com/eclipse_extp/" aria-label="Instagram da Eclipse" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="mailto:eclipse.extp@gmail.com" aria-label="Email da Eclipse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+        </div>
       </div>
     </div>
-    <p style="color:rgba(169,216,240,.42);font-size:.78rem;padding-bottom:1.6rem;max-width:80ch">Página informativa de campanha estudantil. O domínio é demonstrativo e os contactos são de exemplo enquanto decorre o período eleitoral.</p>
+    <div class="ft-word" aria-hidden="true"><img src="assets/img/eclipse-logo.svg" alt="" width="999" height="553" loading="lazy"></div>
+    <div class="ft-bottom">
+      <p>© <span data-year>2026</span> Eclipse — Lista E à Associação de Estudantes do Externato de Penafirme.</p>
+      <ul>
+        <li><a href="privacidade.html">Política de Privacidade</a></li>
+        <li><a href="termos.html">Termos de Utilização</a></li>
+        <li><a href="#" data-open-cookie>Preferências de cookies</a></li>
+      </ul>
+    </div>
+    <p class="ft-note">Página informativa de campanha estudantil. O domínio é demonstrativo e os contactos são de exemplo enquanto decorre o período eleitoral.</p>
   </div>
 </footer>
 
-<button class="to-top" type="button" aria-label="Voltar ao topo">
-  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
-</button>
+<div class="dock" data-dock>
+  <a class="btn btn--sun" href="programa.html">Ler o programa <span class="ar" aria-hidden="true">→</span></a>
+  <a class="dock__mail" href="contactos.html" aria-label="Contactar a Eclipse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+</div>
 
 <aside class="cookie" id="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-hidden="true">
   <h4 id="cookie-title">A tua privacidade</h4>
   <p>Usamos cookies essenciais para o site funcionar. Com o teu consentimento, usamos também medição de audiência e preferências para o melhorar. Podes aceitar, recusar ou escolher ao detalhe. Sabe mais na <a href="privacidade.html">Política de Privacidade</a>.</p>
   <div class="cookie__actions">
-    <button class="btn btn--primary btn--sm btn--noarrow" id="cookie-accept" type="button">Aceitar todos</button>
-    <button class="btn btn--ghost-ink btn--sm btn--noarrow" id="cookie-reject" type="button">Recusar não essenciais</button>
-    <button class="btn btn--ghost-ink btn--sm btn--noarrow" id="cookie-open-prefs" type="button">Escolher preferências</button>
+    <button class="btn" id="cookie-accept" type="button">Aceitar todos</button>
+    <button class="btn btn--ghost" id="cookie-reject" type="button">Recusar não essenciais</button>
+    <button class="btn btn--ghost" id="cookie-open-prefs" type="button">Escolher preferências</button>
   </div>
   <div class="cookie__prefs" id="cookie-prefs">
     <label class="cookie__pref"><input type="checkbox" checked disabled> <span><b>Essenciais</b> — necessários ao funcionamento e à segurança do site. Não podem ser desativados.</span></label>
     <label class="cookie__pref"><input type="checkbox" id="pref-analytics"> <span><b>Medição de audiência</b> — estatísticas anónimas sobre visitas, para percebermos o que é útil.</span></label>
     <label class="cookie__pref"><input type="checkbox" id="pref-preferences"> <span><b>Preferências</b> — guardar escolhas como o idioma ou a aceitação de cookies.</span></label>
     <div class="cookie__actions">
-      <button class="btn btn--ink btn--sm btn--noarrow" id="cookie-save" type="button">Guardar escolhas</button>
+      <button class="btn" id="cookie-save" type="button">Guardar escolhas</button>
     </div>
   </div>
 </aside>
 
+<script src="assets/js/config.js" defer></script>
 <script src="assets/js/site.js" defer></script>
 </body>
 </html>
