@@ -245,6 +245,80 @@
     $$("video").forEach(function (v) { if (v !== e.target && !v.paused) v.pause(); });
   }, true);
 
+  /* ---------- Vídeos de apoio: capa com play e duração; os controlos só aparecem depois de começar ---------- */
+  var PLAY_SVG = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5-13-7.5Z"/></svg>';
+  $$(".video--tall video").forEach(function (v) {
+    var fig = v.closest(".video");
+    var h = $("h3", fig);
+    var btn = doc.createElement("button");
+    btn.type = "button";
+    btn.className = "video__start";
+    btn.setAttribute("aria-label", "Ver o vídeo" + (h ? " de " + h.textContent.trim() : ""));
+    btn.innerHTML = '<span class="video__time" hidden></span><span class="video__start-ic">' + PLAY_SVG + "</span>";
+    v.removeAttribute("controls");
+    v.parentNode.appendChild(btn);
+    var time = $(".video__time", btn);
+    var showTime = function () {
+      if (!isFinite(v.duration) || !v.duration) return;
+      var s = Math.round(v.duration);
+      time.textContent = Math.floor(s / 60) + ":" + ("0" + (s % 60)).slice(-2);
+      time.hidden = false;
+    };
+    if (v.readyState >= 1) showTime();
+    v.addEventListener("loadedmetadata", showTime);
+    v.addEventListener("play", function () { v.controls = true; fig.classList.add("is-playing"); });
+    v.addEventListener("ended", function () { v.controls = false; fig.classList.remove("is-playing"); v.load(); });
+    btn.addEventListener("click", function () {
+      v.controls = true;
+      fig.classList.add("is-playing");
+      var p = v.play();
+      if (p && p.catch) p.catch(function () {});
+      v.focus({ preventScroll: true });
+    });
+  });
+
+  /* Pausa o vídeo quando sai do ecrã (por exemplo, ao deslizar para o seguinte) */
+  if ("IntersectionObserver" in window) {
+    var vio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (!en.isIntersecting && !en.target.paused) en.target.pause(); });
+    }, { threshold: 0.35 });
+    $$(".video--tall video").forEach(function (v) { vio.observe(v); });
+  }
+
+  /* Telemóvel: pontos por baixo da fila de vídeos, que mostram onde se está e levam a cada vídeo */
+  $$(".video-grid--tall").forEach(function (vg) {
+    var cards = $$(".video", vg);
+    if (cards.length < 2) return;
+    var nav = doc.createElement("div");
+    nav.className = "video-dots";
+    var dots = cards.map(function (c, i) {
+      var b = doc.createElement("button");
+      b.type = "button";
+      b.setAttribute("aria-label", "Vídeo " + (i + 1) + " de " + cards.length);
+      b.addEventListener("click", function () {
+        vg.scrollTo({ left: c.getBoundingClientRect().left - cards[0].getBoundingClientRect().left, behavior: reduceMotion ? "auto" : "smooth" });
+      });
+      nav.appendChild(b);
+      return b;
+    });
+    vg.parentNode.insertBefore(nav, vg.nextSibling);
+    var cur = -1, tick = false;
+    var update = function () {
+      tick = false;
+      var step = cards[1].getBoundingClientRect().left - cards[0].getBoundingClientRect().left;
+      if (!step) return;
+      var i = vg.scrollLeft >= vg.scrollWidth - vg.clientWidth - 2 ? cards.length - 1 : Math.round(vg.scrollLeft / step);
+      i = Math.max(0, Math.min(cards.length - 1, i));
+      if (i === cur) return;
+      if (cur > -1) dots[cur].removeAttribute("aria-current");
+      dots[i].setAttribute("aria-current", "true");
+      cur = i;
+    };
+    vg.addEventListener("scroll", function () { if (!tick) { tick = true; requestAnimationFrame(update); } }, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+  });
+
   /* ---------- Vidro: o brilho segue o rato ---------- */
   if (finePointer) {
     $$(".vote, .note, .facts, .phero-meta, .finder__q, .sec--ink .card--ink").forEach(function (el) {
