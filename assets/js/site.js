@@ -558,15 +558,97 @@
     }
   }
 
+  /* ---------- Galeria: colagem em «Todas» (ordem e tamanhos baralhados a cada visita) ---------- */
+  // Tamanhos em colunas × meias-linhas: s/S = quadrado pequeno/grande (caras), W = horizontal 3:2,
+  // L = horizontal grande 4:3, M = horizontal pequena 4:3, P = panorâmica 2:1 (fotografias de grupo).
+  var SZ = { s: [1, 2, "Q"], S: [2, 4, "Q"], W: [3, 4, "L"], L: [4, 6, "L"], M: [2, 3, "L"], P: [2, 2, "L"] };
+  // Cada modelo enche faixas inteiras da grelha com o preenchimento «dense»: nunca ficam buracos.
+  var BANDS = {
+    6: ["W S s s", "s W S s", "S S S", "W W", "s s s s s s", "L S s s", "S L s s", "s s W s s s s", "S s s S s s", "M M M"],
+    4: ["W s s", "s W s", "S S", "S s s s s", "s s S s s", "L", "M M", "s s s s", "S P P"],
+    2: ["s s", "S", "M", "M s s", "s s M"]
+  };
+  var collage = function (grid) {
+    var kids = Array.prototype.slice.call(grid.children);
+    var photos = kids.filter(function (el) { return el.classList.contains("gallery__item") && $("img", el); });
+    if (photos.length < 4) return null;
+    var shuffle = function (a) {
+      for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = a[i]; a[i] = a[j]; a[j] = t; }
+      return a;
+    };
+    var wide = function (el) { var im = $("img", el); return (+im.getAttribute("width") || 1) / (+im.getAttribute("height") || 1) > 1.2; };
+    var poolL = shuffle(photos.filter(wide));
+    var poolQ = shuffle(photos.filter(function (el) { return !wide(el); }));
+    var plans = {}, cols = 0, lastW = 0, on = false;
+    var plan = function (n) {
+      var bands = BANDS[n].map(function (b) { return b.split(" "); });
+      var minLen = Math.min.apply(null, bands.map(function (b) { return b.length; }));
+      var L = poolL.slice(), Q = poolQ.slice(), out = [], recent = [];
+      while (L.length + Q.length) {
+        var left = L.length + Q.length, best = -1, bestSc = Infinity;
+        for (var pass = 0; pass < 2 && best < 0; pass++) {
+          bands.forEach(function (b, k) {
+            var rest = left - b.length;
+            if (rest < 0 || (rest > 0 && rest < minLen) || (pass === 0 && recent.indexOf(k) >= 0)) return;
+            var nL = b.filter(function (c) { return SZ[c][2] === "L"; }).length;
+            // o modelo que gasta horizontais e quadrados na proporção do que falta, com uma boa dose de acaso
+            var sc = Math.abs(nL / b.length - L.length / left) + Math.max(0, nL - L.length) + Math.max(0, b.length - nL - Q.length) + Math.random() * 0.6;
+            if (sc < bestSc) { bestSc = sc; best = k; }
+          });
+        }
+        var band = best < 0 ? ["S"] : bands[best];
+        recent.push(best);
+        if (recent.length > 2) recent.shift();
+        band.forEach(function (c) {
+          var it = SZ[c][2] === "L" ? (L.shift() || Q.shift()) : (Q.shift() || L.shift());
+          if (it) out.push([it, SZ[c][0], SZ[c][1]]);
+        });
+      }
+      return out;
+    };
+    var layout = function () {
+      if (!on) return;
+      var n = window.innerWidth >= 900 ? 6 : window.innerWidth >= 560 ? 4 : 2;
+      if (n === cols && grid.clientWidth === lastW) return;
+      if (n !== cols) {
+        cols = n;
+        grid.style.setProperty("--cols", n);
+        plans[n] = plans[n] || plan(n);
+        plans[n].forEach(function (p) {
+          p[0].style.setProperty("--w", p[1]);
+          p[0].style.setProperty("--h", p[2]);
+          grid.appendChild(p[0]);
+        });
+        kids.forEach(function (el) { if (photos.indexOf(el) < 0) grid.appendChild(el); });
+      }
+      lastW = grid.clientWidth;
+      var gap = parseFloat(getComputedStyle(grid).columnGap) || 0;
+      grid.style.setProperty("--row", Math.max(20, ((lastW - gap * (cols - 1)) / cols - gap) / 2) + "px");
+    };
+    if ("ResizeObserver" in window) new ResizeObserver(layout).observe(grid);
+    else window.addEventListener("resize", layout);
+    return {
+      on: function () { on = true; cols = 0; grid.classList.add("is-collage"); layout(); },
+      off: function () {
+        on = false;
+        grid.classList.remove("is-collage");
+        kids.forEach(function (el) { grid.appendChild(el); });
+      }
+    };
+  };
+
   /* ---------- Galeria: filtro por tema (campanha, bastidores, membros) ---------- */
   $$("[data-gallery-filter]").forEach(function (bar) {
     var grid = $(bar.getAttribute("data-gallery-filter"));
     if (!grid) return;
+    var col = collage(grid);
+    if (col) col.on();
     var btns = $$("button[data-filter]", bar);
     btns.forEach(function (b) {
       b.addEventListener("click", function () {
         var f = b.getAttribute("data-filter");
         btns.forEach(function (o) { o.setAttribute("aria-pressed", o === b ? "true" : "false"); });
+        if (col) { if (f === "todas") col.on(); else col.off(); }
         $$("[data-cat]", grid).forEach(function (it) { it.hidden = f !== "todas" && it.getAttribute("data-cat") !== f; });
         grid.classList.remove("is-filtering");
         void grid.offsetWidth;
@@ -593,7 +675,7 @@
         if (!img) return;
         lbImg.src = img.getAttribute("data-full") || img.src;
         lbImg.alt = img.alt || "";
-        lbCap.textContent = img.getAttribute("data-caption") || img.alt || "";
+        lbCap.textContent = img.getAttribute("data-caption") || "";
         lightbox.classList.add("is-open");
         lastFocus = item;
         lbClose.focus();

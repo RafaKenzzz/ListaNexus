@@ -1296,8 +1296,17 @@ html:not(.js) .filters { display: none; }
 .logo--zoom img { scale: 1.5; }
 .sponsor-hero__logo.logo--zoom { position: relative; }
 .sponsor-hero__logo.logo--zoom img { position: absolute; inset: 26px; width: calc(100% - 52px); height: calc(100% - 52px); max-width: none; max-height: none; object-fit: contain; }
-/* Faixa de logótipos da página inicial: 8 patrocinadores em 4 colunas */
+/* Faixa de logótipos da página inicial: 7 patrocinadores + «Este espaço pode ser teu», em 4 colunas */
 .logos { grid-template-columns: repeat(4, 1fr); }
+.logo-tile--cta { padding: 1rem; background: var(--sun); box-shadow: none; color: var(--ink); text-align: center; text-decoration: none; font-size: clamp(1rem, 1.5vw, 1.2rem); font-weight: 750; font-stretch: 112%; line-height: 1.2; }
+.logo-tile--cta .ar { display: inline-block; transition: transform .25s var(--ease); }
+@media (hover: hover) and (pointer: fine) { .logo-tile--cta:hover { box-shadow: 0 24px 44px -28px rgb(var(--ink-rgb) / .45); } .logo-tile--cta:hover .ar { transform: translateX(4px); } }
+/* Patrocinadores: o cartão amarelo fecha a grelha de 3 colunas a ocupar duas */
+@media (min-width: 981px) { .card--wide { grid-column: span 2; } }
+/* Fotografias sem legenda (bastidores): o visualizador não mostra a linha vazia */
+.lightbox__cap:empty { display: none; }
+/* Rodapé: crédito do site */
+.ft-credit { display: block; margin-top: .3rem; }
 @media (max-width: 640px) {
   .teams { gap: .8rem; }
   .card.team { padding: 1.15rem 1.15rem 1.25rem; }
@@ -1419,3 +1428,16 @@ html:not(.js) .filters { display: none; }
   .ecl-fx, .ecl-flare, .ecl-rays::before { animation: none; opacity: 1; }
 }
 @media print { .ecl-fx, .ecl-flare { display: none; } }
+
+/* patch-8: galeria em colagem («Todas»). O site.js baralha as fotografias e dá a cada uma
+   --w colunas × --h meias-linhas; --cols e --row (meia coluna) também vêm do site.js. */
+.gallery.is-collage { grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); grid-auto-rows: var(--row, 96px); grid-auto-flow: row dense; gap: clamp(.45rem, .9vw, .8rem); }
+.gallery.is-collage .shot-soon { display: none; }
+.gallery.is-collage .gallery__item { position: relative; display: block; min-width: 0; grid-column: span var(--w, 1); grid-row: span var(--h, 2); }
+.gallery.is-collage .gallery__item > div { height: 100%; aspect-ratio: auto; border-radius: 10px; }
+.gallery.is-collage .gallery__item figcaption { position: absolute; inset: auto 0 0; padding: 2.4rem .85rem .75rem; border-radius: 0 0 10px 10px; background: linear-gradient(rgb(var(--ink-rgb) / 0), rgb(var(--ink-rgb) / .82)); color: var(--white); font-size: .85rem; line-height: 1.25; opacity: 0; transform: translateY(6px); transition: opacity .2s ease, transform .25s var(--ease); pointer-events: none; }
+.gallery.is-collage .gallery__item:focus-visible figcaption { opacity: 1; transform: none; }
+@media (hover: hover) and (pointer: fine) {
+  .gallery.is-collage .gallery__item:hover figcaption { opacity: 1; transform: none; color: var(--white); }
+}
+@media (prefers-reduced-motion: reduce) { .gallery.is-collage .gallery__item figcaption { transform: none; } }
