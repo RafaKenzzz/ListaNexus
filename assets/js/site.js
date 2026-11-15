@@ -217,19 +217,196 @@
     timer = setInterval(tick, 1000);
   }
 
-  /* ---------- Herói: o eclipse desloca-se devagar com o scroll ---------- */
-  var eclipse = $("[data-eclipse]");
-  if (eclipse && finePointer && !reduceMotion) {
-    var eTick = false;
-    var move = function () {
-      var y = window.scrollY;
-      if (y < window.innerHeight * 1.3) eclipse.style.transform = "translate3d(0," + (y * 0.2).toFixed(1) + "px,0)";
-      eTick = false;
+  /* ---------- Céu do topo: estrelas a cintilar, profundidade com o rato e o scroll, estrelas cadentes ----------
+     Desenhado num <canvas> só enquanto está visível. Com movimento reduzido fica um céu parado.
+     O eclipse (fotografia) acompanha o rato e o scroll; a Lua fica sempre escura, sem estrelas por cima. */
+  var SKY_COLORS = ["230 241 255", "230 241 255", "230 241 255", "230 241 255", "184 228 248", "255 227 163"];
+  var skySprites = null;
+  var makeSprite = function (cross) {
+    var c = doc.createElement("canvas");
+    c.width = c.height = 64;
+    var x = c.getContext("2d");
+    var g = x.createRadialGradient(32, 32, 0, 32, 32, 32);
+    g.addColorStop(0, "rgba(255,255,255,1)");
+    g.addColorStop(cross ? 0.1 : 0.2, "rgba(225,240,255,.6)");
+    g.addColorStop(0.5, "rgba(184,228,248,.1)");
+    g.addColorStop(1, "rgba(184,228,248,0)");
+    x.fillStyle = g;
+    x.fillRect(0, 0, 64, 64);
+    if (cross) {   // os quatro raios da estrela do logótipo
+      x.globalCompositeOperation = "lighter";
+      [[0, 31.3, 64, 1.4, 64, 0], [31.3, 0, 1.4, 64, 0, 64]].forEach(function (b) {
+        var l = x.createLinearGradient(0, 0, b[4], b[5]);
+        l.addColorStop(0, "rgba(255,255,255,0)");
+        l.addColorStop(0.5, "rgba(255,255,255,.95)");
+        l.addColorStop(1, "rgba(255,255,255,0)");
+        x.fillStyle = l;
+        x.fillRect(b[0], b[1], b[2], b[3]);
+      });
+    }
+    return c;
+  };
+  var sky = function (host) {
+    var cv = doc.createElement("canvas");
+    var ctx = cv.getContext && cv.getContext("2d");
+    if (!ctx) return;
+    cv.className = "sky";
+    cv.setAttribute("aria-hidden", "true");
+    cv.style.cssText = "position:absolute;left:0;top:0;width:100%;height:100%;z-index:-2;pointer-events:none";
+    host.insertBefore(cv, host.firstChild);
+    host.classList.add("has-sky");
+    if (!skySprites) skySprites = { glow: makeSprite(false), cross: makeSprite(true) };
+    var ecl = $("[data-eclipse], .endpage__eclipse", host);
+    var moveEcl = ecl && finePointer && !reduceMotion;
+    var scrolls = !host.classList.contains("endpage");
+    var W = 0, H = 0, stars = [], shots = [];
+    var t0 = 0, last = 0, nextShot = 2.2, running = false, visible = false, raf = 0;
+    var px = 0, py = 0, ex = 0, ey = 0;
+
+    var build = function () {
+      var n = Math.round(Math.min(700, Math.max(140, W * H / 1900)));
+      stars = [];
+      for (var i = 0; i < n; i++) {
+        var z = Math.pow(Math.random(), 2.4);   // a maioria fica ao longe, pequena e ténue
+        stars.push({
+          u: Math.random(), v: Math.random(), z: z, r: 0.3 + z * 1.15, a: 0.25 + z * 0.7,
+          sp: 0.5 + Math.random() * 2.2, ph: Math.random() * 6.283, d: 0.1 + Math.random() * 1.3,
+          c: SKY_COLORS[(Math.random() * SKY_COLORS.length) | 0], k: z > 0.93 ? 6 + z * 9 : 0
+        });
+      }
+      stars.sort(function (a, b) { return a.c < b.c ? -1 : a.c > b.c ? 1 : 0; });
     };
-    window.addEventListener("scroll", function () {
-      if (!eTick) { eTick = true; requestAnimationFrame(move); }
-    }, { passive: true });
-  }
+    var moon = function () {
+      if (!ecl) return null;
+      var a = ecl.getBoundingClientRect(), b = host.getBoundingClientRect();
+      if (!a.width) return null;
+      return { x: a.left - b.left + a.width * 0.498, y: a.top - b.top + a.height * 0.524, r: a.width * 0.2585 };
+    };
+    var draw = function (t, dt) {
+      var sy = scrolls ? Math.min(window.scrollY, H) : 0;
+      var m = moon();
+      var col = "";
+      ctx.clearRect(0, 0, W, H);
+      ctx.globalAlpha = 1;
+      if (m) {   // a Lua tapa a nebulosa de trás
+        ctx.fillStyle = "#060a1f";
+        ctx.beginPath();
+        ctx.arc(m.x, m.y, m.r * 0.99, 0, 6.2832);
+        ctx.fill();
+      }
+      for (var i = 0; i < stars.length; i++) {
+        var s = stars[i];
+        var fade = reduceMotion ? 1 : Math.min(1, Math.max(0, (t - s.d) / 0.9));
+        if (!fade) continue;
+        var tw = reduceMotion ? 0.8 : 0.62 + 0.38 * Math.sin(t * s.sp + s.ph);
+        var x = s.u * W - ex * 22 * s.z;
+        var y = s.v * H - ey * 16 * s.z + sy * 0.32 * (1 - s.z);
+        x = ((x % W) + W) % W;
+        y = ((y % H) + H) % H;
+        if (m) { var dx = x - m.x, dy = y - m.y; if (dx * dx + dy * dy < m.r * m.r * 1.1) continue; }
+        ctx.globalAlpha = s.a * tw * fade;
+        if (s.k) {
+          var k = s.k * (0.75 + 0.35 * tw);
+          ctx.drawImage(skySprites.cross, x - k, y - k, k * 2, k * 2);
+          continue;
+        }
+        if (s.c !== col) { col = s.c; ctx.fillStyle = "rgb(" + col + ")"; }
+        if (s.r < 1) ctx.fillRect(x - s.r, y - s.r, s.r * 2, s.r * 2);
+        else { ctx.beginPath(); ctx.arc(x, y, s.r, 0, 6.2832); ctx.fill(); }
+      }
+      if (!reduceMotion) {
+        if (t > nextShot) {   // estrela cadente, de cima para baixo e da direita para a esquerda
+          nextShot = t + 4 + Math.random() * 5;
+          var ang = (146 + Math.random() * 16) * Math.PI / 180, spd = 900 + Math.random() * 600;
+          shots.push({ x: W * (0.35 + Math.random() * 0.7), y: H * Math.random() * 0.35 - 20, vx: Math.cos(ang) * spd, vy: Math.sin(ang) * spd, len: 140 + Math.random() * 160, life: 0.8 + Math.random() * 0.5, age: 0 });
+        }
+        for (var j = shots.length - 1; j >= 0; j--) {
+          var o = shots[j];
+          o.age += dt;
+          if (o.age > o.life) { shots.splice(j, 1); continue; }
+          var p = o.age / o.life, al = p < 0.15 ? p / 0.15 : 1 - (p - 0.15) / 0.85;
+          var hx = o.x + o.vx * o.age, hy = o.y + o.vy * o.age;
+          var sp = Math.sqrt(o.vx * o.vx + o.vy * o.vy), len = o.len * Math.min(1, o.age / 0.18);
+          var tx = hx - o.vx / sp * len, ty = hy - o.vy / sp * len;
+          var g = ctx.createLinearGradient(hx, hy, tx, ty);
+          g.addColorStop(0, "rgba(255,255,255," + al.toFixed(3) + ")");
+          g.addColorStop(0.3, "rgba(184,228,248," + (al * 0.45).toFixed(3) + ")");
+          g.addColorStop(1, "rgba(184,228,248,0)");
+          ctx.globalAlpha = 1;
+          ctx.strokeStyle = g;
+          ctx.lineWidth = 1.6;
+          ctx.lineCap = "round";
+          ctx.beginPath();
+          ctx.moveTo(hx, hy);
+          ctx.lineTo(tx, ty);
+          ctx.stroke();
+          ctx.globalAlpha = al;
+          ctx.drawImage(skySprites.glow, hx - 9, hy - 9, 18, 18);
+        }
+      }
+      ctx.globalAlpha = 1;
+    };
+    var loop = function (now) {
+      raf = 0;
+      if (!running) return;
+      if (!t0) t0 = now - last * 1000;
+      var t = (now - t0) / 1000, dt = Math.min(0.05, Math.max(0, t - last));
+      last = t;
+      ex += (px - ex) * 0.06;
+      ey += (py - ey) * 0.06;
+      if (moveEcl) {
+        var ey2 = (scrolls ? Math.min(window.scrollY, H) * 0.2 : 0) - ey * 13;
+        ecl.style.transform = "translate3d(" + (-ex * 18).toFixed(1) + "px," + ey2.toFixed(1) + "px,0)";
+      }
+      draw(t, dt);
+      raf = requestAnimationFrame(loop);
+    };
+    var start = function () {
+      if (running || reduceMotion || !W) return;
+      running = true;
+      t0 = 0;
+      raf = requestAnimationFrame(loop);
+    };
+    var stop = function () {
+      running = false;
+      if (raf) cancelAnimationFrame(raf);
+      raf = 0;
+    };
+    var size = function () {
+      var w = host.clientWidth, h = host.clientHeight;
+      if (!w || !h) return;
+      var dpr = Math.min(window.devicePixelRatio || 1, w * h > 1e6 ? 1.5 : 2);
+      var rebuild = !stars.length || Math.abs(w - W) > W * 0.2;
+      W = w;
+      H = h;
+      cv.width = Math.round(w * dpr);
+      cv.height = Math.round(h * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      if (rebuild) build();
+      if (reduceMotion || (last && !running)) draw(last || 99, 0);
+      if (visible && !doc.hidden) start();
+    };
+    if ("ResizeObserver" in window) new ResizeObserver(size).observe(host);
+    else window.addEventListener("resize", size);
+    size();
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (en) {
+        visible = en[en.length - 1].isIntersecting;
+        if (visible && !doc.hidden) start(); else stop();
+      }).observe(host);
+    } else { visible = true; start(); }
+    doc.addEventListener("visibilitychange", function () {
+      if (doc.hidden) stop(); else if (visible) start();
+    });
+    if (moveEcl || (finePointer && !reduceMotion)) {
+      host.addEventListener("pointermove", function (e) {
+        px = e.clientX / window.innerWidth * 2 - 1;
+        py = e.clientY / window.innerHeight * 2 - 1;
+      });
+      host.addEventListener("pointerleave", function () { px = 0; py = 0; });
+    }
+  };
+  $$(".hero, .phero:not(.phero--photo), .endpage").forEach(sky);
 
   /* ---------- Padrão em movimento lento só quando está visível ---------- */
   if (!reduceMotion && "IntersectionObserver" in window) {
