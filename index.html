@@ -24,9 +24,8 @@
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#060a1f">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,100..125,400..800;1,100..125,400..800&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" as="image" href="assets/img/fotos/eclipse-anel-de-diamante.jpg">
   <script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__ecl)document.documentElement.classList.remove("js")},3000);</script>
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -103,7 +102,7 @@
       <h1 class="lines hero__title"><span class="split-line" style="--i:0"><span>A ligação</span></span> <span class="split-line" style="--i:1"><span>que faltava<i class="star star--twinkle" aria-hidden="true"></i></span></span></h1>
       <div class="hero__grid">
         <div class="hero__copy">
-          <p class="lead rv">Não somos uma lista de promessas. Somos a Lista E às eleições da Associação de Estudantes do Externato de Penafirme: sessenta alunos que ouviram a escola e escreveram um programa a sério.</p>
+          <p class="lead rv">Não somos uma lista de promessas. Somos a Lista E às eleições da Associação de Estudantes do Externato de Penafirme: cinquenta e nove alunos que ouviram a escola e escreveram um programa a sério.</p>
           <div class="actions rv">
             <a class="btn btn--sun" href="programa.html">Ler o programa <span class="ar" aria-hidden="true">→</span></a>
             <a class="btn btn--ghost" href="sobre.html">Quem é a Eclipse</a>
@@ -130,7 +129,7 @@
         </div>
       </div>
       <ul class="facts">
-        <li class="rv"><strong data-count="60">60</strong><span>alunos na lista, de anos e turmas diferentes</span></li>
+        <li class="rv"><strong data-count="59">59</strong><span>alunos na lista, de anos e turmas diferentes</span></li>
         <li class="rv"><strong data-count="12">12</strong><span>propostas para mudar a escola</span></li>
         <li class="rv"><strong data-count="3">3</strong><span>áreas, da comunicação ao bem-estar</span></li>
         <li class="rv"><strong>1.ª</strong><span>lista da escola com site próprio</span></li>
@@ -155,6 +154,7 @@
             <span class="video__ring" aria-hidden="true"></span>
             <span class="video__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5-13-7.5Z"/></svg></span>
             <span class="video__hint">Vídeo em breve</span>
+            <video src="assets/Videos/FilmeIlustrativo.mp4" poster="assets/Videos/FilmeIlustrativo.jpg" controls playsinline preload="metadata" aria-label="Vídeo: Quem é a Eclipse"></video>
           </div>
           <figcaption class="video__body">
             <h3>Quem é a Eclipse</h3>
@@ -190,7 +190,7 @@
         </article>
         <article class="feature rv">
           <h3>Gente com quem contas</h3>
-          <p>Sessenta alunos de anos diferentes, de toda a escola. Sem hierarquias que afastem, com responsabilidades que se assumem.</p>
+          <p>Cinquenta e nove alunos de anos diferentes, de toda a escola. Sem hierarquias que afastem, com responsabilidades que se assumem.</p>
         </article>
         <article class="feature rv">
           <h3>Transparência total</h3>
@@ -280,7 +280,7 @@
   <section class="sec sec--white">
     <div class="w">
       <div class="sec-head sec-head--row">
-        <h2 class="lines"><span class="split-line" style="--i:0"><span>Sessenta alunos.</span></span> <span class="split-line" style="--i:1"><span>Uma só direção.</span></span></h2>
+        <h2 class="lines"><span class="split-line" style="--i:0"><span>59 alunos.</span></span> <span class="split-line" style="--i:1"><span>Uma só direção.</span></span></h2>
         <a class="btn btn--ghost rv" href="equipa.html">Conhecer a coordenação <span class="ar" aria-hidden="true">→</span></a>
       </div>
       <div class="people">
@@ -343,7 +343,7 @@
           <div class="post__media"><img src="assets/img/eclipse-logo.svg" alt="Logótipo da lista Eclipse" width="999" height="553" loading="lazy"></div>
           <p class="post__date">Candidatura</p>
           <h3>A Eclipse é candidata à Associação de Estudantes</h3>
-          <p>Sessenta alunos e doze propostas para mudar a escola. A candidatura está entregue e a campanha começa agora.</p>
+          <p>Cinquenta e nove alunos e doze propostas para mudar a escola. A candidatura está entregue e a campanha começa agora.</p>
           <a class="link" href="noticias.html">Ler notícia <span class="ar" aria-hidden="true">→</span></a>
         </article>
         <div class="rv">
@@ -397,7 +397,7 @@
     <div class="ft-top">
       <div class="ft-pitch">
         <p>Vota E. Vota Eclipse<i class="star" aria-hidden="true"></i></p>
-        <p class="ft-sub">Lista E às eleições da Associação de Estudantes do Externato de Penafirme. Recebe o essencial da campanha por email, no máximo duas vezes por mês. Sem spam.</p>
+        <p class="ft-sub">Lista E às eleições da Associação de Estudantes do Externato de Penafirme. Recebe o essencial da campanha por email, no máximo duas vezes por mês. Sem spam, e podes cancelar quando quiseres.</p>
         <form class="newsletter" action="https://formsubmit.co/ajax/b27be4651bf7003b8eaa9fe9e6ee7276" method="POST" data-ajax>
           <input type="hidden" name="_subject" value="Nova subscrição da newsletter — Eclipse">
           <input type="hidden" name="_template" value="table">
@@ -459,7 +459,7 @@
 
 <aside class="cookie" id="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-hidden="true">
   <h4 id="cookie-title">A tua privacidade</h4>
-  <p>Usamos cookies essenciais para o site funcionar. Com o teu consentimento, usamos também medição de audiência e preferências para o melhorar. Podes aceitar, recusar ou escolher ao detalhe. Sabe mais na <a href="privacidade.html">Política de Privacidade</a>.</p>
+  <p>Usamos só o armazenamento essencial para o site funcionar, sem publicidade nem rastreio. Medição de audiência e preferências, só com o teu consentimento: podes aceitar, recusar ou escolher ao detalhe. Sabe mais na <a href="privacidade.html">Política de Privacidade</a>.</p>
   <div class="cookie__actions">
     <button class="btn" id="cookie-accept" type="button">Aceitar todos</button>
     <button class="btn btn--ghost" id="cookie-reject" type="button">Recusar não essenciais</button>

@@ -422,9 +422,9 @@
     $$("video").forEach(function (v) { if (v !== e.target && !v.paused) v.pause(); });
   }, true);
 
-  /* ---------- Vídeos de apoio: capa com play e duração; os controlos só aparecem depois de começar ---------- */
+  /* ---------- Vídeos (página inicial e de apoio): capa com play e duração; os controlos só aparecem depois de começar ---------- */
   var PLAY_SVG = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5-13-7.5Z"/></svg>';
-  $$(".video--tall video").forEach(function (v) {
+  $$(".video video").forEach(function (v) {
     var fig = v.closest(".video");
     var h = $("h3", fig);
     var btn = doc.createElement("button");
@@ -459,7 +459,7 @@
     var vio = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) { if (!en.isIntersecting && !en.target.paused) en.target.pause(); });
     }, { threshold: 0.35 });
-    $$(".video--tall video").forEach(function (v) { vio.observe(v); });
+    $$(".video video").forEach(function (v) { vio.observe(v); });
   }
 
   /* Telemóvel: pontos por baixo da fila de vídeos, que mostram onde se está e levam a cada vídeo */
@@ -748,7 +748,11 @@
   if (banner) {
     var prefs = $("#cookie-prefs");
     var readConsent = function () {
-      try { return JSON.parse(localStorage.getItem(STORAGE_KEY)); } catch (err) { return null; }
+      var c = null;
+      try { c = JSON.parse(localStorage.getItem(STORAGE_KEY)); } catch (err) { return null; }
+      /* A escolha vale 12 meses (como diz a Política de Privacidade); depois volta a perguntar */
+      if (c && (!c.date || Date.now() - Date.parse(c.date) > 365 * 864e5)) return null;
+      return c;
     };
     var applyConsent = function (consent) { window.eclipseConsent = consent; };
     var save = function (consent) {

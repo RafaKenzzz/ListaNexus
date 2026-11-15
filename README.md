@@ -110,7 +110,7 @@ Definido como variáveis CSS no topo de `assets/css/styles.css`.
 | `--blue` / `--blue-deep` | `#1d4fd7` / `#1339a9` | Destaque sobre fundo claro |
 | `--sun` / `--sun-2` | `#ffc533` / `#ffd666` | O sol: botões e chamadas |
 
-**Tipografia** (Google Fonts, com fallback para _system fonts_)
+**Tipografia** (alojada no próprio site, em `assets/fonts/`, licença SIL OFL 1.1; com fallback para _system fonts_)
 
 - **Archivo** (largura e peso variáveis) — títulos largos em itálico e texto corrido
 
