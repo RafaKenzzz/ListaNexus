@@ -1333,7 +1333,9 @@ html:not(.js) .filters { display: none; }
 @media (hover: hover) and (pointer: fine) { .video__start:hover .video__start-ic { transform: scale(1.07); } }
 .video__time { position: absolute; left: .75rem; top: .75rem; display: inline-flex; align-items: center; min-height: 26px; padding: .1rem .6rem; border-radius: 999px; background: rgb(var(--ink-rgb) / .9); box-shadow: inset 0 0 0 1px rgb(255 255 255 / .16), 0 4px 14px -6px rgb(0 0 0 / .6); color: var(--white); font-size: .8rem; font-weight: 650; font-variant-numeric: tabular-nums; }
 .video.is-playing .video__start { opacity: 0; pointer-events: none; }
-.video:not(.video--tall) .video__start-ic { width: clamp(64px, 7vw, 88px); }
+/* Vídeos da página inicial: a capa é o logótipo, por isso o play fica por baixo dele, centrado */
+.video:not(.video--tall) .video__start { place-items: end center; padding-bottom: 4%; }
+.video:not(.video--tall) .video__start-ic { width: clamp(38px, 5vw, 72px); }
 .video:not(.video--tall) .video__time { left: 1rem; top: 1rem; }
 .video-dots { display: none; }
 /* Cartões ainda sem vídeo: o play fica só em contorno, para não parecer que já se pode ver */
