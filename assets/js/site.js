@@ -656,6 +656,11 @@
       });
     });
   });
+  // Colagem sem filtro (fotografias das páginas de patrocinador)
+  $$("[data-collage]").forEach(function (grid) {
+    var col = collage(grid);
+    if (col) col.on();
+  });
 
   /* ---------- Galeria ---------- */
   var lightbox = $("#lightbox");
@@ -673,7 +678,17 @@
       item.addEventListener("click", function () {
         var img = $("img", item);
         if (!img) return;
-        lbImg.src = img.getAttribute("data-full") || img.src;
+        // Mostra logo a miniatura (já carregada) e só troca pela grande quando esta chegar:
+        // assim nunca aparece a fotografia anterior enquanto a nova carrega.
+        var full = img.getAttribute("data-full") || img.currentSrc || img.src;
+        var token = (lbImg._token || 0) + 1;
+        lbImg._token = token;
+        lbImg.src = img.currentSrc || img.src;
+        if (full !== lbImg.src) {
+          var pre = new Image();
+          pre.onload = function () { if (lbImg._token === token) lbImg.src = full; };
+          pre.src = full;
+        }
         lbImg.alt = img.alt || "";
         lbCap.textContent = img.getAttribute("data-caption") || "";
         lightbox.classList.add("is-open");

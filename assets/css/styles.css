@@ -1452,3 +1452,6 @@ html:not(.js) .filters { display: none; }
   .gallery.is-collage .gallery__item:hover figcaption { opacity: 1; transform: none; color: var(--white); }
 }
 @media (prefers-reduced-motion: reduce) { .gallery.is-collage .gallery__item figcaption { transform: none; } }
+/* Patrocinador: linha de afiliação com logótipo (Maya Jiu-Jitsu Academy / Carlson Gracie) */
+.affil { display: flex; align-items: center; gap: .9rem; margin-top: 1rem; font-weight: 650; }
+.affil img { flex: none; width: 56px; height: 56px; border-radius: 50%; }
