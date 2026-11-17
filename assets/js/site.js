@@ -406,7 +406,7 @@
       host.addEventListener("pointerleave", function () { px = 0; py = 0; });
     }
   };
-  $$(".hero, .phero:not(.phero--photo), .endpage").forEach(sky);
+  $$(".hero, .phero:not(.phero--photo):not(.phero--brand), .endpage").forEach(sky);
 
   /* ---------- Padrão em movimento lento só quando está visível ---------- */
   if (!reduceMotion && "IntersectionObserver" in window) {

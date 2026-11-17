@@ -1460,3 +1460,45 @@ html:not(.js) .filters { display: none; }
 .logo-tile:has(.logo-name) { text-decoration: none; }
 .logo-name { font-size: clamp(1.4rem, 2.4vw, 2rem); font-weight: 800; font-style: italic; font-stretch: 122%; letter-spacing: -.01em; color: var(--ink); line-height: 1; }
 .sponsor-hero__logo .logo-name { font-size: clamp(2rem, 4vw, 3rem); }
+/* ===== patch-10: identidade de cada patrocinador (body.marca.marca--<marca>) ===== */
+.marca { --b-bg: var(--ink); --b-bg2: var(--ink-2); --b-fg: var(--white); --b-accent: var(--sun); --b-on: var(--ink); --b-art: var(--sky); --b-soft: var(--paper); --b-link: var(--blue); }
+.marca--acai { --b-bg: #5c0e9c; --b-bg2: #34065c; --b-accent: #3fe0e6; --b-on: #2a0650; --b-art: #c9a6f2; --b-soft: #f5effc; --b-link: #5c0e9c; }
+.marca--maya { --b-bg: #111111; --b-bg2: #000000; --b-accent: #fdcb12; --b-on: #000000; --b-art: #fdcb12; --b-soft: #fffbea; --b-link: #111111; }
+.marca--surf360 { --b-bg: #0b2a4a; --b-bg2: #050f22; --b-accent: #39c6d8; --b-on: #05142b; --b-art: #ffffff; --b-soft: #eef7fa; --b-link: #0b5a7a; }
+.marca--higia { --b-bg: #1d1a12; --b-bg2: #0b0b0b; --b-accent: #d4a72c; --b-on: #0f0f0f; --b-art: #d4a72c; --b-soft: #faf6ea; --b-link: #7a5d10; }
+.marca--jinsei { --b-bg: #1a1206; --b-bg2: #000000; --b-accent: #c9a24a; --b-on: #000000; --b-art: #c9a24a; --b-soft: #f8f4ea; --b-link: #7a5a14; }
+.marca--tasquinha { --b-bg: #4a2d1b; --b-bg2: #24150c; --b-fg: #fcf6eb; --b-accent: #e9c98f; --b-on: #3a2417; --b-art: #f3dfbd; --b-soft: #fcf6eb; --b-link: #7a3f1d; }
+.marca--pastelaria { --b-bg: #3a2818; --b-bg2: #1a110a; --b-fg: #fff8ec; --b-accent: #d2ab5c; --b-on: #2b1d12; --b-art: #d2ab5c; --b-soft: #fbf6ec; --b-link: #7a5520; }
+.marca--valluz { --b-bg: #20448e; --b-bg2: #0f2556; --b-accent: #a9c7ff; --b-on: #0f2556; --b-art: #ffffff; --b-soft: #eef3fb; --b-link: #20448e; }
+.marca--futourism { --b-bg: #145236; --b-bg2: #062014; --b-accent: #8fd14f; --b-on: #062014; --b-art: #b6e58a; --b-soft: #eff8ea; --b-link: #1d6b3f; }
+.marca--marcmed { --b-bg: #17424a; --b-bg2: #0a2227; --b-accent: #7fd1c7; --b-on: #0a2227; --b-art: #9fe0d8; --b-soft: #eef7f6; --b-link: #17616b; }
+
+/* Topo: a cor da marca em vez do céu da Eclipse, com um desenho próprio por trás */
+.phero--brand { background: radial-gradient(120% 120% at 88% 0%, var(--b-bg) 0%, var(--b-bg2) 78%); color: var(--b-fg); }
+.phero--brand::before { content: none; }
+.phero--brand .lead { color: color-mix(in srgb, var(--b-fg) 84%, transparent); }
+.phero--brand .crumbs, .phero--brand .crumbs a { color: color-mix(in srgb, var(--b-fg) 78%, transparent); }
+.brand-art { position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.brand-art svg { display: block; width: 100%; height: 100%; }
+.phero--brand .sponsor-hero__logo { box-shadow: 0 34px 70px -34px rgb(0 0 0 / .7), inset 0 0 0 1px rgb(255 255 255 / .1); }
+@media (prefers-reduced-motion: no-preference) {
+  .brand-art svg { animation: brand-art-in 1.4s var(--ease) both; }
+  @keyframes brand-art-in { from { opacity: 0; transform: translateY(18px) scale(1.02); } }
+}
+@media (max-width: 899px) { .brand-art svg { opacity: .7; } }
+
+/* Faixa com as palavras da marca */
+.brand-marquee { background: var(--b-accent); color: var(--b-on); }
+
+/* Conteúdo: tons claros da marca, etiquetas e ícones com as cores dela */
+.marca .sec--paper { background: var(--b-soft); }
+.marca .chip--sun { background: var(--b-accent); color: var(--b-on); }
+.marca .info-item__ico { background: var(--b-bg); color: var(--b-accent); }
+.marca .sponsor .prose h2::before { content: ""; display: block; width: 2.4rem; height: .32rem; margin-bottom: .75rem; border-radius: 9px; background: var(--b-bg); }
+.marca .sponsor aside .card { box-shadow: inset 0 5px 0 var(--b-bg), inset 0 0 0 1px var(--line); }
+.marca .sponsor .info-item a, .marca .sponsor .prose a, .marca .sec-head .link { color: var(--b-link); }
+.marca .sec-head h2 { color: var(--b-bg2); }
+/* Galeria de duas imagens (patrocinadores com poucas fotografias): sem recorte */
+.gallery--duo { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 960px; align-items: start; }
+.gallery--duo .gallery__item > div { aspect-ratio: auto; }
+@media (max-width: 560px) { .gallery--duo { grid-template-columns: 1fr; } }

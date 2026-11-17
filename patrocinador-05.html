@@ -28,7 +28,7 @@
   <script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__ecl)document.documentElement.classList.remove("js")},3000);</script>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
+<body class="marca marca--higia">
 
 <a class="skip-link" href="#main">Saltar para o conteúdo principal</a>
 <div class="progress" aria-hidden="true"></div>
@@ -79,7 +79,8 @@
 
 <main id="main">
 
-  <section class="phero phero--sponsor">
+  <section class="phero phero--sponsor phero--brand">
+    <div class="brand-art" aria-hidden="true"><svg viewBox="0 0 1440 640" preserveAspectRatio="xMidYMid slice" focusable="false"><g fill="none" stroke="var(--b-art)" stroke-width="3" opacity=".28"><path d="M700 640 L1480 640 L1320 170 L880 170 Z"/><path d="M1100 170 V640"/><path d="M792 370 H1390" stroke-width="7"/><path d="M845 270 H1355"/><path d="M752 520 H1430"/></g><g opacity=".7"><circle cx="760" cy="196" r="30" fill="var(--b-art)"/><path d="M736 178 q24 18 0 38 M784 178 q-24 18 0 38" fill="none" stroke="var(--b-bg)" stroke-width="3"/></g></svg></div>
     <div class="w phero__in">
       <div>
         <nav aria-label="Caminho de navegação"><ol class="crumbs"><li><a href="index.html">Início</a></li><li><a href="patrocinadores.html">Patrocinadores</a></li><li aria-current="page">Higia Padel Club</li></ol></nav>
@@ -90,13 +91,29 @@
     </div>
   </section>
 
+  <div class="marquee brand-marquee" aria-hidden="true">
+    <div class="marquee__track"><span>Padel</span><span>Três campos panorâmicos</span><span>Academia</span><span>Torneios</span><span>Bar</span><span>Torres Vedras</span></div>
+  </div>
+
+
+
+
+
   <section class="sec sec--paper">
     <div class="w">
       <div class="sponsor">
         <div class="prose rv">
           <h2>Sobre o negócio</h2>
-          <p>O Higia Padel é um clube de padel em Torres Vedras, com três campos interiores panorâmicos, bar, loja e ginásio.</p>
-          <p>Além do jogo livre, recebe aulas, torneios e eventos.</p>
+          <p>O Higia Padel é um clube com três campos de padel interiores e panorâmicos, em Torres Vedras, com bar, loja e ginásio.</p>
+          <h2>No clube</h2>
+          <ul>
+            <li><strong>Reservas</strong> de campo pela aplicação TiePlayer.</li>
+            <li><strong>Academia</strong> com o treinador Bernardo Monteiro.</li>
+            <li><strong>Torneios</strong> ao longo do ano, como o Higia Summer Cup, a Batalha de Equipas e o ranking Mix Divisions.</li>
+            <li><strong>No bar</strong> há pizzas, tábuas, bebidas e taças de açaí.</li>
+          </ul>
+          <h2>Horário</h2>
+          <p>De segunda a sexta, das 7h00 à meia-noite. Sábado, das 9h00 às 21h00. Domingo, das 9h00 às 13h30.</p>
           <h2>O apoio à Eclipse</h2>
           <p class="sponsor__type"><span class="chip chip--sun">Vouchers</span></p>
           <p>O Higia Padel Club apoia a Eclipse com vouchers.</p>
@@ -108,11 +125,54 @@
             <h3>Informação</h3>
             <ul class="info-list mt-2">
               <li class="info-item"><span class="info-item__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></span><div><h4>Instagram</h4><a href="https://www.instagram.com/higia_padel/" rel="noopener" target="_blank">@higia_padel</a></div></li>
+              <li class="info-item"><span class="info-item__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg></span><div><h4>Reservas</h4><a href="https://linktr.ee/HigiaPadel" rel="noopener" target="_blank">TiePlayer e WhatsApp</a></div></li>
               <li class="info-item"><span class="info-item__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg></span><div><h4>Telefone</h4><a href="tel:+351915224311">+351 915 224 311</a></div></li>
-              <li class="info-item"><span class="info-item__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><h4>Onde encontrar</h4><a href="https://www.google.com/maps/search/Rua+Quinta+de+Vale+Canas+12,+Torres+Vedras" rel="noopener" target="_blank">Torres Vedras</a></div></li>
+              <li class="info-item"><span class="info-item__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><h4>Onde encontrar</h4><a href="https://www.google.com/maps/search/Rua+Quinta+de+Vale+Canas+12,+2560-254+Torres+Vedras" rel="noopener" target="_blank">Rua Quinta de Vale Canas 12, 2560-254 Torres Vedras</a></div></li>
+              <li class="info-item"><span class="info-item__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h4>Horário</h4><span>Seg. a sex., 7h00–0h00 · sáb., 9h00–21h00 · dom., 9h00–13h30</span></div></li>
             </ul>
           </div>
         </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--white">
+    <div class="w">
+      <div class="sec-head">
+        <h2 class="lines"><span class="split-line" style="--i:0"><span>Campo, bar</span></span> <span class="split-line" style="--i:1"><span>e convívio.</span></span></h2>
+        <p class="lead rv">Os campos panorâmicos e o bar do Higia Padel. Fotografias publicadas pelo clube no Google Maps.</p>
+      </div>
+      <div class="gallery" id="fotos-higia" data-collage>
+        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver fotografia: Entrada dos campos de padel cobertos, com o tapete do Higia Padel">
+          <div><img src="assets/img/galeria/Higia/higia-01-mini.jpg" data-full="assets/img/galeria/Higia/higia-01.jpg" alt="Entrada dos campos de padel cobertos, com o tapete do Higia Padel" width="540" height="720" loading="lazy"></div>
+        </figure>
+        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver fotografia: Tábuas de pão, bolos e salgados no bar, com os campos ao fundo">
+          <div><img src="assets/img/galeria/Higia/higia-02-mini.jpg" data-full="assets/img/galeria/Higia/higia-02.jpg" alt="Tábuas de pão, bolos e salgados no bar, com os campos ao fundo" width="540" height="720" loading="lazy"></div>
+        </figure>
+        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver fotografia: O balcão do bar do Higia Padel">
+          <div><img src="assets/img/galeria/Higia/higia-03-mini.jpg" data-full="assets/img/galeria/Higia/higia-03.jpg" alt="O balcão do bar do Higia Padel" width="540" height="720" loading="lazy"></div>
+        </figure>
+        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver fotografia: Cerveja e frutos secos numa mesa com vista para os campos">
+          <div><img src="assets/img/galeria/Higia/higia-04-mini.jpg" data-full="assets/img/galeria/Higia/higia-04.jpg" alt="Cerveja e frutos secos numa mesa com vista para os campos" width="540" height="720" loading="lazy"></div>
+        </figure>
+        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver fotografia: Tábua de pão com duas cervejas, junto aos campos">
+          <div><img src="assets/img/galeria/Higia/higia-05-mini.jpg" data-full="assets/img/galeria/Higia/higia-05.jpg" alt="Tábua de pão com duas cervejas, junto aos campos" width="540" height="720" loading="lazy"></div>
+        </figure>
+        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver fotografia: Pizza numa tábua de madeira, com os campos ao fundo">
+          <div><img src="assets/img/galeria/Higia/higia-06-mini.jpg" data-full="assets/img/galeria/Higia/higia-06.jpg" alt="Pizza numa tábua de madeira, com os campos ao fundo" width="540" height="720" loading="lazy"></div>
+        </figure>
+        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver fotografia: Pizza e cerveja numa mesa junto ao vidro dos campos">
+          <div><img src="assets/img/galeria/Higia/higia-07-mini.jpg" data-full="assets/img/galeria/Higia/higia-07.jpg" alt="Pizza e cerveja numa mesa junto ao vidro dos campos" width="540" height="720" loading="lazy"></div>
+        </figure>
+        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver fotografia: Gin tónico num copo de pé">
+          <div><img src="assets/img/galeria/Higia/higia-08-mini.jpg" data-full="assets/img/galeria/Higia/higia-08.jpg" alt="Gin tónico num copo de pé" width="540" height="720" loading="lazy"></div>
+        </figure>
+        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver fotografia: Sumo de laranja com uma rodela de laranja">
+          <div><img src="assets/img/galeria/Higia/higia-09-mini.jpg" data-full="assets/img/galeria/Higia/higia-09.jpg" alt="Sumo de laranja com uma rodela de laranja" width="540" height="720" loading="lazy"></div>
+        </figure>
+        <figure class="gallery__item rv" tabindex="0" role="button" aria-label="Ver fotografia: Taça de açaí com morango, banana, uva e granola">
+          <div><img src="assets/img/galeria/Higia/higia-10-mini.jpg" data-full="assets/img/galeria/Higia/higia-10.jpg" alt="Taça de açaí com morango, banana, uva e granola" width="540" height="720" loading="lazy"></div>
+        </figure>
       </div>
     </div>
   </section>
@@ -212,6 +272,14 @@
     </div>
   </div>
 </aside>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de imagens">
+  <button class="lightbox__close" type="button" aria-label="Fechar visualizador">×</button>
+  <figure class="lightbox__fig">
+    <img alt="">
+    <figcaption class="lightbox__cap"></figcaption>
+  </figure>
+</div>
 
 <script src="assets/js/config.js" defer></script>
 <script src="assets/js/site.js" defer></script>
