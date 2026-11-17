@@ -1303,13 +1303,13 @@ html:not(.js) .filters { display: none; }
 .logo--zoom img { scale: 1.5; }
 .sponsor-hero__logo.logo--zoom { position: relative; }
 .sponsor-hero__logo.logo--zoom img { position: absolute; inset: 26px; width: calc(100% - 52px); height: calc(100% - 52px); max-width: none; max-height: none; object-fit: contain; }
-/* Faixa de logótipos da página inicial: 7 patrocinadores + «Este espaço pode ser teu», em 4 colunas */
-.logos { grid-template-columns: repeat(4, 1fr); }
+/* Faixa de logótipos da página inicial: 9 patrocinadores + «Este espaço pode ser teu», em 5 colunas */
+.logos { grid-template-columns: repeat(5, 1fr); }
 .logo-tile--cta { padding: 1rem; background: var(--sun); box-shadow: none; color: var(--ink); text-align: center; text-decoration: none; font-size: clamp(1rem, 1.5vw, 1.2rem); font-weight: 750; font-stretch: 112%; line-height: 1.2; }
 .logo-tile--cta .ar { display: inline-block; transition: transform .25s var(--ease); }
 @media (hover: hover) and (pointer: fine) { .logo-tile--cta:hover { box-shadow: 0 24px 44px -28px rgb(var(--ink-rgb) / .45); } .logo-tile--cta:hover .ar { transform: translateX(4px); } }
-/* Patrocinadores: o cartão amarelo fecha a grelha de 3 colunas a ocupar duas */
-@media (min-width: 981px) { .card--wide { grid-column: span 2; } }
+/* Patrocinadores: o cartão amarelo fecha a grelha de 3 colunas a toda a largura */
+@media (min-width: 981px) { .card--wide { grid-column: 1 / -1; } }
 /* Fotografias sem legenda (bastidores): o visualizador não mostra a linha vazia */
 .lightbox__cap:empty { display: none; }
 /* Rodapé: crédito do site */
