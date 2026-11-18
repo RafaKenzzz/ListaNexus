@@ -37,7 +37,7 @@ Depois abra <http://localhost:8080>.
 listaae/
 ├─ index.html              # Início: herói com o dia de votação, vídeos, manifesto, assistente do programa, equipa, notícias
 ├─ sobre.html              # História, princípios, como trabalhamos
-├─ programa.html           # 12 propostas em 3 áreas (comunicação; desporto, eventos e convívio; aprendizagem e bem-estar)
+├─ programa.html           # 14 propostas em 3 áreas (comunicação; desporto, eventos e convívio; aprendizagem e bem-estar)
 ├─ equipa.html             # Candidatos e organização
 ├─ membros.html            # Dirigentes por órgão (nome e função)
 ├─ noticias.html           # Notícias, agenda de eventos, newsletter
