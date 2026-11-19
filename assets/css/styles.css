@@ -1502,3 +1502,11 @@ html:not(.js) .filters { display: none; }
 .gallery--duo { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 960px; align-items: start; }
 .gallery--duo .gallery__item > div { aspect-ratio: auto; }
 @media (max-width: 560px) { .gallery--duo { grid-template-columns: 1fr; } }
+
+/* DinoKart: asfalto, vermelho e branco */
+.marca--dinokart { --b-bg: #232a33; --b-bg2: #0b0e12; --b-accent: #e11d2a; --b-on: #ffffff; --b-art: #ffffff; --b-soft: #f4f5f7; --b-link: #b5121d; }
+/* Com 11 patrocinadores, o convite amarelo ocupa o lugar que sobra na última linha.
+   Com 12, mudar as duas regras para «grid-column: 1 / -1» (linha inteira). */
+.logo-tile--cta { grid-column: auto / -1; }
+@media (min-width: 981px) { .card--wide { grid-column: auto / -1; } }
+@media (max-width: 899px) { .brand-art .b-speed { display: none; } }
