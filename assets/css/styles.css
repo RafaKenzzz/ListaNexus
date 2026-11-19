@@ -1505,10 +1505,7 @@ html:not(.js) .filters { display: none; }
 
 /* DinoKart: asfalto, vermelho e branco */
 .marca--dinokart { --b-bg: #232a33; --b-bg2: #0b0e12; --b-accent: #e11d2a; --b-on: #ffffff; --b-art: #ffffff; --b-soft: #f4f5f7; --b-link: #b5121d; }
-/* Com 12 patrocinadores, o convite amarelo ocupa a linha inteira (com um número ímpar, usar «auto / -1»). */
-.logo-tile--cta { grid-column: 1 / -1; }
+/* Patrocinadores: 12 cartões → convite amarelo a toda a largura. Página inicial: 11 logótipos → o convite ocupa o lugar que sobra. */
+.logo-tile--cta { grid-column: auto / -1; }
 @media (min-width: 981px) { .card--wide { grid-column: 1 / -1; } }
 @media (max-width: 899px) { .brand-art .b-speed { display: none; } }
-
-/* F’lipa: espresso, nude e linha fina */
-.marca--filipa { --b-bg: #3d312b; --b-bg2: #1c1512; --b-accent: #dcbc9c; --b-on: #2a201c; --b-art: #f0e4d8; --b-soft: #f7f2ee; --b-link: #8a5a3c; }
