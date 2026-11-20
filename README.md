@@ -177,6 +177,9 @@ Para trocar imagens, substitua os ficheiros mantendo as proporções:
   Netlify, Vercel, GitHub Pages, Cloudflare Pages. Não requer configuração especial.
 - **Site publicado:** https://rafakenzzz.github.io/ListaNexus/ (GitHub Pages, branch `main`).
   Qualquer `git push` para `main` atualiza o site automaticamente em ~1 minuto.
+- **Cloudflare:** o mesmo branch é publicado como Worker com ficheiros estáticos
+  (`wrangler.jsonc`). Os cabeçalhos de segurança estão em `_headers` e os ficheiros que
+  não vão para o ar estão em `.assetsignore`.
 
 ### Publicar alterações
 
