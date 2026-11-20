@@ -1,5 +1,5 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
 
 # Área de campanha informativa. Conteúdo público.
-Sitemap: https://listanexus-nu.vercel.app/sitemap.xml
+Sitemap: https://listaeclipse.pt/sitemap.xml

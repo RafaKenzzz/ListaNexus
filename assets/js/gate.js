@@ -8,7 +8,7 @@
    continuam públicos no GitHub. */
 (function () {
   "use strict";
-  var OPEN = "2026-11-21T00:00:00Z"; // sábado, 21 de novembro de 2026, 0h00 em Lisboa
+  var OPEN = "2026-11-21T19:00:00Z"; // sábado, 21 de novembro de 2026, 19h00 em Lisboa (hora de inverno = UTC)
   var HASH = "932f3d50147035d87858910e4c551977be02f673a8efd700443350b8e425230e";
   var KEY = "eclipse-preview";
 
@@ -33,7 +33,7 @@
   var next = "index.html";
   try {
     var asked = new URLSearchParams(location.search).get("next") || "";
-    if (/^[a-z0-9-]+\.html(#[a-z0-9-]*)?$/i.test(asked)) next = asked;
+    if (/^[a-z0-9-]+(\.html)?(#[a-z0-9-]*)?$/i.test(asked)) next = asked; // com ou sem .html (a Cloudflare tira o .html)
   } catch (e) {}
   if (isOpen() || ok) { location.replace(next); return; }
 
