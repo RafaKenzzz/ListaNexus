@@ -1,0 +1,8 @@
+.git
+.gitignore
+.nojekyll
+.assetsignore
+wrangler.jsonc
+vercel.json
+README.md
+node_modules
