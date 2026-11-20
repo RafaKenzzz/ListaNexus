@@ -529,8 +529,9 @@
   var icsBtns = $$("[data-vote-ics]");
   if (icsBtns.length && CFG.voteStart && window.Blob && window.URL && URL.createObjectURL) {
     var icsStart = new Date(CFG.voteStart);
-    var icsEnd = new Date(CFG.voteEnd || CFG.voteStart);
-    if (!isNaN(icsStart.getTime()) && icsEnd.getTime() > Date.now()) {
+    var icsUntil = new Date(CFG.voteEnd || CFG.voteStart);
+    var icsEnd = new Date(icsStart.getTime() + 60 * 60 * 1000); // sem hora de fecho: o evento marca a abertura
+    if (!isNaN(icsStart.getTime()) && icsUntil.getTime() > Date.now()) {
       var two = function (n) { return (n < 10 ? "0" : "") + n; };
       var stamp = function (d) { return d.getFullYear() + two(d.getMonth() + 1) + two(d.getDate()) + "T" + two(d.getHours()) + two(d.getMinutes()) + "00"; };
       var ics = [
@@ -539,8 +540,8 @@
         "DTSTAMP:" + new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z",
         "DTSTART:" + stamp(icsStart), "DTEND:" + stamp(icsEnd),
         "SUMMARY:Votação para a Associação de Estudantes — Vota E (Eclipse)",
-        "LOCATION:Biblioteca do Externato de Penafirme",
-        "DESCRIPTION:Leva o cartão de estudante. A tua escolha é a Lista E.",
+        "LOCATION:Externato de Penafirme (nas respetivas áreas)",
+        "DESCRIPTION:A votação abre às 8h30. A tua escolha é a Lista E.",
         "BEGIN:VALARM", "TRIGGER:-PT30M", "ACTION:DISPLAY", "DESCRIPTION:Hoje é dia de votar na Lista E", "END:VALARM",
         "END:VEVENT", "END:VCALENDAR"
       ].join("\r\n");
