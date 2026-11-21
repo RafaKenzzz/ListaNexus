@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-ZEWCv0dHJngpA6H1rg3hvb/kqrlyfb/pS6JHdvif954='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self' https://formsubmit.co; form-action 'self' https://formsubmit.co; manifest-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; upgrade-insecure-requests">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="assets/js/gate.js"></script>
   <title>Galeria — Eclipse | AE Externato de Penafirme</title>
   <meta name="description" content="Fotografias e vídeos de apoio da campanha Eclipse: ações de campanha, bastidores, os membros da lista à Associação de Estudantes do Externato de Penafirme.">
   <link rel="canonical" href="https://listaeclipse.pt/galeria">
@@ -74,7 +73,7 @@
   </nav>
   <div class="mmenu__foot">
     <a class="btn" href="contactos.html">Fala com a Eclipse</a>
-    <p><a href="mailto:eclipse.extp@gmail.com">eclipse.extp@gmail.com</a><a href="https://www.instagram.com/eclipse_extp/" rel="noopener" target="_blank">@eclipse_extp</a></p>
+    <p><a href="mailto:eclipse.extp@gmail.com">eclipse.extp@gmail.com</a><a href="https://www.instagram.com/lista.eclipse_extp/" rel="noopener" target="_blank">@lista.eclipse_extp</a></p>
   </div>
 </div>
 
@@ -109,7 +108,6 @@
                 <div><img src="assets/fotosgaleria/nome.jpg" data-full="assets/fotosgaleria/nome.jpg" data-caption="Descrição" alt="Descrição" loading="lazy"></div>
                 <figcaption>Descrição</figcaption>
               </figure>
-           3. Apagar um dos blocos «Em breve» (shot-soon) dessa categoria.
            Nos bastidores as fotografias não levam legenda: sem <figcaption> e sem data-caption
            (a descrição fica só no alt e no aria-label). -->
       <div class="gallery" id="fotos">
@@ -341,10 +339,6 @@
           <div><img src="assets/membros/ricardo-bernardes-quadrado.jpg" data-full="assets/membros/ricardo-bernardes.jpg" data-caption="Ricardo Bernardes · Colaboradores" alt="Ricardo Bernardes, colaboradores, da lista Eclipse" width="720" height="720" loading="lazy" style="object-position: 50% 0"></div>
           <figcaption>Ricardo Bernardes</figcaption>
         </figure>
-        <figure class="shot-soon rv" data-cat="campanha">
-          <div class="shot-soon__frame on-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l1.6-2.4h6.8L17 8h3v11H4V8Z"/><circle cx="12" cy="13.2" r="3.6"/></svg><span class="chip">Em breve</span></div>
-          <figcaption>Campanha</figcaption>
-        </figure>
       </div>
       <p class="muted small mt-3 text rv">As fotografias de alunos só são publicadas com autorização das pessoas retratadas e, no caso de menores, de quem exerce a responsabilidade parental, como explica a nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
     </div>
@@ -354,20 +348,13 @@
     <div class="w">
       <div class="sec-head">
         <h2 class="lines"><span class="split-line" style="--i:0"><span>Também estão</span></span> <span class="split-line" style="--i:1"><span>com a Eclipse.</span></span></h2>
-        <p class="lead rv">Figuras conhecidas deixam uma mensagem de apoio à Eclipse e aos alunos do Externato de Penafirme. Os vídeos vão chegando ao longo da campanha.</p>
+        <p class="lead rv">Figuras conhecidas deixam uma mensagem de apoio à Eclipse e aos alunos do Externato de Penafirme.</p>
       </div>
-      <!-- Vídeos de apoio. Para pôr um vídeo:
-           1. Copiar o ficheiro para a pasta assets/videossuporte/ (MP4, de preferência com menos de 50 MB).
-              Opcional: uma imagem de capa com o mesmo nome em .jpg.
-           2. Num cartão ainda vazio, tirar o vídeo do comentário e pôr o nome do ficheiro, assim:
-              <video src="assets/videossuporte/nome.mp4" poster="assets/videossuporte/nome.jpg" controls playsinline preload="metadata"></video>
-           3. Trocar «Vídeo de apoio» pelo nome da pessoa e «Em breve.» por quem é.
-           Para ter mais vídeos, copiar um bloco <figure class="video video--tall"> inteiro. -->      <div class="video-grid video-grid--tall">
+      <div class="video-grid video-grid--tall">
         <figure class="video video--tall rv">
           <div class="video__frame">
             <span class="video__ring" aria-hidden="true"></span>
             <span class="video__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5-13-7.5Z"/></svg></span>
-            <span class="video__hint">Vídeo em breve</span>
             <video src="assets/videossuporte/gregorio.mp4" poster="assets/videossuporte/gregorio.jpg" controls playsinline preload="metadata" aria-label="Vídeo de apoio: Gregório"></video>
           </div>
           <figcaption class="video__body">
@@ -380,7 +367,6 @@
           <div class="video__frame">
             <span class="video__ring" aria-hidden="true"></span>
             <span class="video__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5-13-7.5Z"/></svg></span>
-            <span class="video__hint">Vídeo em breve</span>
             <video src="assets/videossuporte/indiano.mp4" poster="assets/videossuporte/indiano.jpg" controls playsinline preload="metadata" aria-label="Vídeo de apoio: subinsubirvida"></video>
           </div>
           <figcaption class="video__body">
@@ -389,41 +375,6 @@
             <p>Mensagem de apoio à Eclipse.</p>
           </figcaption>
         </figure>
-        <figure class="video video--tall rv">
-          <div class="video__frame">
-            <span class="video__ring" aria-hidden="true"></span>
-            <span class="video__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5-13-7.5Z"/></svg></span>
-            <span class="video__hint">Vídeo em breve</span>
-            <!-- Vídeo 3: <video src="assets/videossuporte/NOME-DO-FICHEIRO.mp4" controls playsinline preload="metadata"></video> -->
-          </div>
-          <figcaption class="video__body">
-            <h3>Vídeo de apoio</h3>
-            <p>Em breve.</p>
-          </figcaption>
-        </figure>
-        <figure class="video video--tall rv">
-          <div class="video__frame">
-            <span class="video__ring" aria-hidden="true"></span>
-            <span class="video__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5-13-7.5Z"/></svg></span>
-            <span class="video__hint">Vídeo em breve</span>
-            <!-- Vídeo 4: <video src="assets/videossuporte/NOME-DO-FICHEIRO.mp4" controls playsinline preload="metadata"></video> -->
-          </div>
-          <figcaption class="video__body">
-            <h3>Vídeo de apoio</h3>
-            <p>Em breve.</p>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta" data-tiles>
-    <div class="w">
-      <div class="cta__card rv">
-        <svg class="mark mark-anim cta__mark" viewBox="250 0 749 553" aria-hidden="true" focusable="false"><path class="m-arc m-arc--a" d="M512.2 35.9 494.7 37.1 473.7 40 443.7 47.2 405.8 61.1 375.7 76.8 347.3 96.2 325.2 115.2 309.1 132.3 300.8 142.9 283.3 169.6 300.4 148 320 127.4 343.5 108 368.2 92.2 390.7 81 417.3 71 446.5 64 475.3 60.8 496 60.9 530.5 65 561.3 73 584.3 82 614.6 98.2 635.8 113.2 656.4 133.8 678.4 161.1 688 165.7 698.2 168.7 701 168.7 705.5 166.5 713.5 160.3 718 155 723.6 143.5 725.3 137.5 715.6 124.2 695.5 103 679.5 89.1 667.8 80.6 651.7 70.5 631.7 60.1 610 51.2 594.3 46.2 573.8 41.1 555.2 38 532.5 36Z"/><path class="m-arc m-arc--b" d="M725 362.2 708.7 396.3 696.8 415.3 688 427.3 677.8 439.6 656.9 460.5 635.6 477.7 606.3 495.8 592.2 502.8 572.3 510.8 536 520.9 504.3 525 476.2 525 463.8 524 434.3 518.8 399.5 507.8 366.3 491.6 338 472.5 323.5 460 304.2 440.8 285 417.3 267.1 388.8 275.3 406.5 284.6 422.7 296.3 439.7 309.5 455.8 336.7 482 368.2 504.5 386.3 514.6 405.5 523.6 440.5 535.7 458.3 539.8 485.8 543.7 520.2 544.6 543.5 542.8 571.7 537.7 593.3 531.7 610 525.7 626.7 518.5 652.7 504.4 667.7 494.5 687.2 479.1 709.9 456.3 727.4 433.7 744.7 403.5 756.7 373.7 759.6 363.7 759.2 362.2Z"/><path class="m-star" d="M744 9C746.2 177.3 764.9 191.2 990 191C764.9 194.3 746.2 206.5 744 352C742.3 206.5 727.7 194.7 552 196C727.7 191.6 742.3 177.4 744 9Z"/></svg>
-        <h2>Queres o cartaz <br>da tua turma?</h2>
-        <p class="lead">Professores e turmas podem pedir um cartaz da sua turma com a fotografia da turma, para afixar na sala. Entregamos a quem o pedir. Basta dizer qual é a turma.</p>
-        <div class="actions"><a class="btn btn--sun" href="contactos.html">Pedir o cartaz <span class="ar" aria-hidden="true">→</span></a><a class="btn btn--ghost" href="noticias.html#agenda">Ver a agenda</a></div>
       </div>
     </div>
   </section>
@@ -478,10 +429,10 @@
         <h2>Fala connosco</h2>
         <ul>
           <li><a href="mailto:eclipse.extp@gmail.com">eclipse.extp@gmail.com</a></li>
-          <li><a href="https://www.instagram.com/eclipse_extp/" rel="noopener" target="_blank">Instagram @eclipse_extp</a></li>
+          <li><a href="https://www.instagram.com/lista.eclipse_extp/" rel="noopener" target="_blank">Instagram @lista.eclipse_extp</a></li>
         </ul>
         <div class="ft-social mt-2">
-          <a href="https://www.instagram.com/eclipse_extp/" aria-label="Instagram da Eclipse" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.instagram.com/lista.eclipse_extp/" aria-label="Instagram da Eclipse" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
           <a href="mailto:eclipse.extp@gmail.com" aria-label="Email da Eclipse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
         </div>
       </div>

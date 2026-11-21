@@ -81,7 +81,7 @@ Os números de telefone/e-mail, morada e nomes são **placeholders**. Procure e 
 | Domínio (`https://eclipsepenafirme.pt/`) | `canonical`/`og:url` em todos os `.html`, `sitemap.xml`, `robots.txt`, JSON-LD |
 | E-mail da lista (`eclipse.extp@gmail.com`) | footer de todas as páginas, `contactos.html`, `privacidade.html` |
 | Destino dos formulários | `action` de todos os `<form>` (FormSubmit) + `privacidade.html` |
-| Instagram (`@eclipse.penafirme`) | footer, `contactos.html`, JSON-LD |
+| Instagram (`@lista.eclipse_extp`) | footer, `contactos.html`, JSON-LD |
 | Patrocinadores e páginas de cada um | `patrocinadores.html` + `patrocinador-01..08.html` |
 | Nomes/dados da equipa | `equipa.html` |
 | Membros (nome, ano, curso, função, frase, email) | `membros.html` |
@@ -134,8 +134,8 @@ Definido como variáveis CSS no topo de `assets/css/styles.css`.
   comentário em `galeria.html`.
 - **Vídeos de apoio** na galeria (`galeria.html#videos`), em formato vertical. Para pôr um vídeo:
   copiar o MP4 (e uma capa `.jpg` com o mesmo nome) para `assets/videossuporte/`, de preferência
-  com menos de 50 MB, tirar do comentário a linha `<video …>` de um cartão vazio e trocar
-  «Vídeo de apoio» / «Em breve.» pelo nome e por quem é. Só toca um vídeo de cada vez.
+  com menos de 50 MB, e acrescentar um cartão com o nome da pessoa e quem é. Só toca um vídeo
+  de cada vez.
 - **FAQ** com `<details>` nativos (abre uma pergunta de cada vez).
 - **Consentimento de cookies** real (categorias: essenciais, medição, preferências),
   guardado em `localStorage` na chave `eclipse.consent.v1`. Reabertura via links `[data-open-cookie]`.
