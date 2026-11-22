@@ -1475,3 +1475,8 @@ html:not(.js) .filters { display: none; }
 /* COJOPE: azul, granada e o dourado do sol do emblema */
 .marca--cojope { --b-bg: #22476f; --b-bg2: #0f2238; --b-accent: #f2c14e; --b-on: #22180a; --b-art: #f7e3b0; --b-soft: #f7f3ea; --b-link: #8b2335; }
 @media (max-width: 899px) { .brand-art .b-speed { display: none; } }
+/* Notícias com fotografia (T-shirt, Ginástica Torreense): imagem a toda a moldura, sem o fundo de estrelas */
+.post__media--photo { background: var(--paper-2); }
+.post--feature .post__media--photo img, .post__media--photo img { object-fit: cover; padding: 0; }
+.post__media--auto { aspect-ratio: auto; }
+.post__media--auto img { height: auto; }
