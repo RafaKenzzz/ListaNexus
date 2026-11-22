@@ -1467,7 +1467,11 @@ html:not(.js) .filters { display: none; }
 
 /* DinoKart: asfalto, vermelho e branco */
 .marca--dinokart { --b-bg: #232a33; --b-bg2: #0b0e12; --b-accent: #e11d2a; --b-on: #ffffff; --b-art: #ffffff; --b-soft: #f4f5f7; --b-link: #b5121d; }
-/* Patrocinadores: 12 cartões → convite amarelo a toda a largura. Página inicial: 11 logótipos → o convite ocupa o lugar que sobra. */
-.logo-tile--cta { grid-column: auto / -1; }
-@media (min-width: 981px) { .card--wide { grid-column: 1 / -1; } }
+/* 13 patrocinadores. Página inicial (4 colunas): o convite amarelo ocupa as 3 que sobram; no telemóvel (2 colunas) ocupa 1.
+   patrocinadores.html (3 colunas): o convite ocupa as 2 que sobram. */
+.logo-tile--cta { grid-column: span 3; }
+@media (max-width: 640px) { .logo-tile--cta { grid-column: auto; } }
+@media (min-width: 981px) { .card--wide { grid-column: span 2; } }
+/* COJOPE: azul, granada e o dourado do sol do emblema */
+.marca--cojope { --b-bg: #22476f; --b-bg2: #0f2238; --b-accent: #f2c14e; --b-on: #22180a; --b-art: #f7e3b0; --b-soft: #f7f3ea; --b-link: #8b2335; }
 @media (max-width: 899px) { .brand-art .b-speed { display: none; } }
